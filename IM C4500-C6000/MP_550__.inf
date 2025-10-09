@@ -1,0 +1,250 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2025 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 02/05/2025,3.2.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%LANIER%=LANIER,NTamd64
+%NRG%=NRG,NTamd64
+%Ricoh%=Ricoh,NTamd64
+%SAVIN%=SAVIN,NTamd64
+
+
+;WindowsXP(amd64)
+[LANIER.NTamd64]
+"LANIER IM 550 PCL 6"=LANIER_IM_550_64.dat,USBPRINT\LANIERIM_55055E0,LPTENUM\LANIERIM_55055E0,LANIERIM_55055E0
+"LANIER IM 600 PCL 6"=LANIER_IM_600_64.dat,USBPRINT\LANIERIM_6000513,LPTENUM\LANIERIM_6000513,LANIERIM_6000513,LANIERIM_600_513
+"LANIER IM 600SR PCL 6"=LANIER_IM_600SR_64.dat,USBPRINT\LANIERIM_600SR3E70,LPTENUM\LANIERIM_600SR3E70,LANIERIM_600SR3E70
+
+[NRG.NTamd64]
+"NRG IM 550 PCL 6"=NRG_IM_550_64.dat,USBPRINT\NRGIM_5505F99,LPTENUM\NRGIM_5505F99,NRGIM_5505F99
+"NRG IM 600 PCL 6"=NRG_IM_600_64.dat,USBPRINT\NRGIM_6000F6A,LPTENUM\NRGIM_6000F6A,NRGIM_6000F6A,NRGIM_600_F6A
+"NRG IM 600SR PCL 6"=NRG_IM_600SR_64.dat,USBPRINT\NRGIM_600SRA9D3,LPTENUM\NRGIM_600SRA9D3,NRGIM_600SRA9D3
+
+[Ricoh.NTamd64]
+"RICOH IM 550 PCL 6"=RICOH_IM_550_64.dat,USBPRINT\RICOHIM_5507827,LPTENUM\RICOHIM_5507827,RICOHIM_5507827
+"RICOH IM 600 PCL 6"=RICOH_IM_600_64.dat,USBPRINT\RICOHIM_60028D4,LPTENUM\RICOHIM_60028D4,RICOHIM_60028D4
+"RICOH IM 600SR PCL 6"=RICOH_IM_600SR_64.dat,USBPRINT\RICOHIM_600SR13E2,LPTENUM\RICOHIM_600SR13E2,RICOHIM_600SR13E2
+
+[SAVIN.NTamd64]
+"SAVIN IM 550 PCL 6"=SAVIN_IM_550_64.dat,USBPRINT\SAVINIM_550B4B7,LPTENUM\SAVINIM_550B4B7,SAVINIM_550B4B7
+"SAVIN IM 600 PCL 6"=SAVIN_IM_600_64.dat,USBPRINT\SAVINIM_600E446,LPTENUM\SAVINIM_600E446,SAVINIM_600E446
+"SAVIN IM 600SR PCL 6"=SAVIN_IM_600SR_64.dat,USBPRINT\SAVINIM_600SR268F,LPTENUM\SAVINIM_600SR268F,SAVINIM_600SR268F
+
+
+
+[LANIER_IM_550_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Tcd.psz
+LanguageMonitor	= rica7Tlm,rica7Tlm.dll
+CopyINF	= RPRNUT.INF
+
+[LANIER_IM_600_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Tcd.psz
+LanguageMonitor	= rica7Tlm,rica7Tlm.dll
+CopyINF	= RPRNUT.INF
+
+[LANIER_IM_600SR_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Tcd.psz
+LanguageMonitor	= rica7Tlm,rica7Tlm.dll
+CopyINF	= RPRNUT.INF
+
+[NRG_IM_550_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Tcd.psz
+LanguageMonitor	= rica7Tlm,rica7Tlm.dll
+CopyINF	= RPRNUT.INF
+
+[NRG_IM_600_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Tcd.psz
+LanguageMonitor	= rica7Tlm,rica7Tlm.dll
+CopyINF	= RPRNUT.INF
+
+[NRG_IM_600SR_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Tcd.psz
+LanguageMonitor	= rica7Tlm,rica7Tlm.dll
+CopyINF	= RPRNUT.INF
+
+[RICOH_IM_550_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Tcd.psz
+LanguageMonitor	= rica7Tlm,rica7Tlm.dll
+CopyINF	= RPRNUT.INF
+
+[RICOH_IM_600_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Tcd.psz
+LanguageMonitor	= rica7Tlm,rica7Tlm.dll
+CopyINF	= RPRNUT.INF
+
+[RICOH_IM_600SR_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Tcd.psz
+LanguageMonitor	= rica7Tlm,rica7Tlm.dll
+CopyINF	= RPRNUT.INF
+
+[SAVIN_IM_550_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Tcd.psz
+LanguageMonitor	= rica7Tlm,rica7Tlm.dll
+CopyINF	= RPRNUT.INF
+
+[SAVIN_IM_600_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Tcd.psz
+LanguageMonitor	= rica7Tlm,rica7Tlm.dll
+CopyINF	= RPRNUT.INF
+
+[SAVIN_IM_600SR_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Tcd.psz
+LanguageMonitor	= rica7Tlm,rica7Tlm.dll
+CopyINF	= RPRNUT.INF
+
+
+[LANIER_IM_550_64.dat.Services]
+AddService = ,0x2
+
+[LANIER_IM_600_64.dat.Services]
+AddService = ,0x2
+
+[LANIER_IM_600SR_64.dat.Services]
+AddService = ,0x2
+
+[NRG_IM_550_64.dat.Services]
+AddService = ,0x2
+
+[NRG_IM_600_64.dat.Services]
+AddService = ,0x2
+
+[NRG_IM_600SR_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_IM_550_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_IM_600_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_IM_600SR_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_IM_550_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_IM_600_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_IM_600SR_64.dat.Services]
+AddService = ,0x2
+
+
+[RPD_FILES]
+rica7Tui.dll,rica7Qui.dll
+rica7Tui.irj,MP_550__.irj
+rica7Tui.rdj
+rica7Tui.rcf,MP_550__.rcf
+rica7Tug.dll,rica7Qug.dll
+rica7Tug.miz
+rica7Tur.dll,rica7Qur.dll
+rica7Tgr.dll,rica7Qgr.dll
+rica7Tgl.dll,rica7Qgl.dll
+rica7Tci.dll,rica7Qci.dll
+rica7Tcd.dll,rica7Qcd.dll
+rica7Tcd.psz
+rica7Tcf.cfz
+rica7Tcl.ini
+rica7Tch.chm,rica7Qch.chm
+rica7Tcz.dlz,rica7Tcz.dlz
+rica7Tcj.dll,rica7Qcj.dll
+rica7Tct.dll,rica7Qct.dll
+rica7Tcb.dll,rica7Qcb.dll
+rica7Ttl.exe,rica7Qtl.exe
+rica7Ttc.exe,rica7Qtc.exe
+rica7Ttt.exe,rica7Qtt.exe
+rica7Ttf.exe,rica7Qtf.exe
+
+[RPD_COMMON_SYS32]
+rica7Tlm.dll,rica7Qlm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD07Td64.dll,RD07Td64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica7Tui.dll
+DriverFile	= rica7Tgr.dll
+HelpFile	= rica7Tch.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica7Qui.dll	= 1
+MP_550__.irj	= 1
+rica7Tui.rdj	= 1
+MP_550__.rcf	= 2
+rica7Qug.dll	= 1
+rica7Tug.miz	= 1
+rica7Qur.dll	= 1
+rica7Qgr.dll	= 1
+rica7Qgl.dll	= 1
+rica7Qci.dll	= 1
+rica7Qcd.dll	= 1
+rica7Tcd.psz	= 1
+rica7Tcf.cfz	= 1
+rica7Tcl.ini	= 1
+rica7Qch.chm	= 1
+rica7Tcz.dlz	= 1
+rica7Qcj.dll	= 1
+rica7Qct.dll	= 1
+rica7Qcb.dll	= 1
+rica7Qlm.dll	= 1
+rica7Qtc.exe	= 1
+rica7Qtt.exe	= 1
+rica7Qtf.exe	= 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+rica7Qtl.exe      = 1
+RD07Td64.dll	= 1
+
+[Strings]
+Ricoh="Ricoh"
+LANIER="LANIER"
+NRG="NRG"
+SAVIN="SAVIN"
+DSK= "PCL6 Printer Driver Disk1"

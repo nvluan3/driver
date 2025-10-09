@@ -1,0 +1,160 @@
+{
+
+	"common" :
+	{
+
+		"root" :
+		{
+			"Logging"								: [ "1",					"REG_DWORD" ]
+		},
+
+		"common_scope" :
+		{
+			"DriverProductVersion"		: [ "1.8.0.0",		"REG_SZ" ],
+			"Date"				: [ "04/21/2020",	"REG_SZ" ],
+			"PrinterModelName"		: [ "MP 6002",	"REG_SZ" ],
+			"PDL"						: [ "PCLXL",				"REG_SZ" ]
+		},
+
+		"ui_scope" :
+		{
+		},
+
+		"gr_scope" :
+		{
+		},
+
+		"capsdb_scope" :
+		{
+		}
+
+	},
+
+       "Gestetner MP 6002 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 6002", "REG_SZ" ]
+               }
+       },
+       "Gestetner MP 7502 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 7502", "REG_SZ" ]
+               }
+       },
+       "Gestetner MP 9002 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 9002", "REG_SZ" ]
+               }
+       },
+"infotec MP 6002 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 6002", "REG_SZ" ]
+               }
+       },
+       "infotec MP 7502 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 7502", "REG_SZ" ]
+               }
+       },
+       "infotec MP 9002 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 9002", "REG_SZ" ]
+               }
+       },
+"LANIER MP 6002 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 6002", "REG_SZ" ]
+               }
+       },
+       "LANIER MP 7502 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 7502", "REG_SZ" ]
+               }
+       },
+       "LANIER MP 9002 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 9002", "REG_SZ" ]
+               }
+       },
+"NRG MP 6002 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 6002", "REG_SZ" ]
+               }
+       },
+       "NRG MP 7502 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 7502", "REG_SZ" ]
+               }
+       },
+       "NRG MP 9002 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 9002", "REG_SZ" ]
+               }
+       },
+"RICOH Aficio MP 6002 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "Aficio MP 6002", "REG_SZ" ]
+               }
+       },
+       "RICOH Aficio MP 7502 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "Aficio MP 7502", "REG_SZ" ]
+               }
+       },
+       "RICOH Aficio MP 9002 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "Aficio MP 9002", "REG_SZ" ]
+               }
+       },
+"SAVIN MP 6002 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 6002", "REG_SZ" ]
+               }
+       },
+       "SAVIN MP 7502 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 7502", "REG_SZ" ]
+               }
+       },
+       "SAVIN MP 9002 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 9002", "REG_SZ" ]
+               }
+       }
+ 
+}

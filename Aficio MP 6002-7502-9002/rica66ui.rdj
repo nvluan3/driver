@@ -1,0 +1,13 @@
+{
+	"ini_list"	: 
+	[
+		{
+			"PrinterModelName"	: ["MP 6002","MP 7502","MP 9002","Aficio MP 6002","Aficio MP 7502","Aficio MP 9002"],
+			"LoadDll"			: "MFRICR64.dll",
+			"ResDll"			: "MP602d64.dll",
+			"Version"			: "1.1.18.0"
+			
+		}
+	]
+}
+

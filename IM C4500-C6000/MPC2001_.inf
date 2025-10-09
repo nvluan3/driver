@@ -1,0 +1,154 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2025 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 02/05/2025,3.2.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%Gestetner%=Gestetner,NTamd64
+%Ricoh%=Ricoh,NTamd64
+
+
+;WindowsXP(amd64)
+[Gestetner.NTamd64]
+"Gestetner GS3021 PCL 6"=Gestetner_GS3021_64.dat,USBPRINT\GestetnerGS302133E5,LPTENUM\GestetnerGS302133E5,GestetnerGS302133E5
+"Gestetner GS3026c PCL 6"=Gestetner_GS3026c_64.dat,USBPRINT\GestetnerGS3026c92B0,LPTENUM\GestetnerGS3026c92B0,GestetnerGS3026c92B0
+
+[Ricoh.NTamd64]
+"RICOH M C2001 PCL 6"=RICOH_M_C2001_64.dat,USBPRINT\RICOHM_C20010EC2,LPTENUM\RICOHM_C20010EC2,RICOHM_C20010EC2,RICOHM_C2001_EC2
+"RICOH M C2501 PCL 6"=RICOH_M_C2501_64.dat,USBPRINT\RICOHM_C25010FD0,LPTENUM\RICOHM_C25010FD0,RICOHM_C25010FD0,RICOHM_C2501_FD0
+
+
+
+[Gestetner_GS3021_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Wcd.psz
+LanguageMonitor	= rica7Wlm,rica7Wlm.dll
+CopyINF	= RPRNUT.INF
+
+[Gestetner_GS3026c_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Wcd.psz
+LanguageMonitor	= rica7Wlm,rica7Wlm.dll
+CopyINF	= RPRNUT.INF
+
+[RICOH_M_C2001_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Wcd.psz
+LanguageMonitor	= rica7Wlm,rica7Wlm.dll
+CopyINF	= RPRNUT.INF
+
+[RICOH_M_C2501_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Wcd.psz
+LanguageMonitor	= rica7Wlm,rica7Wlm.dll
+CopyINF	= RPRNUT.INF
+
+
+[Gestetner_GS3021_64.dat.Services]
+AddService = ,0x2
+
+[Gestetner_GS3026c_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_M_C2001_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_M_C2501_64.dat.Services]
+AddService = ,0x2
+
+
+[RPD_FILES]
+rica7Wui.dll,rica7Qui.dll
+rica7Wui.irj,MPC2001_.irj
+rica7Wui.rdj
+rica7Wui.rcf,MPC2001_.rcf
+rica7Wug.dll,rica7Qug.dll
+rica7Wug.miz
+rica7Wur.dll,rica7Qur.dll
+rica7Wgr.dll,rica7Qgr.dll
+rica7Wgl.dll,rica7Qgl.dll
+rica7Wci.dll,rica7Qci.dll
+rica7Wcd.dll,rica7Qcd.dll
+rica7Wcd.psz
+rica7Wcf.cfz
+rica7Wcl.ini
+rica7Wch.chm,rica7Qch.chm
+rica7Wcz.dlz,rica7Tcz.dlz
+rica7Wcj.dll,rica7Qcj.dll
+rica7Wct.dll,rica7Qct.dll
+rica7Wcb.dll,rica7Qcb.dll
+rica7Wtl.exe,rica7Qtl.exe
+rica7Wtc.exe,rica7Qtc.exe
+rica7Wtt.exe,rica7Qtt.exe
+rica7Wtf.exe,rica7Qtf.exe
+
+[RPD_COMMON_SYS32]
+rica7Wlm.dll,rica7Qlm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD07Wd64.dll,RD07Wd64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica7Wui.dll
+DriverFile	= rica7Wgr.dll
+HelpFile	= rica7Wch.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica7Qui.dll	= 1
+MPC2001_.irj	= 1
+rica7Wui.rdj	= 1
+MPC2001_.rcf	= 2
+rica7Qug.dll	= 1
+rica7Wug.miz	= 1
+rica7Qur.dll	= 1
+rica7Qgr.dll	= 1
+rica7Qgl.dll	= 1
+rica7Qci.dll	= 1
+rica7Qcd.dll	= 1
+rica7Wcd.psz	= 1
+rica7Wcf.cfz	= 1
+rica7Wcl.ini	= 1
+rica7Qch.chm	= 1
+rica7Tcz.dlz	= 1
+rica7Qcj.dll	= 1
+rica7Qct.dll	= 1
+rica7Qcb.dll	= 1
+rica7Qlm.dll	= 1
+rica7Qtc.exe	= 1
+rica7Qtt.exe	= 1
+rica7Qtf.exe	= 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+rica7Qtl.exe      = 1
+RD07Wd64.dll	= 1
+
+[Strings]
+Ricoh="Ricoh"
+Gestetner="Gestetner"
+DSK= "PCL6 Printer Driver Disk1"

@@ -1,0 +1,266 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2025 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 02/05/2025,3.2.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%infotec%=infotec,NTamd64
+%LANIER%=LANIER,NTamd64
+%NRG%=NRG,NTamd64
+%Ricoh%=Ricoh,NTamd64
+%SAVIN%=SAVIN,NTamd64
+
+
+;WindowsXP(amd64)
+[infotec.NTamd64]
+"infotec Pro C7200S PCL 6"=infotec_Pro_C7200S_64.dat,USBPRINT\infotecPro_C7200S0D2F,LPTENUM\infotecPro_C7200S0D2F,infotecPro_C7200S0D2F,infotecPro_C7200S_D2F
+"infotec Pro C7210S PCL 6"=infotec_Pro_C7210S_64.dat,USBPRINT\infotecPro_C7210SCD7E,LPTENUM\infotecPro_C7210SCD7E,infotecPro_C7210SCD7E
+"infotec Pro C7200S Light PCL 6"=infotec_Pro_C7200S_Light_64.dat,USBPRINT\infotecPro_C7200S_Li54BF,LPTENUM\infotecPro_C7200S_Li54BF,infotecPro_C7200S_Li54BF
+
+[LANIER.NTamd64]
+"LANIER Pro C7200S PCL 6"=LANIER_Pro_C7200S_64.dat,USBPRINT\LANIERPro_C7200S3607,LPTENUM\LANIERPro_C7200S3607,LANIERPro_C7200S3607
+"LANIER Pro C7210S PCL 6"=LANIER_Pro_C7210S_64.dat,USBPRINT\LANIERPro_C7210SF656,LPTENUM\LANIERPro_C7210SF656,LANIERPro_C7210SF656
+"LANIER Pro C7200S Light PCL 6"=LANIER_Pro_C7200S_Light_64.dat,USBPRINT\LANIERPro_C7200S_LigD95D,LPTENUM\LANIERPro_C7200S_LigD95D,LANIERPro_C7200S_LigD95D
+
+[NRG.NTamd64]
+"NRG Pro C7200S PCL 6"=NRG_Pro_C7200S_64.dat,USBPRINT\NRGPro_C7200SA81D,LPTENUM\NRGPro_C7200SA81D,NRGPro_C7200SA81D
+"NRG Pro C7210S PCL 6"=NRG_Pro_C7210S_64.dat,USBPRINT\NRGPro_C7210S684C,LPTENUM\NRGPro_C7210S684C,NRGPro_C7210S684C
+"NRG Pro C7200S Light PCL 6"=NRG_Pro_C7200S_Light_64.dat,USBPRINT\NRGPro_C7200S_Light5FF7,LPTENUM\NRGPro_C7200S_Light5FF7,NRGPro_C7200S_Light5FF7
+
+[Ricoh.NTamd64]
+"RICOH Pro C7200S PCL 6"=RICOH_Pro_C7200S_64.dat,USBPRINT\RICOHPro_C7200S4BAA,LPTENUM\RICOHPro_C7200S4BAA,RICOHPro_C7200S4BAA
+"RICOH Pro C7210S PCL 6"=RICOH_Pro_C7210S_64.dat,USBPRINT\RICOHPro_C7210S8BFB,LPTENUM\RICOHPro_C7210S8BFB,RICOHPro_C7210S8BFB
+"RICOH Pro C7200S Light PCL 6"=RICOH_Pro_C7200S_Light_64.dat,USBPRINT\RICOHPro_C7200S_Ligh0E29,LPTENUM\RICOHPro_C7200S_Ligh0E29,RICOHPro_C7200S_Ligh0E29,RICOHPro_C7200S_Ligh_E29
+
+[SAVIN.NTamd64]
+"SAVIN Pro C7200S PCL 6"=SAVIN_Pro_C7200S_64.dat,USBPRINT\SAVINPro_C7200S1444,LPTENUM\SAVINPro_C7200S1444,SAVINPro_C7200S1444
+"SAVIN Pro C7210S PCL 6"=SAVIN_Pro_C7210S_64.dat,USBPRINT\SAVINPro_C7210SD417,LPTENUM\SAVINPro_C7210SD417,SAVINPro_C7210SD417
+"SAVIN Pro C7200S Light PCL 6"=SAVIN_Pro_C7200S_Light_64.dat,USBPRINT\SAVINPro_C7200S_Ligh4DAA,LPTENUM\SAVINPro_C7200S_Ligh4DAA,SAVINPro_C7200S_Ligh4DAA
+
+
+
+[infotec_Pro_C7200S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Mcd.psz
+LanguageMonitor = rica8Mlm,rica8Mlm.dll
+
+[infotec_Pro_C7210S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Mcd.psz
+LanguageMonitor = rica8Mlm,rica8Mlm.dll
+
+[infotec_Pro_C7200S_Light_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Mcd.psz
+LanguageMonitor = rica8Mlm,rica8Mlm.dll
+
+[LANIER_Pro_C7200S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Mcd.psz
+LanguageMonitor = rica8Mlm,rica8Mlm.dll
+
+[LANIER_Pro_C7210S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Mcd.psz
+LanguageMonitor = rica8Mlm,rica8Mlm.dll
+
+[LANIER_Pro_C7200S_Light_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Mcd.psz
+LanguageMonitor = rica8Mlm,rica8Mlm.dll
+
+[NRG_Pro_C7200S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Mcd.psz
+LanguageMonitor = rica8Mlm,rica8Mlm.dll
+
+[NRG_Pro_C7210S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Mcd.psz
+LanguageMonitor = rica8Mlm,rica8Mlm.dll
+
+[NRG_Pro_C7200S_Light_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Mcd.psz
+LanguageMonitor = rica8Mlm,rica8Mlm.dll
+
+[RICOH_Pro_C7200S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Mcd.psz
+LanguageMonitor = rica8Mlm,rica8Mlm.dll
+
+[RICOH_Pro_C7210S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Mcd.psz
+LanguageMonitor = rica8Mlm,rica8Mlm.dll
+
+[RICOH_Pro_C7200S_Light_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Mcd.psz
+LanguageMonitor = rica8Mlm,rica8Mlm.dll
+
+[SAVIN_Pro_C7200S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Mcd.psz
+LanguageMonitor = rica8Mlm,rica8Mlm.dll
+
+[SAVIN_Pro_C7210S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Mcd.psz
+LanguageMonitor = rica8Mlm,rica8Mlm.dll
+
+[SAVIN_Pro_C7200S_Light_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Mcd.psz
+LanguageMonitor = rica8Mlm,rica8Mlm.dll
+
+
+[infotec_Pro_C7200S_64.dat.Services]
+AddService = ,0x2
+
+[infotec_Pro_C7210S_64.dat.Services]
+AddService = ,0x2
+
+[infotec_Pro_C7200S_Light_64.dat.Services]
+AddService = ,0x2
+
+[LANIER_Pro_C7200S_64.dat.Services]
+AddService = ,0x2
+
+[LANIER_Pro_C7210S_64.dat.Services]
+AddService = ,0x2
+
+[LANIER_Pro_C7200S_Light_64.dat.Services]
+AddService = ,0x2
+
+[NRG_Pro_C7200S_64.dat.Services]
+AddService = ,0x2
+
+[NRG_Pro_C7210S_64.dat.Services]
+AddService = ,0x2
+
+[NRG_Pro_C7200S_Light_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_Pro_C7200S_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_Pro_C7210S_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_Pro_C7200S_Light_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_Pro_C7200S_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_Pro_C7210S_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_Pro_C7200S_Light_64.dat.Services]
+AddService = ,0x2
+
+
+[RPD_FILES]
+rica8Mui.dll,rica7Qui.dll
+rica8Mui.irj,PRC7200S.irj
+rica8Mui.rdj
+rica8Mui.rcf,PRC7200S.rcf
+rica8Mug.dll,rica7Qug.dll
+rica8Mug.miz
+rica8Mur.dll,rica7Qur.dll
+rica8Mgr.dll,rica7Qgr.dll
+rica8Mgl.dll,rica7Qgl.dll
+rica8Mci.dll,rica7Qci.dll
+rica8Mcd.dll,rica7Qcd.dll
+rica8Mcd.psz
+rica8Mcf.cfz
+rica8Mcl.ini
+rica8Mch.chm,rica7Qch.chm
+rica8Mcz.dlz,rica8Mcz.dlz
+rica8Mcj.dll,rica7Qcj.dll
+rica8Mct.dll,rica7Qct.dll
+rica8Mcb.dll,rica7Qcb.dll
+rica8Mtl.exe,rica7Qtl.exe
+
+[RPD_COMMON_SYS32]
+rica8Mlm.dll,rica7Qlm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD08Md64.dll,RD08Md64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica8Mui.dll
+DriverFile	= rica8Mgr.dll
+HelpFile	= rica8Mch.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica7Qui.dll	= 1
+PRC7200S.irj	= 1
+rica8Mui.rdj	= 1
+PRC7200S.rcf	= 2
+rica7Qug.dll	= 1
+rica8Mug.miz	= 1
+rica7Qur.dll	= 1
+rica7Qgr.dll	= 1
+rica7Qgl.dll	= 1
+rica7Qci.dll	= 1
+rica7Qcd.dll	= 1
+rica8Mcd.psz	= 1
+rica8Mcf.cfz	= 1
+rica8Mcl.ini	= 1
+rica7Qch.chm	= 1
+rica8Mcz.dlz	= 1
+rica7Qcj.dll	= 1
+rica7Qct.dll	= 1
+rica7Qcb.dll	= 1
+rica7Qlm.dll	= 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+rica7Qtl.exe              = 1
+RD08Md64.dll	= 1
+
+[Strings]
+Ricoh="Ricoh"
+infotec="infotec"
+LANIER="LANIER"
+NRG="NRG"
+SAVIN="SAVIN"
+DSK= "PCL6 Printer Driver Disk1"

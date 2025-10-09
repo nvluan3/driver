@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<installinfo>
+<dll type="primary">
+	<model component="common">
+		<registry key="UI_SECONDARY_DLL_NAME" value="rica64US.dll" type="REG_SZ"/>
+	</model>
+</dll>
+
+<dll type="secondary">
+	<model component="RICOH Aficio MP 6001 PCL 6">
+		<registry key="UI_PRINTER_MODEL_NAME"
+		 value="Aficio MP 6001" type="REG_SZ"/>
+	</model>
+	<model component="RICOH Aficio MP 7001 PCL 6">
+		<registry key="UI_PRINTER_MODEL_NAME"
+		 value="Aficio MP 7001" type="REG_SZ"/>
+	</model>
+	<model component="RICOH Aficio MP 8001 PCL 6">
+		<registry key="UI_PRINTER_MODEL_NAME"
+		 value="Aficio MP 8001" type="REG_SZ"/>
+	</model>
+	<model component="RICOH Aficio MP 9001 PCL 6">
+		<registry key="UI_PRINTER_MODEL_NAME"
+		 value="Aficio MP 9001" type="REG_SZ"/>
+	</model>
+	<model component="common">
+		<registry key="UI_PRIMARY_DLL_NAME" value="rica64US.dll" type="REG_SZ"/>
+		<registry key="UI_SECONDARY_DLL_NAME" value="rica64US.dll" type="REG_SZ"/>
+		<registry key="UI_RESOURCE_DLL_NAME" value="rica64UR.dll" type="REG_SZ"/>
+		<registry key="UI_CAPSDB_DLL_NAME" value="rica64CD.dll" type="REG_SZ"/>
+		<registry key="UI_JOBCODE_32_DLL_NAME" value="ricjc32.dll" type="REG_SZ"/>
+                <registry key="UI_JOBCODE_64_DLL_NAME" value="ricjc64.dll" type="REG_SZ"/>
+
+		<registry key="UI_PSD_FILE_NAME" value="rica64CD.psz" type="REG_SZ"/>
+		<registry key="UI_XML_ZIP_FILE_NAME" value="rica64UC.cfz" type="REG_SZ"/>
+		
+		<registry key="UI_LANGUAGE_LIST" value="rica64WD.xml" type="REG_SZ"/>
+		<registry key="UI_PAPERINFO_LIST" value="rica64PS.xml" type="REG_SZ"/>
+		<registry key="UI_DRVCAPS_LIST" value="rica64DC.xml" type="REG_SZ"/>
+		<registry key="UI_PROPERTY_CAPTION_LIST" value="rica64PC.xml" type="REG_SZ"/>
+
+		<registry key="UI_LOGO_FILE_NAME" value="rica64lg.dat" type="REG_SZ"/>
+		<registry key="UI_HELP_EXE_NAME" value="rica64hp.exe" type="REG_SZ"/>
+		<registry key="DRIVER_PRODUCT_VERSION" value="1.6.0.0" type="REG_SZ"/>
+
+		<registry key="GR_PRIMARY_DLL_NAME" value="rica64GS.dll" type="REG_SZ"/>
+		<registry key="GR_SECONDARY_DLL_NAME" value="rica64GS.dll" type="REG_SZ"/>
+		<registry key="GR_UMPD_DLL_NAME" value="rica64GU.dll" type="REG_SZ"/>
+		<registry key="GR_CORE_DLL_NAME" value="rica64GC.dll" type="REG_SZ"/>
+		<registry key="GR_PLUGIN_DLL_NAME" value="rica64PL.dll" type="REG_SZ"/>
+                <registry key="GR_TRACKID_32_DLL_NAME" value="trackid.dll" type="REG_SZ"/>
+                <registry key="GR_TRACKID_64_DLL_NAME" value="trackid64.dll" type="REG_SZ"/>
+		<registry key="GR_DRIVERLOG_32_DLL_NAME" value="rdrvlog.dll" type="REG_SZ"/>
+		<registry key="GR_DRIVERLOG_64_DLL_NAME" value="rdrvlg64.dll" type="REG_SZ"/>
+
+		<registry key="RMIOASSIST" value="1" type="REG_DWORD"/>
+		<registry key="UI_BIDI_ASSIST_DLL_NAME" value="RASCOMSV.dll" type="REG_SZ"/>
+		<registry key="UI_DEVICE_OPITION_UTILITY_DLL_NAME" value="RMfDrApi.dll" type="REG_SZ"/>
+		<registry key="MetaConfigType" value="1" type="REG_BINARY"/>
+		<registry key="UI_MACHINE_IMAGE_MIZ_NAME" value="rica64mi.miz" type="REG_SZ" /> 
+
+		<registry key="CDB_VRNET_32_DLL_NAME" value="rc4mannt.dll" type="REG_SZ"/>
+		<registry key="CDB_VRNET_64_DLL_NAME" value="rc4man64.dll" type="REG_SZ"/>
+		<registry key="CDB_CUSTOMIZE_FILE_NAME" value="rica64.rcf" type="REG_SZ"/>
+		<registry key="CDB_CHARSET_CODE" value="2" type="REG_DWORD"/>
+
+		<registry key="MPM_MODEL_NAME" value="Aficio MP 6001,Aficio MP 7001,Aficio MP 8001,Aficio MP 9001" type="REG_SZ"/>
+		<registry key="MPM_MFRICRESDLL_NAME" value="MFRicr64.dll" type="REG_SZ"/>
+		<registry key="MPM_RESDLL_NAME" value="MP601d64.dll" type="REG_SZ"/>
+		<registry key="MPM_MFRICRESDLL_VERSION" value="1.1.18.0" type="REG_SZ"/>
+		<registry key="Logging" value="1" type="REG_DWORD"/>
+	</model>
+
+
+	<watermark mm="1" inch="2">
+
+	        <list name="watermark_none" preset="yes" unit="inch" x_position="0" y_position="0" angle="0" firstpageonly="no" transparenttext="no">
+				<color red="192" green="192" blue="192"/>
+				<font name="Times New Roman" style="standard" size="72"/>
+		</list>
+
+		<list name="watermark_confidential" preset="yes" unit="inch" x_position="0" y_position="0" angle="54" firstpageonly="no" transparenttext="no">
+			<color red="192" green="192" blue="192"/>
+			<font name="Times New Roman" style="standard" size="120"/>
+		</list>
+
+		<list name="watermark_draft" preset="yes" unit="inch" x_position="0" y_position="0" angle="45" firstpageonly="no" transparenttext="no">
+			<color red="192" green="192" blue="192"/>
+			<font name="Courier New" style="standard" size="256"/>
+		</list>
+
+		<list name="watermark_copy" preset="yes" unit="inch" x_position="0" y_position="0" angle="45" firstpageonly="no" transparenttext="no">
+			<color red="192" green="192" blue="192"/>
+			<font name="Arial" style="standard" size="261"/>
+		</list>
+
+		<list name="watermark_urgent" preset="yes" unit="inch" x_position="0" y_position="0" angle="52" firstpageonly="no" transparenttext="no">
+			<color red="192" green="192" blue="192"/>
+			<font name="Arial" style="standard" size="138"/>
+		</list>
+
+
+		<list name="watermark_orginal" preset="yes" unit="inch" x_position="0" y_position="0" angle="45" firstpageonly="no" transparenttext="no">
+			<color red="192" green="192" blue="192"/>
+			<font name="Arial" style="standard" size="174"/>
+		</list>
+
+
+	</watermark>
+
+</dll>
+</installinfo>
+

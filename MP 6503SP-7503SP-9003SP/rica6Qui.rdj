@@ -1,0 +1,13 @@
+{
+	"ini_list"	: 
+	[
+		{
+			"PrinterModelName"	: ["MP 6503","MP 7503","MP 9003"],
+			"LoadDll"			: "MFRicr64.dll",
+			"ResDll"			: "RD06Qd64.dll",
+			"Version"			: "1.1.19.0"
+			
+		}
+	]
+}
+
