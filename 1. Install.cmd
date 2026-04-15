@@ -1,0 +1,1 @@
+powershell -Command "Start-Process PowerShell -ArgumentList '-ExecutionPolicy Unrestricted -File \"%~dp0cai-may-in.ps1\"' -Verb RunAs"
