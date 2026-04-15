@@ -1,0 +1,265 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2025 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 02/05/2025,3.2.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%Gestetner%=Gestetner,NTamd64
+%LANIER%=LANIER,NTamd64
+%NRG%=NRG,NTamd64
+%Ricoh%=Ricoh,NTamd64
+%SAVIN%=SAVIN,NTamd64
+
+
+;WindowsXP(amd64)
+[Gestetner.NTamd64]
+"Gestetner IM C2000 PCL 6"=Gestetner_IM_C2000_64.dat,USBPRINT\GestetnerIM_C200075B6,LPTENUM\GestetnerIM_C200075B6,GestetnerIM_C200075B6
+"Gestetner GS3020 PCL 6"=Gestetner_GS3020_64.dat,USBPRINT\GestetnerGS3020F324,LPTENUM\GestetnerGS3020F324,GestetnerGS3020F324
+"Gestetner IM C2500 PCL 6"=Gestetner_IM_C2500_64.dat,USBPRINT\GestetnerIM_C250074A6,LPTENUM\GestetnerIM_C250074A6,GestetnerIM_C250074A6
+"Gestetner GS3025 PCL 6"=Gestetner_GS3025_64.dat,USBPRINT\GestetnerGS3025F0E4,LPTENUM\GestetnerGS3025F0E4,GestetnerGS3025F0E4
+
+[LANIER.NTamd64]
+"LANIER IM C2000 PCL 6"=LANIER_IM_C2000_64.dat,USBPRINT\LANIERIM_C20003454,LPTENUM\LANIERIM_C20003454,LANIERIM_C20003454
+"LANIER IM C2500 PCL 6"=LANIER_IM_C2500_64.dat,USBPRINT\LANIERIM_C25003546,LPTENUM\LANIERIM_C25003546,LANIERIM_C25003546
+
+[NRG.NTamd64]
+"NRG IM C2000 PCL 6"=NRG_IM_C2000_64.dat,USBPRINT\NRGIM_C2000C3F6,LPTENUM\NRGIM_C2000C3F6,NRGIM_C2000C3F6
+"NRG IM C2500 PCL 6"=NRG_IM_C2500_64.dat,USBPRINT\NRGIM_C2500C2E6,LPTENUM\NRGIM_C2500C2E6,NRGIM_C2500C2E6
+
+[Ricoh.NTamd64]
+"RICOH IM C2000 PCL 6"=RICOH_IM_C2000_64.dat,USBPRINT\RICOHIM_C200019C4,LPTENUM\RICOHIM_C200019C4,RICOHIM_C200019C4
+"RICOH IM C2500 PCL 6"=RICOH_IM_C2500_64.dat,USBPRINT\RICOHIM_C250018D6,LPTENUM\RICOHIM_C250018D6,RICOHIM_C250018D6
+"RICOH IM C2509J PCL 6"=RICOH_IM_C2509J_64.dat,USBPRINT\RICOHIM_C2509J391E,LPTENUM\RICOHIM_C2509J391E,RICOHIM_C2509J391E
+
+[SAVIN.NTamd64]
+"SAVIN IM C2000 PCL 6"=SAVIN_IM_C2000_64.dat,USBPRINT\SAVINIM_C20002CAB,LPTENUM\SAVINIM_C20002CAB,SAVINIM_C20002CAB
+"SAVIN IM C2500 PCL 6"=SAVIN_IM_C2500_64.dat,USBPRINT\SAVINIM_C25002DBB,LPTENUM\SAVINIM_C25002DBB,SAVINIM_C25002DBB
+
+
+
+[Gestetner_IM_C2000_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Scd.psz
+LanguageMonitor	= rica7Slm,rica7Slm.dll
+CopyINF	= RPRNUT.INF
+
+[Gestetner_GS3020_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Scd.psz
+LanguageMonitor	= rica7Slm,rica7Slm.dll
+CopyINF	= RPRNUT.INF
+
+[Gestetner_IM_C2500_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Scd.psz
+LanguageMonitor	= rica7Slm,rica7Slm.dll
+CopyINF	= RPRNUT.INF
+
+[Gestetner_GS3025_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Scd.psz
+LanguageMonitor	= rica7Slm,rica7Slm.dll
+CopyINF	= RPRNUT.INF
+
+[LANIER_IM_C2000_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Scd.psz
+LanguageMonitor	= rica7Slm,rica7Slm.dll
+CopyINF	= RPRNUT.INF
+
+[LANIER_IM_C2500_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Scd.psz
+LanguageMonitor	= rica7Slm,rica7Slm.dll
+CopyINF	= RPRNUT.INF
+
+[NRG_IM_C2000_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Scd.psz
+LanguageMonitor	= rica7Slm,rica7Slm.dll
+CopyINF	= RPRNUT.INF
+
+[NRG_IM_C2500_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Scd.psz
+LanguageMonitor	= rica7Slm,rica7Slm.dll
+CopyINF	= RPRNUT.INF
+
+[RICOH_IM_C2000_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Scd.psz
+LanguageMonitor	= rica7Slm,rica7Slm.dll
+CopyINF	= RPRNUT.INF
+
+[RICOH_IM_C2500_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Scd.psz
+LanguageMonitor	= rica7Slm,rica7Slm.dll
+CopyINF	= RPRNUT.INF
+
+[RICOH_IM_C2509J_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Scd.psz
+LanguageMonitor	= rica7Slm,rica7Slm.dll
+CopyINF	= RPRNUT.INF
+
+[SAVIN_IM_C2000_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Scd.psz
+LanguageMonitor	= rica7Slm,rica7Slm.dll
+CopyINF	= RPRNUT.INF
+
+[SAVIN_IM_C2500_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Scd.psz
+LanguageMonitor	= rica7Slm,rica7Slm.dll
+CopyINF	= RPRNUT.INF
+
+
+[Gestetner_IM_C2000_64.dat.Services]
+AddService = ,0x2
+
+[Gestetner_GS3020_64.dat.Services]
+AddService = ,0x2
+
+[Gestetner_IM_C2500_64.dat.Services]
+AddService = ,0x2
+
+[Gestetner_GS3025_64.dat.Services]
+AddService = ,0x2
+
+[LANIER_IM_C2000_64.dat.Services]
+AddService = ,0x2
+
+[LANIER_IM_C2500_64.dat.Services]
+AddService = ,0x2
+
+[NRG_IM_C2000_64.dat.Services]
+AddService = ,0x2
+
+[NRG_IM_C2500_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_IM_C2000_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_IM_C2500_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_IM_C2509J_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_IM_C2000_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_IM_C2500_64.dat.Services]
+AddService = ,0x2
+
+
+[RPD_FILES]
+rica7Sui.dll,rica7Qui.dll
+rica7Sui.irj,MPC2000_.irj
+rica7Sui.rdj
+rica7Sui.rcf,MPC2000_.rcf
+rica7Sug.dll,rica7Qug.dll
+rica7Sug.miz
+rica7Sur.dll,rica7Qur.dll
+rica7Sgr.dll,rica7Qgr.dll
+rica7Sgl.dll,rica7Qgl.dll
+rica7Sci.dll,rica7Qci.dll
+rica7Scd.dll,rica7Qcd.dll
+rica7Scd.psz
+rica7Scf.cfz
+rica7Scl.ini
+rica7Sch.chm,rica7Qch.chm
+rica7Scz.dlz,rica7Qcz.dlz
+rica7Scj.dll,rica7Qcj.dll
+rica7Sct.dll,rica7Qct.dll
+rica7Scb.dll,rica7Qcb.dll
+rica7Stl.exe,rica7Qtl.exe
+rica7Stc.exe,rica7Qtc.exe
+rica7Stt.exe,rica7Qtt.exe
+rica7Stf.exe,rica7Qtf.exe
+
+[RPD_COMMON_SYS32]
+rica7Slm.dll,rica7Qlm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD07Sd64.dll,RD07Sd64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica7Sui.dll
+DriverFile	= rica7Sgr.dll
+HelpFile	= rica7Sch.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica7Qui.dll	= 1
+MPC2000_.irj	= 1
+rica7Sui.rdj	= 1
+MPC2000_.rcf	= 2
+rica7Qug.dll	= 1
+rica7Sug.miz	= 1
+rica7Qur.dll	= 1
+rica7Qgr.dll	= 1
+rica7Qgl.dll	= 1
+rica7Qci.dll	= 1
+rica7Qcd.dll	= 1
+rica7Scd.psz	= 1
+rica7Scf.cfz	= 1
+rica7Scl.ini	= 1
+rica7Qch.chm	= 1
+rica7Qcz.dlz	= 1
+rica7Qcj.dll	= 1
+rica7Qct.dll	= 1
+rica7Qcb.dll	= 1
+rica7Qlm.dll	= 1
+rica7Qtc.exe	= 1
+rica7Qtt.exe	= 1
+rica7Qtf.exe	= 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+rica7Qtl.exe      = 1
+RD07Sd64.dll	= 1
+
+[Strings]
+Ricoh="Ricoh"
+Gestetner="Gestetner"
+LANIER="LANIER"
+NRG="NRG"
+SAVIN="SAVIN"
+DSK= "PCL6 Printer Driver Disk1"

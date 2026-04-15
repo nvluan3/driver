@@ -1,0 +1,157 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2025 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 02/05/2025,3.2.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%Gestetner%=Gestetner,NTamd64
+%NRG%=NRG,NTamd64
+%Ricoh%=Ricoh,NTamd64
+
+
+;WindowsXP(amd64)
+[Gestetner.NTamd64]
+"Gestetner IM 2702 PCL 6"=Gestetner_IM_2702_64.dat,USBPRINT\GestetnerIM_2702CA0A,LPTENUM\GestetnerIM_2702CA0A,GestetnerIM_2702CA0A
+"Gestetner GS1227 PCL 6"=Gestetner_GS1227_64.dat,USBPRINT\GestetnerGS122749C7,LPTENUM\GestetnerGS122749C7,GestetnerGS122749C7
+
+[NRG.NTamd64]
+"NRG IM 2702 PCL 6"=NRG_IM_2702_64.dat,USBPRINT\NRGIM_27020BBE,LPTENUM\NRGIM_27020BBE,NRGIM_27020BBE,NRGIM_2702_BBE
+
+[Ricoh.NTamd64]
+"RICOH IM 2702 PCL 6"=RICOH_IM_2702_64.dat,USBPRINT\RICOHIM_27027B19,LPTENUM\RICOHIM_27027B19,RICOHIM_27027B19
+
+
+[Gestetner_IM_2702_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica4Ycd.psz
+LanguageMonitor = rica4Ylm,rica4Ylm.dll
+CopyINF = RPRNUT.INF
+
+[Gestetner_GS1227_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica4Ycd.psz
+LanguageMonitor = rica4Ylm,rica4Ylm.dll
+CopyINF = RPRNUT.INF
+
+[NRG_IM_2702_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica4Ycd.psz
+LanguageMonitor = rica4Ylm,rica4Ylm.dll
+CopyINF = RPRNUT.INF
+
+[RICOH_IM_2702_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica4Ycd.psz
+LanguageMonitor = rica4Ylm,rica4Ylm.dll
+CopyINF = RPRNUT.INF
+
+
+[Gestetner_IM_2702_64.dat.Services]
+AddService = ,0x2
+
+[Gestetner_GS1227_64.dat.Services]
+AddService = ,0x2
+
+[NRG_IM_2702_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_IM_2702_64.dat.Services]
+AddService = ,0x2
+
+
+[RPD_FILES]
+rica4Yui.dll,rica7Qui.dll
+rica4Yui.irj,MP_2702_.irj
+rica4Yui.rdj
+rica4Yui.rcf,MP_2702_.rcf
+rica4Yug.dll,rica7Qug.dll
+rica4Yug.miz
+rica4Yur.dll,rica7Qur.dll
+rica4Ygr.dll,rica7Qgr.dll
+rica4Ygl.dll,rica7Qgl.dll
+rica4Yci.dll,rica7Qci.dll
+rica4Ycd.dll,rica7Qcd.dll
+rica4Ycd.psz
+rica4Ycf.cfz
+rica4Ycl.ini
+rica4Ych.chm,rica7Qch.chm
+rica4Ycz.dlz,rica7Tcz.dlz
+rica4Ycj.dll,rica7Qcj.dll
+rica4Yct.dll,rica7Qct.dll
+rica4Ycb.dll,rica7Qcb.dll
+rica4Ytl.exe,rica7Qtl.exe
+rica4Ytc.exe,rica7Qtc.exe
+rica4Ytt.exe,rica7Qtt.exe
+rica4Ytf.exe,rica7Qtf.exe
+
+[RPD_COMMON_SYS32]
+rica4Ylm.dll,rica7Qlm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD04Yd64.dll,RD04Yd64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica4Yui.dll
+DriverFile	= rica4Ygr.dll
+HelpFile	= rica4Ych.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica7Qui.dll	= 1
+MP_2702_.irj	= 1
+rica4Yui.rdj	= 1
+MP_2702_.rcf	= 2
+rica7Qug.dll	= 1
+rica4Yug.miz	= 1
+rica7Qur.dll	= 1
+rica7Qgr.dll	= 1
+rica7Qgl.dll	= 1
+rica7Qci.dll	= 1
+rica7Qcd.dll	= 1
+rica4Ycd.psz	= 1
+rica4Ycf.cfz	= 1
+rica4Ycl.ini	= 1
+rica7Qch.chm	= 1
+rica7Tcz.dlz	= 1
+rica7Qcj.dll	= 1
+rica7Qct.dll	= 1
+rica7Qcb.dll	= 1
+rica7Qlm.dll	= 1
+rica7Qtc.exe	= 1
+rica7Qtt.exe	= 1
+rica7Qtf.exe	= 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+rica7Qtl.exe              = 1
+RD04Yd64.dll	= 1
+
+[Strings]
+Ricoh="Ricoh"
+Gestetner="Gestetner"
+NRG="NRG"
+DSK= "PCL6 Printer Driver Disk1"

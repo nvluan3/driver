@@ -1,0 +1,221 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2025 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 11/10/2025,3.1.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%infotec%=infotec,NTamd64
+%LANIER%=LANIER,NTamd64
+%NRG%=NRG,NTamd64
+%Ricoh%=Ricoh,NTamd64
+%SAVIN%=SAVIN,NTamd64
+
+
+;WindowsXP(amd64)
+[infotec.NTamd64]
+"infotec SP 5300 PCL 6"=infotec_SP_5300_64.dat,USBPRINT\infotecSP_53000E2F,LPTENUM\infotecSP_53000E2F,infotecSP_53000E2F,infotecSP_5300_E2F
+"infotec SP 5310 PCL 6"=infotec_SP_5310_64.dat,USBPRINT\infotecSP_53109E2E,LPTENUM\infotecSP_53109E2E,infotecSP_53109E2E
+
+[LANIER.NTamd64]
+"LANIER SP 5300 PCL 6"=LANIER_SP_5300_64.dat,USBPRINT\LANIERSP_5300D10C,LPTENUM\LANIERSP_5300D10C,LANIERSP_5300D10C
+"LANIER SP 5310 PCL 6"=LANIER_SP_5310_64.dat,USBPRINT\LANIERSP_5310430D,LPTENUM\LANIERSP_5310430D,LANIERSP_5310430D
+
+[NRG.NTamd64]
+"NRG SP 5300 PCL 6"=NRG_SP_5300_64.dat,USBPRINT\NRGSP_530033C7,LPTENUM\NRGSP_530033C7,NRGSP_530033C7
+"NRG SP 5310 PCL 6"=NRG_SP_5310_64.dat,USBPRINT\NRGSP_5310A3C6,LPTENUM\NRGSP_5310A3C6,NRGSP_5310A3C6
+
+[Ricoh.NTamd64]
+"RICOH SP 5300 PCL 6"=RICOH_SP_5300_64.dat,USBPRINT\RICOHSP_530081C3,LPTENUM\RICOHSP_530081C3,RICOHSP_530081C3
+"RICOH SP 5310 PCL 6"=RICOH_SP_5310_64.dat,USBPRINT\RICOHSP_531013C2,LPTENUM\RICOHSP_531013C2,RICOHSP_531013C2
+
+[SAVIN.NTamd64]
+"SAVIN SP 5300 PCL 6"=SAVIN_SP_5300_64.dat,USBPRINT\SAVINSP_53002FAC,LPTENUM\SAVINSP_53002FAC,SAVINSP_53002FAC
+"SAVIN SP 5310 PCL 6"=SAVIN_SP_5310_64.dat,USBPRINT\SAVINSP_5310BFAD,LPTENUM\SAVINSP_5310BFAD,SAVINSP_5310BFAD
+
+
+[infotec_SP_5300_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica5Mcd.psz
+LanguageMonitor	= rica5Mlm,rica5Mlm.dll
+
+[infotec_SP_5310_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica5Mcd.psz
+LanguageMonitor	= rica5Mlm,rica5Mlm.dll
+
+[LANIER_SP_5300_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica5Mcd.psz
+LanguageMonitor	= rica5Mlm,rica5Mlm.dll
+
+[LANIER_SP_5310_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica5Mcd.psz
+LanguageMonitor	= rica5Mlm,rica5Mlm.dll
+
+[NRG_SP_5300_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica5Mcd.psz
+LanguageMonitor	= rica5Mlm,rica5Mlm.dll
+
+[NRG_SP_5310_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica5Mcd.psz
+LanguageMonitor	= rica5Mlm,rica5Mlm.dll
+
+[RICOH_SP_5300_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica5Mcd.psz
+LanguageMonitor	= rica5Mlm,rica5Mlm.dll
+
+[RICOH_SP_5310_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica5Mcd.psz
+LanguageMonitor	= rica5Mlm,rica5Mlm.dll
+
+[SAVIN_SP_5300_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica5Mcd.psz
+LanguageMonitor	= rica5Mlm,rica5Mlm.dll
+
+[SAVIN_SP_5310_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica5Mcd.psz
+LanguageMonitor	= rica5Mlm,rica5Mlm.dll
+
+
+[infotec_SP_5300_64.dat.Services]
+AddService = ,0x2
+
+[infotec_SP_5310_64.dat.Services]
+AddService = ,0x2
+
+[LANIER_SP_5300_64.dat.Services]
+AddService = ,0x2
+
+[LANIER_SP_5310_64.dat.Services]
+AddService = ,0x2
+
+[NRG_SP_5300_64.dat.Services]
+AddService = ,0x2
+
+[NRG_SP_5310_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_SP_5300_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_SP_5310_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_SP_5300_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_SP_5310_64.dat.Services]
+AddService = ,0x2
+
+
+[RPD_FILES]
+rica5Mui.dll,rica5Xui.dll
+rica5Mui.irj,SP_5300_.irj
+rica5Mui.rdj
+rica5Mui.rcf,SP_5300_.rcf
+rica5Mug.dll,rica5Xug.dll
+rica5Mug.miz
+rica5Mur.dll,rica5Xur.dll
+rica5Mgr.dll,rica5Xgr.dll
+rica5Mgl.dll,rica5Xgl.dll
+rica5Mci.dll,rica5Xci.dll
+rica5Mcd.dll,rica5Xcd.dll
+rica5Mcd.psz
+rica5Mcf.cfz
+rica5Mcl.ini
+rica5Mch.chm,rica5Xch.chm
+rica5Mcz.dlz,rica5Xcz.dlz
+rica5Mcj.dll,rica5Xcj.dll
+rica5Mct.dll,rica5Xct.dll
+rica5Mcb.dll,rica5Xcb.dll
+rica5Mtl.exe,rica5Xtl.exe
+rica5Mtc.exe,rica5Xtc.exe
+rica5Mtt.exe,rica5Xtt.exe
+rica5Mtf.exe,rica5Xtf.exe
+
+[RPD_COMMON_SYS32]
+rica5Mlm.dll,rica5Xlm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD05Md64.dll,RD05Md64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica5Mui.dll
+DriverFile	= rica5Mgr.dll
+HelpFile	= rica5Mch.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica5Xui.dll	= 1
+SP_5300_.irj	= 1
+rica5Mui.rdj	= 1
+SP_5300_.rcf	= 2
+rica5Xug.dll	= 1
+rica5Mug.miz	= 1
+rica5Xur.dll	= 1
+rica5Xgr.dll	= 1
+rica5Xgl.dll	= 1
+rica5Xci.dll	= 1
+rica5Xcd.dll	= 1
+rica5Mcd.psz	= 1
+rica5Mcf.cfz	= 1
+rica5Mcl.ini	= 1
+rica5Xch.chm	= 1
+rica5Xcz.dlz	= 1
+rica5Xcj.dll	= 1
+rica5Xct.dll	= 1
+rica5Xcb.dll	= 1
+rica5Xlm.dll	= 1
+rica5Xtc.exe = 1
+rica5Xtt.exe = 1
+rica5Xtf.exe = 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+rica5Xtl.exe      = 1
+RD05Md64.dll	= 1
+
+[Strings]
+Ricoh="Ricoh"
+infotec="infotec"
+LANIER="LANIER"
+NRG="NRG"
+SAVIN="SAVIN"
+DSK= "PCL6 Printer Driver Disk1"

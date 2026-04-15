@@ -1,0 +1,245 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2025 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 11/10/2025,3.1.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%Gestetner%=Gestetner,NTamd64
+%infotec%=infotec,NTamd64
+%LANIER%=LANIER,NTamd64
+%NRG%=NRG,NTamd64
+%Ricoh%=Ricoh,NTamd64
+%SAVIN%=SAVIN,NTamd64
+
+
+;WindowsXP(amd64)
+[Gestetner.NTamd64]
+"Gestetner MP C306Z PCL 6"=Gestetner_MP_C306Z_64.dat,USBPRINT\GestetnerMP_C306Z3579,LPTENUM\GestetnerMP_C306Z3579,GestetnerMP_C306Z3579
+"Gestetner MP C406Z PCL 6"=Gestetner_MP_C406Z_64.dat,USBPRINT\GestetnerMP_C406Z4378,LPTENUM\GestetnerMP_C406Z4378,GestetnerMP_C406Z4378
+
+[infotec.NTamd64]
+"infotec MP C306Z PCL 6"=infotec_MP_C306Z_64.dat,USBPRINT\infotecMP_C306Z6C86,LPTENUM\infotecMP_C306Z6C86,infotecMP_C306Z6C86
+"infotec MP C406Z PCL 6"=infotec_MP_C406Z_64.dat,USBPRINT\infotecMP_C406Z1887,LPTENUM\infotecMP_C406Z1887,infotecMP_C406Z1887
+
+[LANIER.NTamd64]
+"LANIER MP C306Z PCL 6"=LANIER_MP_C306Z_64.dat,USBPRINT\LANIERMP_C306ZD51B,LPTENUM\LANIERMP_C306ZD51B,LANIERMP_C306ZD51B
+"LANIER MP C406Z PCL 6"=LANIER_MP_C406Z_64.dat,USBPRINT\LANIERMP_C406ZA11A,LPTENUM\LANIERMP_C406ZA11A,LANIERMP_C406ZA11A
+
+[NRG.NTamd64]
+"NRG MP C306Z PCL 6"=NRG_MP_C306Z_64.dat,USBPRINT\NRGMP_C306Z40B8,LPTENUM\NRGMP_C306Z40B8,NRGMP_C306Z40B8
+"NRG MP C406Z PCL 6"=NRG_MP_C406Z_64.dat,USBPRINT\NRGMP_C406Z36B9,LPTENUM\NRGMP_C406Z36B9,NRGMP_C406Z36B9
+
+[Ricoh.NTamd64]
+"RICOH MP C306Z PCL 6"=RICOH_MP_C306Z_64.dat,USBPRINT\RICOHMP_C306Z8229,LPTENUM\RICOHMP_C306Z8229,RICOHMP_C306Z8229
+"RICOH MP C406Z PCL 6"=RICOH_MP_C406Z_64.dat,USBPRINT\RICOHMP_C406ZF428,LPTENUM\RICOHMP_C406ZF428,RICOHMP_C406ZF428
+
+[SAVIN.NTamd64]
+"SAVIN MP C306Z PCL 6"=SAVIN_MP_C306Z_64.dat,USBPRINT\SAVINMP_C306ZADE5,LPTENUM\SAVINMP_C306ZADE5,SAVINMP_C306ZADE5
+"SAVIN MP C406Z PCL 6"=SAVIN_MP_C406Z_64.dat,USBPRINT\SAVINMP_C406ZD9E4,LPTENUM\SAVINMP_C406ZD9E4,SAVINMP_C406ZD9E4
+
+
+[Gestetner_MP_C306Z_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica4Qcd.psz
+LanguageMonitor = rica4Qlm,rica4Qlm.dll
+
+[Gestetner_MP_C406Z_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica4Qcd.psz
+LanguageMonitor = rica4Qlm,rica4Qlm.dll
+
+[infotec_MP_C306Z_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica4Qcd.psz
+LanguageMonitor = rica4Qlm,rica4Qlm.dll
+
+[infotec_MP_C406Z_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica4Qcd.psz
+LanguageMonitor = rica4Qlm,rica4Qlm.dll
+
+[LANIER_MP_C306Z_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica4Qcd.psz
+LanguageMonitor = rica4Qlm,rica4Qlm.dll
+
+[LANIER_MP_C406Z_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica4Qcd.psz
+LanguageMonitor = rica4Qlm,rica4Qlm.dll
+
+[NRG_MP_C306Z_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica4Qcd.psz
+LanguageMonitor = rica4Qlm,rica4Qlm.dll
+
+[NRG_MP_C406Z_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica4Qcd.psz
+LanguageMonitor = rica4Qlm,rica4Qlm.dll
+
+[RICOH_MP_C306Z_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica4Qcd.psz
+LanguageMonitor = rica4Qlm,rica4Qlm.dll
+
+[RICOH_MP_C406Z_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica4Qcd.psz
+LanguageMonitor = rica4Qlm,rica4Qlm.dll
+
+[SAVIN_MP_C306Z_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica4Qcd.psz
+LanguageMonitor = rica4Qlm,rica4Qlm.dll
+
+[SAVIN_MP_C406Z_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica4Qcd.psz
+LanguageMonitor = rica4Qlm,rica4Qlm.dll
+
+
+[Gestetner_MP_C306Z_64.dat.Services]
+AddService = ,0x2
+
+[Gestetner_MP_C406Z_64.dat.Services]
+AddService = ,0x2
+
+[infotec_MP_C306Z_64.dat.Services]
+AddService = ,0x2
+
+[infotec_MP_C406Z_64.dat.Services]
+AddService = ,0x2
+
+[LANIER_MP_C306Z_64.dat.Services]
+AddService = ,0x2
+
+[LANIER_MP_C406Z_64.dat.Services]
+AddService = ,0x2
+
+[NRG_MP_C306Z_64.dat.Services]
+AddService = ,0x2
+
+[NRG_MP_C406Z_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_MP_C306Z_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_MP_C406Z_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_MP_C306Z_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_MP_C406Z_64.dat.Services]
+AddService = ,0x2
+
+
+[RPD_FILES]
+rica4Qui.dll,rica5Xui.dll
+rica4Qui.irj,MPC306Z_.irj
+rica4Qui.rdj
+rica4Qui.rcf,MPC306Z_.rcf
+rica4Qug.dll,rica5Xug.dll
+rica4Qug.miz
+rica4Qur.dll,rica5Xur.dll
+rica4Qgr.dll,rica5Xgr.dll
+rica4Qgl.dll,rica5Xgl.dll
+rica4Qci.dll,rica5Xci.dll
+rica4Qcd.dll,rica5Xcd.dll
+rica4Qcd.psz
+rica4Qcf.cfz
+rica4Qcl.ini
+rica4Qch.chm,rica5Xch.chm
+rica4Qcz.dlz,rica4Qcz.dlz
+rica4Qcj.dll,rica5Xcj.dll
+rica4Qct.dll,rica5Xct.dll
+rica4Qcb.dll,rica5Xcb.dll
+rica4Qtl.exe,rica5Xtl.exe
+rica4Qtc.exe,rica5Xtc.exe
+rica4Qtt.exe,rica5Xtt.exe
+rica4Qtf.exe,rica5Xtf.exe
+
+[RPD_COMMON_SYS32]
+rica4Qlm.dll,rica5Xlm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD04Qd64.dll,RD04Qd64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica4Qui.dll
+DriverFile	= rica4Qgr.dll
+HelpFile	= rica4Qch.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica5Xui.dll	= 1
+MPC306Z_.irj	= 1
+rica4Qui.rdj	= 1
+MPC306Z_.rcf	= 2
+rica5Xug.dll	= 1
+rica4Qug.miz	= 1
+rica5Xur.dll	= 1
+rica5Xgr.dll	= 1
+rica5Xgl.dll	= 1
+rica5Xci.dll	= 1
+rica5Xcd.dll	= 1
+rica4Qcd.psz	= 1
+rica4Qcf.cfz	= 1
+rica4Qcl.ini	= 1
+rica5Xch.chm	= 1
+rica4Qcz.dlz	= 1
+rica5Xcj.dll	= 1
+rica5Xct.dll	= 1
+rica5Xcb.dll	= 1
+rica5Xlm.dll	= 1
+rica5Xtc.exe = 1
+rica5Xtt.exe = 1
+rica5Xtf.exe = 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+rica5Xtl.exe              = 1
+RD04Qd64.dll	= 1
+
+[Strings]
+Ricoh="Ricoh"
+Gestetner="Gestetner"
+infotec="infotec"
+LANIER="LANIER"
+NRG="NRG"
+SAVIN="SAVIN"
+DSK= "PCL6 Printer Driver Disk1"

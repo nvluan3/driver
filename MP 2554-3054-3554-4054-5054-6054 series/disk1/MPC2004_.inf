@@ -1,0 +1,285 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2025 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 11/10/2025,3.1.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%Gestetner%=Gestetner,NTamd64
+%infotec%=infotec,NTamd64
+%LANIER%=LANIER,NTamd64
+%NRG%=NRG,NTamd64
+%Ricoh%=Ricoh,NTamd64
+%SAVIN%=SAVIN,NTamd64
+
+
+;WindowsXP(amd64)
+[Gestetner.NTamd64]
+"Gestetner MP C2004 PCL 6"=Gestetner_MP_C2004_64.dat,USBPRINT\GestetnerMP_C200487FA,LPTENUM\GestetnerMP_C200487FA,GestetnerMP_C200487FA
+"Gestetner DSc1220 PCL 6"=Gestetner_DSc1220_64.dat,USBPRINT\GestetnerDSc12209F00,LPTENUM\GestetnerDSc12209F00,GestetnerDSc12209F00
+"Gestetner MP C2504 PCL 6"=Gestetner_MP_C2504_64.dat,USBPRINT\GestetnerMP_C250486EA,LPTENUM\GestetnerMP_C250486EA,GestetnerMP_C250486EA
+"Gestetner DSc1225 PCL 6"=Gestetner_DSc1225_64.dat,USBPRINT\GestetnerDSc12259CC0,LPTENUM\GestetnerDSc12259CC0,GestetnerDSc12259CC0
+
+[infotec.NTamd64]
+"infotec MP C2004 PCL 6"=infotec_MP_C2004_64.dat,USBPRINT\infotecMP_C2004DC05,LPTENUM\infotecMP_C2004DC05,infotecMP_C2004DC05
+"infotec MP C2504 PCL 6"=infotec_MP_C2504_64.dat,USBPRINT\infotecMP_C2504DD17,LPTENUM\infotecMP_C2504DD17,infotecMP_C2504DD17
+
+[LANIER.NTamd64]
+"LANIER MP C2004 PCL 6"=LANIER_MP_C2004_64.dat,USBPRINT\LANIERMP_C20046598,LPTENUM\LANIERMP_C20046598,LANIERMP_C20046598
+"LANIER MP C2504 PCL 6"=LANIER_MP_C2504_64.dat,USBPRINT\LANIERMP_C25046488,LPTENUM\LANIERMP_C25046488,LANIERMP_C25046488
+
+[NRG.NTamd64]
+"NRG MP C2004 PCL 6"=NRG_MP_C2004_64.dat,USBPRINT\NRGMP_C2004F23B,LPTENUM\NRGMP_C2004F23B,NRGMP_C2004F23B
+"NRG MP C2504 PCL 6"=NRG_MP_C2504_64.dat,USBPRINT\NRGMP_C2504F32B,LPTENUM\NRGMP_C2504F32B,NRGMP_C2504F32B
+
+[Ricoh.NTamd64]
+"RICOH MP C2004 PCL 6"=RICOH_MP_C2004_64.dat,USBPRINT\RICOHMP_C200430AA,LPTENUM\RICOHMP_C200430AA,RICOHMP_C200430AA
+"RICOH MP C2094J PCL 6"=RICOH_MP_C2094J_64.dat,USBPRINT\RICOHMP_C2094J8AE1,LPTENUM\RICOHMP_C2094J8AE1,RICOHMP_C2094J8AE1
+"RICOH MP C2504 PCL 6"=RICOH_MP_C2504_64.dat,USBPRINT\RICOHMP_C250431BA,LPTENUM\RICOHMP_C250431BA,RICOHMP_C250431BA
+"RICOH MP C2594J PCL 6"=RICOH_MP_C2594J_64.dat,USBPRINT\RICOHMP_C2594J44E1,LPTENUM\RICOHMP_C2594J44E1,RICOHMP_C2594J44E1
+
+[SAVIN.NTamd64]
+"SAVIN MP C2004 PCL 6"=SAVIN_MP_C2004_64.dat,USBPRINT\SAVINMP_C20041D66,LPTENUM\SAVINMP_C20041D66,SAVINMP_C20041D66
+"SAVIN MP C2504 PCL 6"=SAVIN_MP_C2504_64.dat,USBPRINT\SAVINMP_C25041C76,LPTENUM\SAVINMP_C25041C76,SAVINMP_C25041C76
+
+
+[Gestetner_MP_C2004_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Scd.psz
+LanguageMonitor	= rica6Slm,rica6Slm.dll
+
+[Gestetner_DSc1220_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Scd.psz
+LanguageMonitor	= rica6Slm,rica6Slm.dll
+
+[Gestetner_MP_C2504_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Scd.psz
+LanguageMonitor	= rica6Slm,rica6Slm.dll
+
+[Gestetner_DSc1225_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Scd.psz
+LanguageMonitor	= rica6Slm,rica6Slm.dll
+
+[infotec_MP_C2004_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Scd.psz
+LanguageMonitor	= rica6Slm,rica6Slm.dll
+
+[infotec_MP_C2504_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Scd.psz
+LanguageMonitor	= rica6Slm,rica6Slm.dll
+
+[LANIER_MP_C2004_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Scd.psz
+LanguageMonitor	= rica6Slm,rica6Slm.dll
+
+[LANIER_MP_C2504_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Scd.psz
+LanguageMonitor	= rica6Slm,rica6Slm.dll
+
+[NRG_MP_C2004_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Scd.psz
+LanguageMonitor	= rica6Slm,rica6Slm.dll
+
+[NRG_MP_C2504_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Scd.psz
+LanguageMonitor	= rica6Slm,rica6Slm.dll
+
+[RICOH_MP_C2004_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Scd.psz
+LanguageMonitor	= rica6Slm,rica6Slm.dll
+
+[RICOH_MP_C2094J_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Scd.psz
+LanguageMonitor	= rica6Slm,rica6Slm.dll
+
+[RICOH_MP_C2504_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Scd.psz
+LanguageMonitor	= rica6Slm,rica6Slm.dll
+
+[RICOH_MP_C2594J_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Scd.psz
+LanguageMonitor	= rica6Slm,rica6Slm.dll
+
+[SAVIN_MP_C2004_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Scd.psz
+LanguageMonitor	= rica6Slm,rica6Slm.dll
+
+[SAVIN_MP_C2504_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Scd.psz
+LanguageMonitor	= rica6Slm,rica6Slm.dll
+
+
+[Gestetner_MP_C2004_64.dat.Services]
+AddService = ,0x2
+
+[Gestetner_DSc1220_64.dat.Services]
+AddService = ,0x2
+
+[Gestetner_MP_C2504_64.dat.Services]
+AddService = ,0x2
+
+[Gestetner_DSc1225_64.dat.Services]
+AddService = ,0x2
+
+[infotec_MP_C2004_64.dat.Services]
+AddService = ,0x2
+
+[infotec_MP_C2504_64.dat.Services]
+AddService = ,0x2
+
+[LANIER_MP_C2004_64.dat.Services]
+AddService = ,0x2
+
+[LANIER_MP_C2504_64.dat.Services]
+AddService = ,0x2
+
+[NRG_MP_C2004_64.dat.Services]
+AddService = ,0x2
+
+[NRG_MP_C2504_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_MP_C2004_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_MP_C2094J_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_MP_C2504_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_MP_C2594J_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_MP_C2004_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_MP_C2504_64.dat.Services]
+AddService = ,0x2
+
+
+[RPD_FILES]
+rica6Sui.dll,rica5Xui.dll
+rica6Sui.irj,MPC2004_.irj
+rica6Sui.rdj
+rica6Sui.rcf,MPC2004_.rcf
+rica6Sug.dll,rica5Xug.dll
+rica6Sug.miz
+rica6Sur.dll,rica5Xur.dll
+rica6Sgr.dll,rica5Xgr.dll
+rica6Sgl.dll,rica5Xgl.dll
+rica6Sci.dll,rica5Xci.dll
+rica6Scd.dll,rica5Xcd.dll
+rica6Scd.psz
+rica6Scf.cfz
+rica6Scl.ini
+rica6Sch.chm,rica5Xch.chm
+rica6Scz.dlz,rica5Xcz.dlz
+rica6Scj.dll,rica5Xcj.dll
+rica6Sct.dll,rica5Xct.dll
+rica6Scb.dll,rica5Xcb.dll
+rica6Stl.exe,rica5Xtl.exe
+rica6Stc.exe,rica5Xtc.exe
+rica6Stt.exe,rica5Xtt.exe
+rica6Stf.exe,rica5Xtf.exe
+
+[RPD_COMMON_SYS32]
+rica6Slm.dll,rica5Xlm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD06Rd64.dll,RD06Rd64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica6Sui.dll
+DriverFile	= rica6Sgr.dll
+HelpFile	= rica6Sch.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica5Xui.dll	= 1
+MPC2004_.irj	= 1
+rica6Sui.rdj	= 1
+MPC2004_.rcf	= 2
+rica5Xug.dll	= 1
+rica6Sug.miz	= 1
+rica5Xur.dll	= 1
+rica5Xgr.dll	= 1
+rica5Xgl.dll	= 1
+rica5Xci.dll	= 1
+rica5Xcd.dll	= 1
+rica6Scd.psz	= 1
+rica6Scf.cfz	= 1
+rica6Scl.ini	= 1
+rica5Xch.chm	= 1
+rica5Xcz.dlz	= 1
+rica5Xcj.dll	= 1
+rica5Xct.dll	= 1
+rica5Xcb.dll	= 1
+rica5Xlm.dll	= 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+rica5Xtl.exe      = 1
+RD06Rd64.dll	= 1
+rica5Xtc.exe	= 1
+rica5Xtt.exe	= 1
+rica5Xtf.exe	= 1
+
+[Strings]
+Ricoh="Ricoh"
+Gestetner="Gestetner"
+infotec="infotec"
+LANIER="LANIER"
+NRG="NRG"
+SAVIN="SAVIN"
+DSK= "PCL6 Printer Driver Disk1"

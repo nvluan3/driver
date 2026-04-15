@@ -1,0 +1,215 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2025 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 11/10/2025,3.1.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%infotec%=infotec,NTamd64
+%LANIER%=LANIER,NTamd64
+%NRG%=NRG,NTamd64
+%Ricoh%=Ricoh,NTamd64
+%SAVIN%=SAVIN,NTamd64
+
+
+;WindowsXP(amd64)
+[infotec.NTamd64]
+"infotec Pro C7100S PCL 6"=infotec_Pro_C7100S_64.dat,USBPRINT\infotecPro_C7100S88AE,LPTENUM\infotecPro_C7100S88AE,infotecPro_C7100S88AE
+"infotec Pro C7110S PCL 6"=infotec_Pro_C7110S_64.dat,USBPRINT\infotecPro_C7110S48FF,LPTENUM\infotecPro_C7110S48FF,infotecPro_C7110S48FF
+
+[LANIER.NTamd64]
+"LANIER Pro C7100S PCL 6"=LANIER_Pro_C7100S_64.dat,USBPRINT\LANIERPro_C7100S7207,LPTENUM\LANIERPro_C7100S7207,LANIERPro_C7100S7207
+"LANIER Pro C7110S PCL 6"=LANIER_Pro_C7110S_64.dat,USBPRINT\LANIERPro_C7110SB256,LPTENUM\LANIERPro_C7110SB256,LANIERPro_C7110SB256
+
+[NRG.NTamd64]
+"NRG Pro C7100S PCL 6"=NRG_Pro_C7100S_64.dat,USBPRINT\NRGPro_C7100SEC1D,LPTENUM\NRGPro_C7100SEC1D,NRGPro_C7100SEC1D
+"NRG Pro C7110S PCL 6"=NRG_Pro_C7110S_64.dat,USBPRINT\NRGPro_C7110S2C4C,LPTENUM\NRGPro_C7110S2C4C,NRGPro_C7110S2C4C
+
+[Ricoh.NTamd64]
+"RICOH Pro C7100S PCL 6"=RICOH_Pro_C7100S_64.dat,USBPRINT\RICOHPro_C7100SCE2B,LPTENUM\RICOHPro_C7100SCE2B,RICOHPro_C7100SCE2B
+"RICOH Pro C7110S PCL 6"=RICOH_Pro_C7110S_64.dat,USBPRINT\RICOHPro_C7110S0E7A,LPTENUM\RICOHPro_C7110S0E7A,RICOHPro_C7110S0E7A,RICOHPro_C7110S_E7A
+
+[SAVIN.NTamd64]
+"SAVIN Pro C7100S PCL 6"=SAVIN_Pro_C7100S_64.dat,USBPRINT\SAVINPro_C7100S5044,LPTENUM\SAVINPro_C7100S5044,SAVINPro_C7100S5044
+"SAVIN Pro C7110S PCL 6"=SAVIN_Pro_C7110S_64.dat,USBPRINT\SAVINPro_C7110S9017,LPTENUM\SAVINPro_C7110S9017,SAVINPro_C7110S9017
+
+
+[infotec_Pro_C7100S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Hcd.psz
+LanguageMonitor = rica8Hlm,rica8Hlm.dll
+
+[infotec_Pro_C7110S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Hcd.psz
+LanguageMonitor = rica8Hlm,rica8Hlm.dll
+
+[LANIER_Pro_C7100S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Hcd.psz
+LanguageMonitor = rica8Hlm,rica8Hlm.dll
+
+[LANIER_Pro_C7110S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Hcd.psz
+LanguageMonitor = rica8Hlm,rica8Hlm.dll
+
+[NRG_Pro_C7100S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Hcd.psz
+LanguageMonitor = rica8Hlm,rica8Hlm.dll
+
+[NRG_Pro_C7110S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Hcd.psz
+LanguageMonitor = rica8Hlm,rica8Hlm.dll
+
+[RICOH_Pro_C7100S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Hcd.psz
+LanguageMonitor = rica8Hlm,rica8Hlm.dll
+
+[RICOH_Pro_C7110S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Hcd.psz
+LanguageMonitor = rica8Hlm,rica8Hlm.dll
+
+[SAVIN_Pro_C7100S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Hcd.psz
+LanguageMonitor = rica8Hlm,rica8Hlm.dll
+
+[SAVIN_Pro_C7110S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Hcd.psz
+LanguageMonitor = rica8Hlm,rica8Hlm.dll
+
+
+[infotec_Pro_C7100S_64.dat.Services]
+AddService = ,0x2
+
+[infotec_Pro_C7110S_64.dat.Services]
+AddService = ,0x2
+
+[LANIER_Pro_C7100S_64.dat.Services]
+AddService = ,0x2
+
+[LANIER_Pro_C7110S_64.dat.Services]
+AddService = ,0x2
+
+[NRG_Pro_C7100S_64.dat.Services]
+AddService = ,0x2
+
+[NRG_Pro_C7110S_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_Pro_C7100S_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_Pro_C7110S_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_Pro_C7100S_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_Pro_C7110S_64.dat.Services]
+AddService = ,0x2
+
+
+[RPD_FILES]
+rica8Hui.dll,rica5Xui.dll
+rica8Hui.irj,PRC7100S.irj
+rica8Hui.rdj
+rica8Hui.rcf,PRC7100S.rcf
+rica8Hug.dll,rica5Xug.dll
+rica8Hug.miz
+rica8Hur.dll,rica5Xur.dll
+rica8Hgr.dll,rica5Xgr.dll
+rica8Hgl.dll,rica5Xgl.dll
+rica8Hci.dll,rica5Xci.dll
+rica8Hcd.dll,rica5Xcd.dll
+rica8Hcd.psz
+rica8Hcf.cfz
+rica8Hcl.ini
+rica8Hch.chm,rica5Xch.chm
+rica8Hcz.dlz,rica4Qcz.dlz
+rica8Hcj.dll,rica5Xcj.dll
+rica8Hct.dll,rica5Xct.dll
+rica8Hcb.dll,rica5Xcb.dll
+rica8Htl.exe,rica5Xtl.exe
+
+[RPD_COMMON_SYS32]
+rica8Hlm.dll,rica5Xlm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD08Hd64.dll,RD08Hd64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica8Hui.dll
+DriverFile	= rica8Hgr.dll
+HelpFile	= rica8Hch.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica5Xui.dll	= 1
+PRC7100S.irj	= 1
+rica8Hui.rdj	= 1
+PRC7100S.rcf	= 2
+rica5Xug.dll	= 1
+rica8Hug.miz	= 1
+rica5Xur.dll	= 1
+rica5Xgr.dll	= 1
+rica5Xgl.dll	= 1
+rica5Xci.dll	= 1
+rica5Xcd.dll	= 1
+rica8Hcd.psz	= 1
+rica8Hcf.cfz	= 1
+rica8Hcl.ini	= 1
+rica5Xch.chm	= 1
+rica4Qcz.dlz	= 1
+rica5Xcj.dll	= 1
+rica5Xct.dll	= 1
+rica5Xcb.dll	= 1
+rica5Xlm.dll	= 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+rica5Xtl.exe              = 1
+RD08Hd64.dll	= 1
+
+[Strings]
+Ricoh="Ricoh"
+infotec="infotec"
+LANIER="LANIER"
+NRG="NRG"
+SAVIN="SAVIN"
+DSK= "PCL6 Printer Driver Disk1"

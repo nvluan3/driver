@@ -1,0 +1,130 @@
+;------------------------------------------------------------------------------
+; Windows XP/SERVER2003/VISTA 64-bit
+; Copyright (c) 2004-2014 RICOH COMPANY, LTD
+; All Rights Reserved
+; RICOH Printer Driver Setup Information File
+;------------------------------------------------------------------------------
+
+[Version]
+Signature  = "$Windows NT$"
+Provider   = %ComName%
+ClassGUID  = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class      = Printer
+DriverVer  = 05/28/2014,1.6.0.0
+CatalogFile= rica64CT.cat
+
+[Manufacturer]
+%ComName% = PRINTERS,NTamd64,NT.5.1
+
+
+;WindowsXP(amd64)
+[PRINTERS.NTamd64]
+%DrvNamea%=Aficio_MP_600164.dat,USBPRINT\RICOHAficio_MP_6001E540,LPTENUM\RICOHAficio_MP_6001E540,RICOHAficio_MP_6001E540
+%DrvNameb%=Aficio_MP_700164.dat,USBPRINT\RICOHAficio_MP_70011941,LPTENUM\RICOHAficio_MP_70011941,RICOHAficio_MP_70011941
+%DrvNamec%=Aficio_MP_800164.dat,USBPRINT\RICOHAficio_MP_80010D42,LPTENUM\RICOHAficio_MP_80010D42,RICOHAficio_MP_80010D42,RICOHAficio_MP_8001_D42
+%DrvNamed%=Aficio_MP_900164.dat,USBPRINT\RICOHAficio_MP_9001F143,LPTENUM\RICOHAficio_MP_9001F143,RICOHAficio_MP_9001F143
+
+;WindowsXP(x86)
+[PRINTERS.NT.5.1]
+%DrvNamea%=Aficio_MP_600164.dat,USBPRINT\RICOHAficio_MP_6001E540,LPTENUM\RICOHAficio_MP_6001E540,RICOHAficio_MP_6001E540
+%DrvNameb%=Aficio_MP_700164.dat,USBPRINT\RICOHAficio_MP_70011941,LPTENUM\RICOHAficio_MP_70011941,RICOHAficio_MP_70011941
+%DrvNamec%=Aficio_MP_800164.dat,USBPRINT\RICOHAficio_MP_80010D42,LPTENUM\RICOHAficio_MP_80010D42,RICOHAficio_MP_80010D42,RICOHAficio_MP_8001_D42
+%DrvNamed%=Aficio_MP_900164.dat,USBPRINT\RICOHAficio_MP_9001F143,LPTENUM\RICOHAficio_MP_9001F143,RICOHAficio_MP_9001F143
+
+[Aficio_MP_600164.dat]
+CopyFiles		= RDLC0,RDLCC64,RDLCC64_SYS32
+DataSection		= RDL_DATA
+DataFile		= rica64cd.psz
+LanguageMonitor = RICOH Language Monitor2,rc4mon64.dll
+[Aficio_MP_700164.dat]
+CopyFiles		= RDLC0,RDLCC64,RDLCC64_SYS32
+DataSection		= RDL_DATA
+DataFile		= rica64cd.psz
+LanguageMonitor = RICOH Language Monitor2,rc4mon64.dll
+[Aficio_MP_800164.dat]
+CopyFiles		= RDLC0,RDLCC64,RDLCC64_SYS32
+DataSection		= RDL_DATA
+DataFile		= rica64cd.psz
+LanguageMonitor = RICOH Language Monitor2,rc4mon64.dll
+[Aficio_MP_900164.dat]
+CopyFiles		= RDLC0,RDLCC64,RDLCC64_SYS32
+DataSection		= RDL_DATA
+DataFile		= rica64cd.psz
+LanguageMonitor = RICOH Language Monitor2,rc4mon64.dll
+
+[RDLC0]
+rica64us.dll,rica64us.dl_
+rica64ur.dll,rica64ur.dl_
+rica64gs.dll,rica64gs.dl_
+rica64gu.dll,rica64gu.dl_
+rica64gc.dll,rica64gc.dl_
+ricipp.dll,ricipp.dl_
+rica64pl.dll,rica64pl.dl_
+rica64cd.dll,rica64cd.dl_
+rica64cd.psz
+rica64hp.chm
+rica64hp.exe,rica64hp.ex_	
+rica64is.xml
+rica64.rcf
+rica64lg.dat
+rica64uc.cfz
+rica64mi.miz
+
+[RDLCC64]
+ricjc64.dll,ricjc64.dl_,,0x00000020
+trackid64.dll,trackid64.dl_,,0x00000020
+ricdb64.dll,ricdb64.dl_,,0x00000020
+mfricr64.dll,mfricr64.dl_,,0x00000020
+rc4man64.dll,rc4man64.dl_,,0x00000020
+MP601d64.dll,MP601d64.dl_,,0x00000020
+
+[RDLCC64_SYS32]
+rc4mon64.dll,rc4mon64.dl_,,0x00000020
+
+[RDL_DATA]
+ConfigFile		= rica64us.dll
+DriverFile		= rica64gs.dll
+HelpFile		= rica64hp.chm
+
+[DestinationDirs]
+DefaultDestDir		= 66000
+RDLCC64_SYS32           = 66002
+	
+[SourceDisksNames.amd64]
+1 = %DISK1%,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware			=TRUE
+
+[SourceDisksFiles.amd64]
+rica64us.dl_		= 1
+rica64ur.dl_		= 1
+rica64gs.dl_		= 1
+rica64gu.dl_		= 1
+rica64gc.dl_		= 1
+ricipp.dl_		= 1
+rica64pl.dl_		= 1
+rica64cd.dl_		= 1
+ricjc64.dl_		= 1
+rc4man64.dl_		= 1
+rc4mon64.dl_		= 1
+trackid64.dl_		= 1
+ricdb64.dl_		= 1
+mfricr64.dl_		= 1
+MP601d64.dl_		= 1
+rica64cd.psz		= 1
+rica64is.xml		= 1
+rica64uc.cfz		= 1
+rica64lg.dat		= 1
+rica64hp.chm		= 1
+rica64hp.ex_		= 1
+rica64.rcf		= 1
+rica64mi.miz		= 1
+
+[Strings]
+ComName= "RICOH"
+DrvNamea="RICOH Aficio MP 6001 PCL 6"
+DrvNameb="RICOH Aficio MP 7001 PCL 6"
+DrvNamec="RICOH Aficio MP 8001 PCL 6"
+DrvNamed="RICOH Aficio MP 9001 PCL 6"
+DISK1= "RICOH Printer Driver Disk1"

@@ -1,0 +1,146 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2025 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 02/05/2025,3.2.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%LANIER%=LANIER,NTamd64
+%Ricoh%=Ricoh,NTamd64
+%SAVIN%=SAVIN,NTamd64
+
+
+;WindowsXP(amd64)
+[LANIER.NTamd64]
+"LANIER P C600 PCL 6"=LANIER_P_C600_64.dat,USBPRINT\LANIERP_C60083A2,LPTENUM\LANIERP_C60083A2,LANIERP_C60083A2
+
+[Ricoh.NTamd64]
+"RICOH P C600 PCL 6"=RICOH_P_C600_64.dat,USBPRINT\RICOHP_C600CC64,LPTENUM\RICOHP_C600CC64,RICOHP_C600CC64
+
+[SAVIN.NTamd64]
+"SAVIN P C600 PCL 6"=SAVIN_P_C600_64.dat,USBPRINT\SAVINP_C60060F5,LPTENUM\SAVINP_C60060F5,SAVINP_C60060F5
+
+
+[LANIER_P_C600_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica4Xcd.psz
+LanguageMonitor = rica4Xlm,rica4Xlm.dll
+CopyINF = RPRNUT.INF
+
+[RICOH_P_C600_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica4Xcd.psz
+LanguageMonitor = rica4Xlm,rica4Xlm.dll
+CopyINF = RPRNUT.INF
+
+[SAVIN_P_C600_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica4Xcd.psz
+LanguageMonitor = rica4Xlm,rica4Xlm.dll
+CopyINF = RPRNUT.INF
+
+
+[LANIER_P_C600_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_P_C600_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_P_C600_64.dat.Services]
+AddService = ,0x2
+
+
+[RPD_FILES]
+rica4Xui.dll,rica7Qui.dll
+rica4Xui.irj,SPC600__.irj
+rica4Xui.rdj
+rica4Xui.rcf,SPC600__.rcf
+rica4Xug.dll,rica7Qug.dll
+rica4Xug.miz
+rica4Xur.dll,rica7Qur.dll
+rica4Xgr.dll,rica7Qgr.dll
+rica4Xgl.dll,rica7Qgl.dll
+rica4Xci.dll,rica7Qci.dll
+rica4Xcd.dll,rica7Qcd.dll
+rica4Xcd.psz
+rica4Xcf.cfz
+rica4Xcl.ini
+rica4Xch.chm,rica7Qch.chm
+rica4Xcz.dlz,rica4Xcz.dlz
+rica4Xcj.dll,rica7Qcj.dll
+rica4Xct.dll,rica7Qct.dll
+rica4Xcb.dll,rica7Qcb.dll
+rica4Xtl.exe,rica7Qtl.exe
+rica4Xtc.exe,rica7Qtc.exe
+rica4Xtt.exe,rica7Qtt.exe
+rica4Xtf.exe,rica7Qtf.exe
+
+[RPD_COMMON_SYS32]
+rica4Xlm.dll,rica7Qlm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD04Xd64.dll,RD04Xd64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica4Xui.dll
+DriverFile	= rica4Xgr.dll
+HelpFile	= rica4Xch.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica7Qui.dll	= 1
+SPC600__.irj	= 1
+rica4Xui.rdj	= 1
+SPC600__.rcf	= 2
+rica7Qug.dll	= 1
+rica4Xug.miz	= 1
+rica7Qur.dll	= 1
+rica7Qgr.dll	= 1
+rica7Qgl.dll	= 1
+rica7Qci.dll	= 1
+rica7Qcd.dll	= 1
+rica4Xcd.psz	= 1
+rica4Xcf.cfz	= 1
+rica4Xcl.ini	= 1
+rica7Qch.chm	= 1
+rica4Xcz.dlz	= 1
+rica7Qcj.dll	= 1
+rica7Qct.dll	= 1
+rica7Qcb.dll	= 1
+rica7Qlm.dll	= 1
+rica7Qtc.exe	= 1
+rica7Qtt.exe	= 1
+rica7Qtf.exe	= 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+rica7Qtl.exe              = 1
+RD04Xd64.dll	= 1
+
+[Strings]
+Ricoh="Ricoh"
+LANIER="LANIER"
+SAVIN="SAVIN"
+DSK= "PCL6 Printer Driver Disk1"

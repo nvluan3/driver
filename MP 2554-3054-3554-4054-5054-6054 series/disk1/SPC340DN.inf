@@ -1,0 +1,197 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2025 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 11/10/2025,3.1.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%LANIER%=LANIER,NTamd64
+%NRG%=NRG,NTamd64
+%Ricoh%=Ricoh,NTamd64
+%SAVIN%=SAVIN,NTamd64
+
+
+;WindowsXP(amd64)
+[LANIER.NTamd64]
+"LANIER SP C340DN PCL 6"=LANIER_SP_C340DN_64.dat,USBPRINT\LANIERSP_C340DNB67D,LPTENUM\LANIERSP_C340DNB67D,LANIERSP_C340DNB67D
+"LANIER SP C342DN PCL 6"=LANIER_SP_C342DN_64.dat,USBPRINT\LANIERSP_C342DN76DC,LPTENUM\LANIERSP_C342DN76DC,LANIERSP_C342DN76DC
+
+[NRG.NTamd64]
+"NRG SP C340DN PCL 6"=NRG_SP_C340DN_64.dat,USBPRINT\NRGSP_C340DN77AB,LPTENUM\NRGSP_C340DN77AB,NRGSP_C340DN77AB
+"NRG SP C342DN PCL 6"=NRG_SP_C342DN_64.dat,USBPRINT\NRGSP_C342DNB70A,LPTENUM\NRGSP_C342DNB70A,NRGSP_C342DNB70A
+
+[Ricoh.NTamd64]
+"RICOH SP C340DN PCL 6"=RICOH_SP_C340DN_64.dat,USBPRINT\RICOHSP_C340DN63A9,LPTENUM\RICOHSP_C340DN63A9,RICOHSP_C340DN63A9
+"RICOH SP C342DN PCL 6"=RICOH_SP_C342DN_64.dat,USBPRINT\RICOHSP_C342DNA308,LPTENUM\RICOHSP_C342DNA308,RICOHSP_C342DNA308
+
+[SAVIN.NTamd64]
+"SAVIN SP C340DN PCL 6"=SAVIN_SP_C340DN_64.dat,USBPRINT\SAVINSP_C340DN8E87,LPTENUM\SAVINSP_C340DN8E87,SAVINSP_C340DN8E87
+"SAVIN SP C342DN PCL 6"=SAVIN_SP_C342DN_64.dat,USBPRINT\SAVINSP_C342DN4E24,LPTENUM\SAVINSP_C342DN4E24,SAVINSP_C342DN4E24
+
+
+[LANIER_SP_C340DN_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica2Scd.psz
+LanguageMonitor	= rica2Slm,rica2Slm.dll
+
+[LANIER_SP_C342DN_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica2Scd.psz
+LanguageMonitor	= rica2Slm,rica2Slm.dll
+
+[NRG_SP_C340DN_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica2Scd.psz
+LanguageMonitor	= rica2Slm,rica2Slm.dll
+
+[NRG_SP_C342DN_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica2Scd.psz
+LanguageMonitor	= rica2Slm,rica2Slm.dll
+
+[RICOH_SP_C340DN_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica2Scd.psz
+LanguageMonitor	= rica2Slm,rica2Slm.dll
+
+[RICOH_SP_C342DN_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica2Scd.psz
+LanguageMonitor	= rica2Slm,rica2Slm.dll
+
+[SAVIN_SP_C340DN_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica2Scd.psz
+LanguageMonitor	= rica2Slm,rica2Slm.dll
+
+[SAVIN_SP_C342DN_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica2Scd.psz
+LanguageMonitor	= rica2Slm,rica2Slm.dll
+
+
+[LANIER_SP_C340DN_64.dat.Services]
+AddService = ,0x2
+
+[LANIER_SP_C342DN_64.dat.Services]
+AddService = ,0x2
+
+[NRG_SP_C340DN_64.dat.Services]
+AddService = ,0x2
+
+[NRG_SP_C342DN_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_SP_C340DN_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_SP_C342DN_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_SP_C340DN_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_SP_C342DN_64.dat.Services]
+AddService = ,0x2
+
+
+[RPD_FILES]
+rica2Sui.dll,rica5Xui.dll
+rica2Sui.irj,SPC340DN.irj
+rica2Sui.rdj
+rica2Sui.rcf,SPC340DN.rcf
+rica2Sug.dll,rica5Xug.dll
+rica2Sug.miz
+rica2Sur.dll,rica5Xur.dll
+rica2Sgr.dll,rica5Xgr.dll
+rica2Sgl.dll,rica5Xgl.dll
+rica2Sci.dll,rica5Xci.dll
+rica2Scd.dll,rica5Xcd.dll
+rica2Scd.psz
+rica2Scf.cfz
+rica2Scl.ini
+rica2Sch.chm,rica5Xch.chm
+rica2Scz.dlz,rica5Xcz.dlz
+rica2Scj.dll,rica5Xcj.dll
+rica2Sct.dll,rica5Xct.dll
+rica2Scb.dll,rica5Xcb.dll
+rica2Stl.exe,rica5Xtl.exe
+rica2Stc.exe,rica5Xtc.exe
+rica2Stt.exe,rica5Xtt.exe
+rica2Stf.exe,rica5Xtf.exe
+
+[RPD_COMMON_SYS32]
+rica2Slm.dll,rica5Xlm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD02Sd64.dll,RD02Sd64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica2Sui.dll
+DriverFile	= rica2Sgr.dll
+HelpFile	= rica2Sch.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica5Xui.dll	= 1
+SPC340DN.irj	= 1
+rica2Sui.rdj	= 1
+SPC340DN.rcf	= 2
+rica5Xug.dll	= 1
+rica2Sug.miz	= 1
+rica5Xur.dll	= 1
+rica5Xgr.dll	= 1
+rica5Xgl.dll	= 1
+rica5Xci.dll	= 1
+rica5Xcd.dll	= 1
+rica2Scd.psz	= 1
+rica2Scf.cfz	= 1
+rica2Scl.ini	= 1
+rica5Xch.chm	= 1
+rica5Xcz.dlz	= 1
+rica5Xcj.dll	= 1
+rica5Xct.dll	= 1
+rica5Xcb.dll	= 1
+rica5Xlm.dll	= 1
+rica5Xtc.exe = 1
+rica5Xtt.exe = 1
+rica5Xtf.exe = 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+rica5Xtl.exe      = 1
+RD02Sd64.dll	= 1
+
+[Strings]
+Ricoh="Ricoh"
+LANIER="LANIER"
+NRG="NRG"
+SAVIN="SAVIN"
+DSK= "PCL6 Printer Driver Disk1"

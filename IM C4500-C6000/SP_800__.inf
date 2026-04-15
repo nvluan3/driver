@@ -1,0 +1,206 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2025 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 02/05/2025,3.2.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%LANIER%=LANIER,NTamd64
+%NRG%=NRG,NTamd64
+%Ricoh%=Ricoh,NTamd64
+%SAVIN%=SAVIN,NTamd64
+
+
+;WindowsXP(amd64)
+[LANIER.NTamd64]
+"LANIER P 800 PCL 6"=LANIER_P_800_64.dat,USBPRINT\LANIERP_800DABE,LPTENUM\LANIERP_800DABE,LANIERP_800DABE
+"LANIER P 801 PCL 6"=LANIER_P_801_64.dat,USBPRINT\LANIERP_8011A7F,LPTENUM\LANIERP_8011A7F,LANIERP_8011A7F
+
+[NRG.NTamd64]
+"NRG P 800 PCL 6"=NRG_P_800_64.dat,USBPRINT\NRGP_800A3A6,LPTENUM\NRGP_800A3A6,NRGP_800A3A6
+"NRG P 801 PCL 6"=NRG_P_801_64.dat,USBPRINT\NRGP_8016367,LPTENUM\NRGP_8016367,NRGP_8016367
+
+[Ricoh.NTamd64]
+"RICOH P 800 PCL 6"=RICOH_P_800_64.dat,USBPRINT\RICOHP_800DC53,LPTENUM\RICOHP_800DC53,RICOHP_800DC53
+"RICOH P 801 PCL 6"=RICOH_P_801_64.dat,USBPRINT\RICOHP_8011C92,LPTENUM\RICOHP_8011C92,RICOHP_8011C92
+
+[SAVIN.NTamd64]
+"SAVIN P 800 PCL 6"=SAVIN_P_800_64.dat,USBPRINT\SAVINP_8008CC0,LPTENUM\SAVINP_8008CC0,SAVINP_8008CC0
+"SAVIN P 801 PCL 6"=SAVIN_P_801_64.dat,USBPRINT\SAVINP_8014C01,LPTENUM\SAVINP_8014C01,SAVINP_8014C01
+
+
+
+[LANIER_P_800_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Ucd.psz
+LanguageMonitor	= rica7Ulm,rica7Ulm.dll
+CopyINF	= RPRNUT.INF
+
+[LANIER_P_801_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Ucd.psz
+LanguageMonitor	= rica7Ulm,rica7Ulm.dll
+CopyINF	= RPRNUT.INF
+
+[NRG_P_800_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Ucd.psz
+LanguageMonitor	= rica7Ulm,rica7Ulm.dll
+CopyINF	= RPRNUT.INF
+
+[NRG_P_801_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Ucd.psz
+LanguageMonitor	= rica7Ulm,rica7Ulm.dll
+CopyINF	= RPRNUT.INF
+
+[RICOH_P_800_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Ucd.psz
+LanguageMonitor	= rica7Ulm,rica7Ulm.dll
+CopyINF	= RPRNUT.INF
+
+[RICOH_P_801_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Ucd.psz
+LanguageMonitor	= rica7Ulm,rica7Ulm.dll
+CopyINF	= RPRNUT.INF
+
+[SAVIN_P_800_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Ucd.psz
+LanguageMonitor	= rica7Ulm,rica7Ulm.dll
+CopyINF	= RPRNUT.INF
+
+[SAVIN_P_801_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica7Ucd.psz
+LanguageMonitor	= rica7Ulm,rica7Ulm.dll
+CopyINF	= RPRNUT.INF
+
+
+[LANIER_P_800_64.dat.Services]
+AddService = ,0x2
+
+[LANIER_P_801_64.dat.Services]
+AddService = ,0x2
+
+[NRG_P_800_64.dat.Services]
+AddService = ,0x2
+
+[NRG_P_801_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_P_800_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_P_801_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_P_800_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_P_801_64.dat.Services]
+AddService = ,0x2
+
+
+[RPD_FILES]
+rica7Uui.dll,rica7Qui.dll
+rica7Uui.irj,SP_800__.irj
+rica7Uui.rdj
+rica7Uui.rcf,SP_800__.rcf
+rica7Uug.dll,rica7Qug.dll
+rica7Uug.miz
+rica7Uur.dll,rica7Qur.dll
+rica7Ugr.dll,rica7Qgr.dll
+rica7Ugl.dll,rica7Qgl.dll
+rica7Uci.dll,rica7Qci.dll
+rica7Ucd.dll,rica7Qcd.dll
+rica7Ucd.psz
+rica7Ucf.cfz
+rica7Ucl.ini
+rica7Uch.chm,rica7Qch.chm
+rica7Ucz.dlz,rica7Tcz.dlz
+rica7Ucj.dll,rica7Qcj.dll
+rica7Uct.dll,rica7Qct.dll
+rica7Ucb.dll,rica7Qcb.dll
+rica7Utl.exe,rica7Qtl.exe
+rica7Utc.exe,rica7Qtc.exe
+rica7Utt.exe,rica7Qtt.exe
+rica7Utf.exe,rica7Qtf.exe
+
+[RPD_COMMON_SYS32]
+rica7Ulm.dll,rica7Qlm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD07Ud64.dll,RD07Ud64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica7Uui.dll
+DriverFile	= rica7Ugr.dll
+HelpFile	= rica7Uch.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica7Qui.dll	= 1
+SP_800__.irj	= 1
+rica7Uui.rdj	= 1
+SP_800__.rcf	= 2
+rica7Qug.dll	= 1
+rica7Uug.miz	= 1
+rica7Qur.dll	= 1
+rica7Qgr.dll	= 1
+rica7Qgl.dll	= 1
+rica7Qci.dll	= 1
+rica7Qcd.dll	= 1
+rica7Ucd.psz	= 1
+rica7Ucf.cfz	= 1
+rica7Ucl.ini	= 1
+rica7Qch.chm	= 1
+rica7Tcz.dlz	= 1
+rica7Qcj.dll	= 1
+rica7Qct.dll	= 1
+rica7Qcb.dll	= 1
+rica7Qlm.dll	= 1
+rica7Qtc.exe	= 1
+rica7Qtt.exe	= 1
+rica7Qtf.exe	= 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+rica7Qtl.exe      = 1
+RD07Ud64.dll	= 1
+
+[Strings]
+Ricoh="Ricoh"
+LANIER="LANIER"
+NRG="NRG"
+SAVIN="SAVIN"
+DSK= "PCL6 Printer Driver Disk1"
