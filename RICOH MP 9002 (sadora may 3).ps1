@@ -1,6 +1,5 @@
-﻿# Kiểm tra xem script có đang chạy với quyền admin không
+﻿# Kiểm tra quyền admin
 $IsAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")
-
 if (-not $IsAdmin) {
     Write-Host "Script chưa chạy với quyền admin. Đang khởi động lại..."
     $scriptPath = $MyInvocation.MyCommand.Definition
@@ -11,40 +10,35 @@ if (-not $IsAdmin) {
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $OutputEncoding = [System.Text.Encoding]::UTF8
 
-# Đường dẫn driver trên GitHub (raw link đến file ZIP)
-$githubDriverUrl = "https://github.com/nvluan3/driver/raw/main/MP%202554-3054-3554-4054-5054-6054%20series.zip"
-$tempDir = "$env:TEMP\PrinterDriver"
-$driverFolder = Join-Path $tempDir "MP 2554-3054-3554-4054-5054-6054 series"
+$nameFolder = "Aficio MP 6002-7502-9002"
+# Thư mục driver gốc (nằm cùng chỗ với script)
+$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
+$sourceDriverFolder = Join-Path $scriptDir $nameFolder
 
-# Nếu chưa có thư mục driver thì tải về và giải nén
+# Thư mục tạm
+$tempDir = "$env:TEMP\PrinterDriver"
+$driverFolder = Join-Path $tempDir $nameFolder
+
+# Nếu chưa có thư mục driver trong temp thì copy từ thư mục chạy script
 if (-not (Test-Path $driverFolder)) {
-    if (-not (Test-Path $tempDir)) { 
-        New-Item -ItemType Directory -Path $tempDir | Out-Null 
+    if (-not (Test-Path $tempDir)) {
+        New-Item -ItemType Directory -Path $tempDir | Out-Null
     }
-    $zipPath = Join-Path $tempDir "driver.zip"
-    # Write-Host "Đang tải driver từ GitHub..."
-    # Invoke-WebRequest -Uri $githubDriverUrl -OutFile $zipPath
-    Write-Host "Đang tải driver từ GitHub bằng Start-BitsTransfer..."
-    Start-BitsTransfer -Source $githubDriverUrl -Destination $zipPath
-    Write-Host "Đang giải nén driver..."
-    Expand-Archive -Path $zipPath -DestinationPath $tempDir -Force
-    if (Test-Path $zipPath) {
-        Remove-Item $zipPath -Force
-        Write-Host "Đã xóa file driver.zip sau khi giải nén."
-    }
+    Write-Host "Đang copy driver từ thư mục $sourceDriverFolder sang thư mục tạm $driverFolder..."
+    Copy-Item -Path $sourceDriverFolder -Destination $driverFolder -Recurse -Force
 } else {
-    Write-Host "Đã có thư mục driver, bỏ qua bước tải."
+    Write-Host "Đã có thư mục driver trong temp, bỏ qua bước copy."
 }
 
 # Đường dẫn đến file INF
-$driverPath = Join-Path $driverFolder "MP_2554_.INF"
+$driverPath = Join-Path $driverFolder "OEMSETUP.INF"
 Write-Host "Đường dẫn đến file INF: $driverPath"
 
 # Thông tin máy in
-$driverName = "RICOH MP 3054 PCL 6"
-$printerName = "RICOH MP 3054 (sadora may 2)"
-$portName = "IP_10.10.108.52"
-$portAddress = "10.10.108.52"
+$driverName = "RICOH Aficio MP 9002 PCL 6"
+$printerName = "RICOH Aficio MP 9002 (sadora may 3)"
+$portName = "IP_10.10.113.34"
+$portAddress = "10.10.113.34"
 $paperSize = "A4"
 
 # Cài driver từ INF bằng pnputil

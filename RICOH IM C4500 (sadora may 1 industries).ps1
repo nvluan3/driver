@@ -11,29 +11,23 @@ if (-not $IsAdmin) {
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $OutputEncoding = [System.Text.Encoding]::UTF8
 
-# Đường dẫn driver trên GitHub (raw link đến file ZIP)
-$githubDriverUrl = "https://github.com/nvluan3/driver/raw/main/IM%20C4500-C6000.zip"
-$tempDir = "$env:TEMP\PrinterDriver"
-$driverFolder = Join-Path $tempDir "IM C4500-C6000"
+$nameFolder = "IM C4500-C6000"
+# Thư mục driver gốc (nằm cùng chỗ với script)
+$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
+$sourceDriverFolder = Join-Path $scriptDir $nameFolder
 
-# Nếu chưa có thư mục driver thì tải về và giải nén
+# Thư mục tạm
+$tempDir = "$env:TEMP\PrinterDriver"
+$driverFolder = Join-Path $tempDir $nameFolder
+# Nếu chưa có thư mục driver trong temp thì copy từ thư mục chạy script
 if (-not (Test-Path $driverFolder)) {
-    if (-not (Test-Path $tempDir)) { 
-        New-Item -ItemType Directory -Path $tempDir | Out-Null 
+    if (-not (Test-Path $tempDir)) {
+        New-Item -ItemType Directory -Path $tempDir | Out-Null
     }
-    $zipPath = Join-Path $tempDir "driver.zip"
-    # Write-Host "Đang tải driver từ GitHub..."
-    # Invoke-WebRequest -Uri $githubDriverUrl -OutFile $zipPath
-    Write-Host "Đang tải driver từ GitHub bằng Start-BitsTransfer..."
-    Start-BitsTransfer -Source $githubDriverUrl -Destination $zipPath
-    Write-Host "Đang giải nén driver..."
-    Expand-Archive -Path $zipPath -DestinationPath $tempDir -Force
-    if (Test-Path $zipPath) {
-        Remove-Item $zipPath -Force
-        Write-Host "Đã xóa file driver.zip sau khi giải nén."
-    }
+    Write-Host "Đang copy driver từ thư mục $sourceDriverFolder sang thư mục tạm $driverFolder..."
+    Copy-Item -Path $sourceDriverFolder -Destination $driverFolder -Recurse -Force
 } else {
-    Write-Host "Đã có thư mục driver, bỏ qua bước tải."
+    Write-Host "Đã có thư mục driver trong temp, bỏ qua bước copy."
 }
 
 # Đường dẫn đến file INF
@@ -42,7 +36,7 @@ Write-Host "Đường dẫn đến file INF: $driverPath"
 
 # Thông tin máy in
 $driverName = "RICOH IM C4500 PCL 6"
-$printerName = "RICOH IM C4500 (sadora may 1)"
+$printerName = "RICOH IM C4500 (sadora may 1 industries)"
 $portName = "IP_10.10.110.95"
 $portAddress = "10.10.110.95"
 $paperSize = "A4"
