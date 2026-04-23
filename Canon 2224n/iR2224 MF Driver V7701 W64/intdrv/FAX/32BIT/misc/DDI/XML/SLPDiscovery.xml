@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<discovery xmlns="urn:slpdiscovery" isEnabled="false">
+	
+  <destinationAddressIPv6>ff02:0:0:0:0:0:1:134c</destinationAddressIPv6>
+  <methodList onlyMatching="true">
+
+    <!-- SLP method to find "service:printer" devices -->
+    <method name="Test" serviceType="printer.canon">
+      <AttributeList>
+        <devNameOID>x-can-PdInfoMachineName</devNameOID>
+        <devTypeOID>x-can-PdInfoProductName</devTypeOID>
+        <sysDescOID>sysDescr</sysDescOID>
+      </AttributeList>
+
+      <deviceList>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR3025" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR3035" />
+            <TypeStr value="iR3045" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR3225" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR3230" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR3235" />
+            <TypeStr value="iR3245" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR5055" />
+            <TypeStr value="iR5065" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR C3080" />
+            <TypeStr value="iR C3480" />
+            <TypeStr value="iR C3580" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C9075" />
+            <TypeStr value="iR-ADV C9065" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C9075-A1" />
+            <TypeStr value="iR-ADV C9070-A1" />
+            <TypeStr value="iR-ADV C9065-A1" />
+            <TypeStr value="iR-ADV C9060-A1" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C7065" />
+            <TypeStr value="iR-ADV C7055" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C7065-A1" />
+            <TypeStr value="iR-ADV C7055-A1" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C5051" />
+            <TypeStr value="iR-ADV C5045" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C5035" />
+            <TypeStr value="iR-ADV C5030" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C5051-B1" />
+            <TypeStr value="iR-ADV C5045-B1" />
+            <TypeStr value="iR-ADV C5035-B1" />
+            <TypeStr value="iR-ADV C5030-B1" />
+          </matchingTypeStrs>
+        </device>
+				
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR2520" />
+          </matchingTypeStrs>
+        </device>
+				
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR2525" />
+            <TypeStr value="iR2530" />
+          </matchingTypeStrs>
+        </device>
+				
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR2535" />
+            <TypeStr value="iR2545" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 6065" />
+            <TypeStr value="iR-ADV 6055" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 6075" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 6075-U1" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 6065-U1" />
+            <TypeStr value="iR-ADV 6055-U1" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C2020" />
+            <TypeStr value="iR-ADV C2030" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="MF9280" />
+            <TypeStr value="MF9220" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR C1028" />
+            <TypeStr value="iR C1030" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 4035" />
+            <TypeStr value="iR-ADV 4025" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 4051" />
+            <TypeStr value="iR-ADV 4045" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR1730" />
+            <TypeStr value="iR1740" />
+            <TypeStr value="iR1750" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 8105-U1" />
+            <TypeStr value="iR-ADV 8095-U1" />
+            <TypeStr value="iR-ADV 8085-U1" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 8095" />
+            <TypeStr value="iR-ADV 8085" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 8105" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C5255-B2" />
+            <TypeStr value="iR-ADV C5250-B2" />
+            <TypeStr value="iR-ADV C5240-B2" />
+            <TypeStr value="iR-ADV C5235-B2" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C5240" />
+            <TypeStr value="iR-ADV C5235" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C5255" />
+            <TypeStr value="iR-ADV C5250" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C2220" />
+            <TypeStr value="iR-ADV C2230" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C2225" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C9280-A2" />
+            <TypeStr value="iR-ADV C9270-A2" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C9280" />
+            <TypeStr value="iR-ADV C9270" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 6265" />
+            <TypeStr value="iR-ADV 6255" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 6265-U2" />
+            <TypeStr value="iR-ADV 6255-U2" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 6275" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 6275-U2" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 8205-U2" />
+            <TypeStr value="iR-ADV 8295-U2" />
+            <TypeStr value="iR-ADV 8285-U2" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 8205" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 8295" />
+            <TypeStr value="iR-ADV 8285" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C7280-A2" />
+            <TypeStr value="iR-ADV C7270-A2" />
+            <TypeStr value="iR-ADV C7260-A2" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C7270" />
+            <TypeStr value="iR-ADV C7260" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 400" />
+            <TypeStr value="iR-ADV 500" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 4225" />
+            <TypeStr value="iR-ADV 4235" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 4245" />
+            <TypeStr value="iR-ADV 4251" />
+          </matchingTypeStrs>
+        </device>
+      </deviceList>
+    </method>
+  </methodList>
+</discovery>

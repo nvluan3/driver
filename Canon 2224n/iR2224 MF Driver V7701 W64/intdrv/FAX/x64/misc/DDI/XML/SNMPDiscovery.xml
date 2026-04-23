@@ -1,0 +1,581 @@
+<!--
+*************************************************************************
+*   Raster/PCL5e Fax Driver Installer [ US ]
+*************************************************************************
+-->
+<discovery xmlns="urn:cissnmpdiscovery">
+	
+  <broadcastType>eLimitedBroadcast</broadcastType>
+  <methodList onlyMatching="false" snmpCommunity="public">
+
+    <method mibType="Canon MIB">
+      <OIDList>
+        <PDLType multiLevel="true">.1.3.6.1.4.1.1602.1.5.5.1.2.1.2</PDLType>
+        <suppliesType multiLevel="true">.1.3.6.1.2.1.43.11.1.1.5</suppliesType>
+        <devTypeOID>.1.3.6.1.4.1.1602.1.1.1.1.0</devTypeOID>
+        <devNameOID>.1.3.6.1.4.1.1602.1.1.1.2.0</devNameOID>
+        <macAddrOID hexEncoded="true">.1.3.6.1.2.1.2.2.1.6.1</macAddrOID>
+        <sysDescOID>.1.3.6.1.2.1.1.1.0</sysDescOID>
+      </OIDList>
+			
+      <deviceList>
+        <device name="Not Support">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="CLC4040-iR C4580-H1" />
+            <TypeStr value="CLC5151-iR C5180-H1" />
+            <TypeStr value="CLC-iR C2620-C1" />
+            <TypeStr value="CLC-iR C2620-C2" />
+            <TypeStr value="CLC-iR C3200-C1" />
+            <TypeStr value="CLC-iR C3220-C1" />
+            <TypeStr value="CLC-iR C3220-C2" />
+            <TypeStr value="FAX-L2000" />
+            <TypeStr value="GP200-225PCL" />
+            <TypeStr value="GP200-225PSPCL" />
+            <TypeStr value="GP300-405PCL" />
+            <TypeStr value="GP300-405PSPCL" />
+            <TypeStr value="GP405 LIPS-D2" />
+            <TypeStr value="iC2300" />
+            <TypeStr value="imageRUNNER1133 series" />
+            <TypeStr value="iPR C1" />
+            <TypeStr value="iPR C1PLUS" />
+            <TypeStr value="iPR C1PLUS-T1" />
+            <TypeStr value="iPR C1-T1" />
+            <TypeStr value="iR 2570C EUR" />
+            <TypeStr value="iR 2570C-C2570-F1" />
+            <TypeStr value="iR 2570C-C2570-F2" />
+            <TypeStr value="iR 3100C EUR" />
+            <TypeStr value="iR 3100C-C3100-E1" />
+            <TypeStr value="iR 3170C EUR" />
+            <TypeStr value="iR 3170C-C3170-F1" />
+            <TypeStr value="iR 3170C-C3170-F2" />
+            <TypeStr value="iR 3180C EUR" />
+            <TypeStr value="iR 5870C EUR" />
+            <TypeStr value="iR 5870C-C5870-G1" />
+            <TypeStr value="iR 5880C EUR" />
+            <TypeStr value="iR 6870C EUR" />
+            <TypeStr value="iR 6870C-C6870-G1" />
+            <TypeStr value="iR 6880C EUR" />
+            <TypeStr value="iR C1021" />
+            <TypeStr value="iR C1022" />
+            <TypeStr value="iR C2110" />
+            <TypeStr value="iR C2380" />
+            <TypeStr value="iR C2550" />
+            <TypeStr value="iR C2570" />
+            <TypeStr value="iR C2570-F1" />
+            <TypeStr value="iR C2570-F2" />
+            <TypeStr value="iR C2580" />
+            <TypeStr value="iR C2620" />
+            <TypeStr value="iR C2620-C1" />
+            <TypeStr value="iR C2620-C2" />
+            <TypeStr value="iR C2880" />
+            <TypeStr value="iR C2880-J1" />
+            <TypeStr value="iR C3100" />
+            <TypeStr value="iR C3100-E1" />
+            <TypeStr value="iR C3170" />
+            <TypeStr value="iR C3170-F1" />
+            <TypeStr value="iR C3170-F2" />
+            <TypeStr value="iR C3180" />
+            <TypeStr value="iR C3200" />
+            <TypeStr value="iR C3200-C1" />
+            <TypeStr value="iR C3220" />
+            <TypeStr value="iR C3220-C1" />
+            <TypeStr value="iR C3220-C2" />
+            <TypeStr value="iR C3380" />
+            <TypeStr value="iR C3380-J1" />
+            <TypeStr value="iR C3880" />
+            <TypeStr value="iR C3880-H1" />
+            <TypeStr value="iR C4080" />
+            <TypeStr value="iR C4080-H1" />
+            <TypeStr value="iR C4580" />
+            <TypeStr value="iR C4580-H1" />
+            <TypeStr value="iR C5058" />
+            <TypeStr value="iR C5068" />
+            <TypeStr value="iR C5180" />
+            <TypeStr value="iR C5180-H1" />
+            <TypeStr value="iR C5185" />
+            <TypeStr value="iR C5185-H1" />
+            <TypeStr value="iR C5800" />
+            <TypeStr value="iR C5800-D1" />
+            <TypeStr value="iR C5870" />
+            <TypeStr value="iR C5870-G1" />
+            <TypeStr value="iR C5880" />
+            <TypeStr value="iR C6800" />
+            <TypeStr value="iR C6800-D1" />
+            <TypeStr value="iR C6870" />
+            <TypeStr value="iR C6870-G1" />
+            <TypeStr value="iR C6880" />
+            <TypeStr value="iR1022" />
+            <TypeStr value="iR1023" />
+            <TypeStr value="iR1024" />
+            <TypeStr value="iR1025" />
+            <TypeStr value="iR1600" />
+            <TypeStr value="iR1610" />
+            <TypeStr value="iR2000" />
+            <TypeStr value="iR2010" />
+            <TypeStr value="iR2016" />
+            <TypeStr value="iR2018" />
+            <TypeStr value="iR2020" />
+            <TypeStr value="iR2022" />
+            <TypeStr value="iR2025" />
+            <TypeStr value="iR2030" />
+            <TypeStr value="iR210PCL" />
+            <TypeStr value="iR210PSPCL" />
+            <TypeStr value="iR2200" />
+            <TypeStr value="iR2200i" />
+            <TypeStr value="iR2220" />
+            <TypeStr value="iR2230" />
+            <TypeStr value="iR2250i" />
+            <TypeStr value="iR2270" />
+            <TypeStr value="iR2800" />
+            <TypeStr value="iR2800i" />
+            <TypeStr value="iR2830" />
+            <TypeStr value="iR2850i" />
+            <TypeStr value="iR2870" />
+            <TypeStr value="iR3030" />
+            <TypeStr value="iR3250" />
+            <TypeStr value="iR3300" />
+            <TypeStr value="iR3300i" />
+            <TypeStr value="iR330-400-P1_PSPCL" />
+            <TypeStr value="iR330-400PCL" />
+            <TypeStr value="iR330-400PSPCL" />
+            <TypeStr value="iR330-400-R1_PCL" />
+            <TypeStr value="iR3320" />
+            <TypeStr value="iR3350i" />
+            <TypeStr value="iR3530" />
+            <TypeStr value="iR3570" />
+            <TypeStr value="iR400PCL" />
+            <TypeStr value="iR400PSPCL" />
+            <TypeStr value="iR4530" />
+            <TypeStr value="iR4570" />
+            <TypeStr value="iR5050" />
+            <TypeStr value="iR5050-S2" />
+            <TypeStr value="iR5055-S2" />
+            <TypeStr value="iR5065-S2" />
+            <TypeStr value="iR5070" />
+            <TypeStr value="iR5070-S1" />
+            <TypeStr value="iR5075" />
+            <TypeStr value="iR5075-S2" />
+            <TypeStr value="iR5150i" />
+            <TypeStr value="iR5160i" />
+            <TypeStr value="iR5570" />
+            <TypeStr value="iR5570-M3" />
+            <TypeStr value="iR5570-S1" />
+            <TypeStr value="iR6050i" />
+            <TypeStr value="iR6060i" />
+            <TypeStr value="iR6570" />
+            <TypeStr value="iR6570-M3" />
+            <TypeStr value="iR6570-S1" />
+            <TypeStr value="iR-ADV C2020i" />
+            <TypeStr value="iR-ADV C2020L" />
+            <TypeStr value="iR-ADV C2025" />
+            <TypeStr value="iR-ADV C2030i" />
+            <TypeStr value="iR-ADV C2030L" />
+            <TypeStr value="iR-ADV C2218" />
+            <TypeStr value="iR-ADV C7280" />
+            <TypeStr value="iR-ADV C9060" />
+            <TypeStr value="iR-ADV C9070" />
+            <TypeStr value="L1000" />
+            <TypeStr value="L3000" />
+            <TypeStr value="LASER CLASS 700" />
+            <TypeStr value="LC800" />
+            <TypeStr value="MEDIO LIPS-B1" />
+            <TypeStr value="MEDIO LIPS-D1" />
+            <TypeStr value="MF7110" />
+            <TypeStr value="MF7170i" />
+            <TypeStr value="MF7210" />
+            <TypeStr value="MF7280" />
+            <TypeStr value="MF7330" />
+            <TypeStr value="MF7450" />
+            <TypeStr value="MF7460" />
+            <TypeStr value="MF7470" />
+            <TypeStr value="MF8400 Series" />
+            <TypeStr value="MF8450" />
+            <TypeStr value="MF9100 Series" />
+            <TypeStr value="MF9100/9300 Series" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR3025" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR3035" />
+            <TypeStr value="iR3045" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR3225" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR3230" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR3235" />
+            <TypeStr value="iR3245" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR5055" />
+            <TypeStr value="iR5065" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR C3080" />
+            <TypeStr value="iR C3480" />
+            <TypeStr value="iR C3580" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C9075" />
+            <TypeStr value="iR-ADV C9065" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C9075-A1" />
+            <TypeStr value="iR-ADV C9070-A1" />
+            <TypeStr value="iR-ADV C9065-A1" />
+            <TypeStr value="iR-ADV C9060-A1" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C7065" />
+            <TypeStr value="iR-ADV C7055" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C7065-A1" />
+            <TypeStr value="iR-ADV C7055-A1" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C5051" />
+            <TypeStr value="iR-ADV C5045" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C5035" />
+            <TypeStr value="iR-ADV C5030" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C5051-B1" />
+            <TypeStr value="iR-ADV C5045-B1" />
+            <TypeStr value="iR-ADV C5035-B1" />
+            <TypeStr value="iR-ADV C5030-B1" />
+          </matchingTypeStrs>
+        </device>
+				
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR2520" />
+          </matchingTypeStrs>
+        </device>
+				
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR2525" />
+            <TypeStr value="iR2530" />
+          </matchingTypeStrs>
+        </device>
+				
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR2535" />
+            <TypeStr value="iR2545" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 6065" />
+            <TypeStr value="iR-ADV 6055" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 6075" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 6075-U1" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 6065-U1" />
+            <TypeStr value="iR-ADV 6055-U1" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C2020" />
+            <TypeStr value="iR-ADV C2030" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="MF9280" />
+            <TypeStr value="MF9220" />
+          </matchingTypeStrs>
+        </device>
+
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR C1028" />
+            <TypeStr value="iR C1030" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 4035" />
+            <TypeStr value="iR-ADV 4025" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 4051" />
+            <TypeStr value="iR-ADV 4045" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR1730" />
+            <TypeStr value="iR1740" />
+            <TypeStr value="iR1750" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 8105-U1" />
+            <TypeStr value="iR-ADV 8095-U1" />
+            <TypeStr value="iR-ADV 8085-U1" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 8095" />
+            <TypeStr value="iR-ADV 8085" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 8105" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C5255-B2" />
+            <TypeStr value="iR-ADV C5250-B2" />
+            <TypeStr value="iR-ADV C5240-B2" />
+            <TypeStr value="iR-ADV C5235-B2" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C5240" />
+            <TypeStr value="iR-ADV C5235" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C5255" />
+            <TypeStr value="iR-ADV C5250" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C2220" />
+            <TypeStr value="iR-ADV C2230" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C2225" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C9280-A2" />
+            <TypeStr value="iR-ADV C9270-A2" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C9280" />
+            <TypeStr value="iR-ADV C9270" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 6265" />
+            <TypeStr value="iR-ADV 6255" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 6265-U2" />
+            <TypeStr value="iR-ADV 6255-U2" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 6275" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 6275-U2" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 8205-U2" />
+            <TypeStr value="iR-ADV 8295-U2" />
+            <TypeStr value="iR-ADV 8285-U2" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 8205" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 8295" />
+            <TypeStr value="iR-ADV 8285" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C7280-A2" />
+            <TypeStr value="iR-ADV C7270-A2" />
+            <TypeStr value="iR-ADV C7260-A2" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV C7270" />
+            <TypeStr value="iR-ADV C7260" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 400" />
+            <TypeStr value="iR-ADV 500" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 4225" />
+            <TypeStr value="iR-ADV 4235" />
+          </matchingTypeStrs>
+        </device>
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="iR-ADV 4245" />
+            <TypeStr value="iR-ADV 4251" />
+          </matchingTypeStrs>
+        </device>
+				
+        <device name="Not Support">
+          <matchingTypeStrs name="devTypeOID">
+            <TypeStr value="Canon D460-490" />
+            <TypeStr value="Canon L100/L150/L170" />
+            <TypeStr value="Canon L190/L410 Series" />
+            <TypeStr value="Canon L250" />
+            <TypeStr value="Canon L410 Series" />
+            <TypeStr value="Canon MF3200 Series" />
+            <TypeStr value="Canon MF4100 Series" />
+            <TypeStr value="Canon MF4360-4390" />
+            <TypeStr value="Canon MF4400 Series" />
+            <TypeStr value="Canon MF4500 Series" />
+            <TypeStr value="Canon MF4500w Series" />
+            <TypeStr value="Canon MF4700 Series" />
+            <TypeStr value="Canon MF4800 Series" />
+            <TypeStr value="Canon MF5650" />
+            <TypeStr value="Canon MF5750" />
+            <TypeStr value="D1150/D1170" />
+            <TypeStr value="D1180/MF6680" />
+            <TypeStr value="D1300 Series" />
+            <TypeStr value="LC600 Series" />
+            <TypeStr value="MF4270" />
+            <TypeStr value="MF4320-4350" />
+            <TypeStr value="MF4680" />
+            <TypeStr value="MF4690" />
+            <TypeStr value="MF4690PL" />
+            <TypeStr value="MF5770" />
+            <TypeStr value="MF5850/MF5870" />
+            <TypeStr value="MF5880" />
+            <TypeStr value="MF5900 Series" />
+            <TypeStr value="MF6100 Series" />
+            <TypeStr value="MF6570" />
+            <TypeStr value="MF6580" />
+            <TypeStr value="MF6590" />
+            <TypeStr value="MF6595" />
+            <TypeStr value="MF6640" />
+            <TypeStr value="MF6700 Series" />
+            <TypeStr value="MF6800 Series" />
+            <TypeStr value="MF8000C Series" />
+            <TypeStr value="MF8030" />
+            <TypeStr value="MF8050" />
+            <TypeStr value="MF8170" />
+            <TypeStr value="MF8200C Series" />
+            <TypeStr value="MF8300C Series" />
+            <TypeStr value="MF8330" />
+            <TypeStr value="MF8350" />
+            <TypeStr value="MF8500C Series" />
+          </matchingTypeStrs>
+        </device>
+				
+        <device name="Canon Generic FAX Driver (FAX)">
+          <matchingTypeStrs name="PDLType">
+            <TypeStr value="3">
+              <matchingTypeStrs name="suppliesType">
+                <TypeStr value="3" />
+                <TypeStr value="4" />
+                <TypeStr value="21" />
+              </matchingTypeStrs>
+            </TypeStr>
+          </matchingTypeStrs>
+        </device>
+      </deviceList>
+    </method>
+  </methodList>
+	
+</discovery>

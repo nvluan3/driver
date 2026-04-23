@@ -1,0 +1,1356 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="sk" xmlns="http://www.w3.org/1999/xhtml" xmlns:hta="urn:HTMLApplication">
+	<head>
+		<meta name="Generator" content="CAESAR" />
+		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
+		<title>Ovládač faxu Canon Generic verzia 10.57 pre Microsoft Windows</title>
+		<hta:application id="id_canon_main_window" applicationname="canon_main_window" border="thick" borderstyle="normal" caption="yes" maximizebutton="yes" minimizebutton="yes" showintaskbar="yes" singleinstance="no" sysmenu="yes" version="1.0" windowstate="normal" contextmenu="yes" navigable="yes" />
+		<style type="text/css">div.list{display:list-item!important;list-style-type:Disc;margin-left:40px!important;padding-left:5px!important;}table div.list{margin-left:20px!important;padding-left:5px!important;}div.dash{display:list-item!important;list-style-type:Circle;margin-left:65px!important;padding-left:5px!important;}table div.dash{margin-left:40px!important;padding-left:5px!important;}div.step_sub{display:list-item!important;list-style-type:Square;margin-left:30px!important;padding-left:5px!important;}div.list_link{display:list-item!important;list-style-type:Square;margin-left:50px!important;padding-left:5px!important;}div.h1{background:#F3F8FA!important;}div.h2,div.h2_2line,div.h2_3line{background:#F3F8FA!important;}div.h3{background:#F3F8FA!important;}thead.table_important td.table_important_col_0,thead.table_note td.table_note_col_0{padding:2px 5px 2px 5px!important;}</style>
+		<style type="text/css" >
+			<!--
+*{
+	font-family:"Arial","Helvetica",Sans-serif;
+	/*margin:0;*/
+	/*padding:0;*/
+	/*border:0;*/
+	/*background-color:Transparent;*/
+	font-size:100%;
+	/*font-style:Normal;*/
+	text-decoration:None;
+}
+html{
+	border:0;
+}
+body{
+	margin:0;
+	padding:0;
+	background:#FFFFFF;
+}
+span{
+	color:Inherit;
+}
+div#id_content a{
+	text-decoration:None;
+}
+div#id_content a:link{
+	color:#3366A5;
+	text-decoration:None;
+}
+div#id_content a:visited{
+	color:#3366A5;
+	text-decoration:None;
+}
+div#id_content a:hover{
+	color:#EC6700;
+	background-color:#FFFFCC;
+	text-decoration:Underline;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.chapter_title{
+	background:#4682B4;
+	padding:2px 5px 2px 5px;
+	border-bottom:Solid 1px #4682B4;
+	font-weight:Bold;
+	font-size:80%;
+	margin-bottom:16px;
+	text-align:Right;
+	color:#FFFFFF;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h1{
+	padding:32px 0 2px 8px;
+	border-bottom:Solid 1px #4682B4;
+	background:#F3F8FA;
+	font-weight:Bold;
+	font-size:120%;
+	margin-bottom:16px;
+	vertical-align:Bottom;
+	text-align:Left;
+	color:#000080;
+	position:Relative;
+}
+div.h1 a{
+	position:Absolute;
+	*position:Static!important;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h2,
+div.h2_2line,
+div.h2_3line{
+	border:Solid 1px #4682B4;
+	padding:5px;
+	margin:30px 10px 5px 10px;
+	font-size:90%;
+	font-weight:Bold;
+	background:#F3F8FA;
+	color:#000080;
+}
+div.h2 a,
+div.h2_2line a,
+div.h2_3line a{
+	font-weight:Bold;
+	text-decoration:None;
+	color:#0000FF;
+}
+div.h2 img,
+div.h2_2line img,
+div.h2_3line img{
+	vertical-align:Middle;
+	margin-right:2px;
+	margin-left:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h3{
+	padding:5px;
+	margin:25px 10px 5px 10px;
+	font-size:90%;
+	font-weight:Bold;
+	background:#F3F8FA;
+	border-bottom:Solid 1px #87CEEB;
+	color:#000080;
+}
+div.h3 a{
+	font-weight:Bold;
+	text-decoration:None;
+	color:#0000FF;
+}
+div.h3 img{
+	vertical-align:Middle;
+	margin-right:2px;
+	margin-left:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h4{
+	margin:20px 10px 5px 10px;
+	font-weight:Bold;
+	font-size:90%;
+	border-Bottom:Solid 1px #87CEEB;
+	background:#FFFFFF;
+	padding:0px 5px;
+	color:#000080;
+}
+div.h4 img{
+	vertical-align:Middle;
+	margin-right:2px;
+	margin-left:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h5{
+	margin:20px 10px 5px 15px;
+	font-weight:Bold;
+	font-size:80%;
+	color:#000080;
+}
+div.h5 img{
+	vertical-align:Middle;
+	margin-right:5px;
+	margin-left:4px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.h6{
+	margin:15px 10px 5px 30px;
+	font-weight:Bold;
+	font-size:80%;
+	color:#000080;
+}
+div.h6 img{
+	vertical-align:Middle;
+	margin-right:2px;
+	margin-left:0px;
+}
+table div.h6{
+	margin-left:0px;
+	margin-top:10px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text{
+	font-size:80%;
+	margin:5px 10px 5px 30px;
+	color:#000000;
+}
+table div.text{
+	margin:3px 0 0 0;
+}
+div.text img{
+	vertical-align:Middle;
+}
+table div.text img{
+	vertical-align:Middle;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text_level1{
+	font-size:80%;
+	margin:5px 10px 5px 40px;
+	color:#000000;
+}
+table div.text_level1{
+	margin:3px 0 0 10px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text_level2{
+	font-size:80%;
+	margin:5px 10px 5px 50px;
+	color:#000000;
+}
+table div.text_level2{
+	margin:3px 0 0 20px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text_level3{
+	font-size:80%;
+	margin:5px 10px 5px 60px;
+	color:#000000;
+}
+table div.text_level3{
+	margin:3px 0 0 30px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text_center{
+	text-align:Center;
+	font-size:80%;
+	color:#000000;
+}
+table div.text_center{
+	margin:3px 0 0 0;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.text_right{
+	text-align:Right;
+	font-size:80%;
+	color:#000000;
+	margin-right:10px;
+}
+table div.text_right{
+	margin-right:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.annotation{
+	font-size:75%;
+	margin:0px 10px 5px 55px;
+	text-indent:-1.5em;
+	color:#000000;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.list{
+	background:Transparent;
+	_background:Transparent;
+	margin-left:30px;
+	margin-right:10px;
+	margin-top:2px;
+	margin-bottom:2px;
+	padding-left:20px;
+	padding-top:0px;
+	font-weight:Normal;
+	font-size:80%;
+	color:#000000;
+}
+table div.list{
+	margin-left:0px;
+}
+div.list img{
+	vertical-align:Top;
+}
+table div.list img{
+	vertical-align:Top;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+div.dash{
+	margin-left:50px;
+	margin-right:10px;
+	margin-top:2px;
+	margin-bottom:2px;
+	font-weight:Normal;
+	font-size:80%;
+	background:Transparent;
+	_background:Transparent;
+	padding:0px 0px 0px 20px;
+	color:#000000;
+}
+*:first-child+html div.dash{
+	background:Transparent;
+}
+table div.dash{
+	margin-left:12px;
+}
+div.dash img{
+	vertical-align:Top;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.example{
+	font-size:80%;
+	font-family:Monospace;
+	margin:5px 10px 5px 30px;
+	clear:Both;
+	background:#707080;
+	padding:5px;
+	color:#FFFFFF;
+}
+div#id_content div.example a:link{
+	color:#0000FF;
+	text-decoration:None;
+}
+div#id_content div.example a:visited{
+	color:#0000FF;
+	text-decoration:None;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.path{
+	padding:3px 10px 3px 20px;
+	font-size:80%;
+	margin:0px 30px;
+	background:Transparent;
+	_background:Transparent;
+	color:#666666;
+}
+div.path img{
+	vertical-align:Middle;
+}
+table div.path{
+	margin-left:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.step_number{
+	background:#F8F8F8;
+	font:Bold 200% "Arial";
+	color:#4682B4;
+	padding:0px 5px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:20px;
+	margin-bottom:0px;
+}
+div.step_number span{
+	font:Bold 100% "Arial";
+	color:#4682B4;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.step_path{
+	padding:3px 10px 3px 30px;
+	font-size:80%;
+	margin:0px 10px;
+	background:#F8F8F8;
+	_background:#F8F8F8;
+	color:#666666;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.step_text{
+	font-weight:Bold;
+	padding:0px 10px 15px 5px;
+	font-size:80%;
+	margin:0px 10px 10px 10px;
+	background:#F8F8F8;
+	color:#000000;
+}
+div.step_text img{
+	vertical-align:Middle;
+}
+@media print{div.step_text{
+	padding:0px 10px 20px 5px;
+}}
+/*-----------------------------------------------------------------------------------------------*/
+div.step_sub{
+	font-size:80%;
+	font-weight:Bold;
+	margin:10px 10px 5px 15px;
+	padding-left:15px;
+	background:Transparent;
+	_background:Transparent;
+	color:#000000;
+}
+div.step_sub img{
+	vertical-align:Top;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.figure{
+	text-align:Left;
+	margin-left:30px;
+	margin-bottom:10px;
+}
+table div.figure{
+	margin-left:0;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.link{
+	margin:10px;
+	font-size:80%;
+	color:#3366A5;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.link a{
+	text-decoration:None;
+	padding-left:10px;
+	background:Transparent;
+	_background:Transparent;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.list_link{
+	background:Transparent;
+	_background:Transparent;
+	margin-left:30px;
+	margin-right:10px;
+	margin-bottom:0px;
+	padding-left:20px;
+	padding-top:1px;
+	font-weight:Normal;
+	font-size:80%;
+	color:#3366A5;
+}
+table div.list_link{
+	margin-left:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.link_to_top{
+	text-align:Right;
+	padding:5px 10px 30px 10px;
+	font-size:80%;
+	color:#3366A5;
+	border-top:Dotted 1px #87CEEB;
+	margin-top:30px;
+}
+@media print{div.link_to_top{
+	display:None;
+}}
+div.link_to_top a{
+	text-decoration:None;
+	padding-left:12px;
+	background:Transparent;
+	_background:Transparent;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.trouble_shooting{
+	margin:10px 10px 10px 30px;
+}
+table.trouble_shooting{
+	border-collapse:Collapse;
+	table-layout:Fixed;
+}
+td.trouble_shooting{
+	border:Solid 1px #FFFFFF;
+}
+td.trouble_shooting_col_0{
+	padding:5px;
+	vertical-align:Middle;
+	font-size:100%;
+	width:80px;
+	background:#C0C0C0;
+	padding-bottom:10px;
+}
+td.trouble_shooting_col_1{
+	background:#EFEFEF;
+	padding-top:5px;
+	padding-bottom:10px;
+	padding-left:5px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.outline{
+	margin:10px 10px 10px 30px;
+}
+table.outline{
+	border-collapse:Collapse;
+	font-size:100%;
+}
+td.outline{
+	padding:10px 5px 10px 5px;
+}
+td.outline_col_0{
+	vertical-align:Middle;
+	text-align:Center;
+	border:Solid 1px #87CEEB;
+	background:#F5F5F5;
+	width:30px;
+	font-size:130%;
+}
+td.outline_col_0 div.h6{
+	color:#4682B4;
+	margin:0px;
+}
+td.outline_col_1{
+	vertical-align:Middle;
+	border:Solid 1px #87CEEB;
+	border-left:None;
+	background:#F5F5F5;
+	width:150px;
+}
+td.outline_col_1 div.h6{
+	margin:0px;
+	color:#000000;
+}
+td.outline_col_2{
+	vertical-align:Middle;
+	background:#FFFFFF;
+	border:Solid 1px #87CEEB;
+	padding:3px 3px 3px 10px;
+}
+td.outline_col_2 div.list{
+	background:Transparent;
+	_background:Transparent;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.table_ui{
+	margin:5px 10px 10px 30px;
+}
+table.table_ui{
+	table-layout:Auto;
+	border-collapse:Collapse;
+	border:None;
+	border-bottom:Solid 1px #E0E0E0;
+}
+td.table_ui_col_0{
+	padding:0px;
+	vertical-align:Top;
+	font-size:100%;
+	width:150px;
+	color:#000000;
+	padding:0px 0px 5px 0px;
+	border-right:None;
+}
+td.table_ui_col_1{
+	background:#FFFFFF;
+	padding:3px;
+	padding-left:10px;
+	border:Solid 1px #E0E0E0;
+	border-left:Solid 1px #E0E0E0;
+	border-right:None;
+	border-bottom:None;
+	vertical-align:Top;
+}
+td.table_ui_col_0 div.ui_level0{
+	background:#FFFFFF;
+	font-size:80%;
+	padding:6px 3px 1px 3px;
+	border-top:Solid 1px #E0E0E0;
+	border-right:None;
+	border-left:Solid 10px #FFFFFF;
+	margin-left:0px;
+}
+td.table_ui_col_0 div.ui_level1{
+	background:#FFFFFF;
+	font-size:80%;
+	padding:6px 3px 10px 3px;
+	border-top:Solid 1px #E0E0E0;
+	border-right:None;
+	border-left:Solid 10px #87BEDB;
+	margin-left:0px;
+}
+td.table_ui_col_0 div.ui_level2{
+	background:#FFFFFF;
+	font-size:80%;
+	padding:6px 3px 10px 3px;
+	margin-left:10px;
+	border-top:Solid 1px #E0E0E0;
+	border-right:None;
+	border-left:Solid 10px #A0D0EA;
+}
+td.table_ui_col_0 div.ui_level3{
+	background:#FFFFFF;
+	font-size:80%;
+	padding:6px 3px 10px 3px;
+	margin-left:20px;
+	border-top:Solid 1px #E0E0E0;
+	border-right:None;
+	border-left:Solid 10px #C6E5F6;
+}
+td.table_ui_col_0 div.ui_level1 img,
+td.table_ui_col_0 div.ui_level2 img,
+td.table_ui_col_0 div.ui_level3 img{
+	vertical-align:Middle;
+}
+/*-----------------------------------------------------------------------------------------------*/
+table div.table_important,
+table div.table_caution,
+table div.table_warning,
+table div.table_note{
+	margin-left:20px;
+}
+div.table_important,
+div.table_caution,
+div.table_warning,
+div.table_note{
+	margin:10px 10px 10px 30px;
+}
+*:first-child+html table.table_important,
+*:first-child+html table.table_caution,
+*:first-child+html table.table_warning,
+*:first-child+html table.table_note{
+	width:Auto;
+	table-layout:Fixed;
+}
+table.table_important,
+table.table_caution,
+table.table_warning,
+table.table_note{
+	background:#FFFFFF;
+	border-collapse:Collapse;
+	font-size:100%;
+	width:100%;
+	_width:Auto;
+	_table-layout:Fixed;
+}
+*:first-child+html table td.table_important_col_0,
+*:first-child+html table td.table_caution_col_0,
+*:first-child+html table td.table_warning_col_0,
+*:first-child+html table td.table_note_col_0{
+	width:Auto;
+}
+table td.table_important_col_0,
+table td.table_caution_col_0,
+table td.table_warning_col_0,
+table td.table_note_col_0{
+	width:100%;
+	_width:Auto;
+	vertical-align:Top;
+}
+*:first-child+html tbody.table_important td.table_important_col_0,
+*:first-child+html tbody.table_caution td.table_caution_col_0,
+*:first-child+html tbody.table_warning td.table_warning_col_0,
+*:first-child+html tbody.table_note td.table_note_col_0{
+	width:Auto;
+}
+tbody.table_important td.table_important_col_0,
+tbody.table_caution td.table_caution_col_0,
+tbody.table_warning td.table_warning_col_0,
+tbody.table_note td.table_note_col_0{
+	padding-left:10px;
+	width:100%;
+	_width:Auto;
+}
+@media print{
+thead.table_important td.table_important,
+thead.table_caution td.table_caution,
+thead.table_warning td.table_warning,
+thead.table_note td.table_note{
+	padding-bottom:5px;
+}}
+tbody.table_important td.table_important,
+tbody.table_caution td.table_caution,
+tbody.table_warning td.table_warning,
+tbody.table_note td.table_note{
+	padding-left:10px;
+	padding-top:2px;
+	border-bottom:None;
+	padding-bottom:5px;
+	border-top:None;
+}
+thead.table_important td.table_important_col_0,
+thead.table_note td.table_note_col_0{
+	padding:2px 5px 2px 30px;
+	text-align:Left;
+	border-bottom:None;
+}
+thead.table_caution td.table_caution_col_0,
+thead.table_warning td.table_warning_col_0{
+	padding:2px 23px 5px 5px;
+	text-align:Center;
+	border-bottom:Solid 1px #808080;
+}
+thead.table_caution td.table_caution_col_0 div img,
+thead.table_warning td.table_warning_col_0 div img{
+	margin-right:3px;
+}
+thead.table_important td.table_important div,
+thead.table_caution td.table_caution div,
+thead.table_warning td.table_warning div,
+thead.table_note td.table_note div{
+	font-weight:Bold;
+}
+table.table_important{
+	border:Solid 1px #808080;
+}
+table.table_caution,
+table.table_warning{
+	border:Solid 1px #808080;
+}
+table.table_note{
+	border:Solid 1px #808080;
+}
+thead.table_important td.table_important{
+	background:Transparent;
+	_background:Transparent;
+}
+thead.table_caution td.table_caution div,
+thead.table_warning td.table_warning div{
+	font-size:120%;
+}
+
+thead.table_note td.table_note{
+	background:Transparent;
+	_background:Transparent;
+}
+thead.table_important td.table_important div{
+	color:#4682B4;
+}
+thead.table_caution td.table_caution div,
+thead.table_warning td.table_warning div{
+	color:#000000;
+}
+thead.table_note td.table_note div{
+	color:#808080;
+}
+thead.table_important td.table_important_col_0,
+tbody.table_important td.table_important_col_0{
+	border-right:Solid 1px #808080;
+}
+thead.table_caution td.table_caution_col_0,
+tbody.table_caution td.table_caution_col_0,
+thead.table_warning td.table_warning_col_0,
+tbody.table_warning td.table_warning_col_0{
+	border-right:Solid 1px #808080;
+}
+thead.table_note td.table_note_col_0,
+tbody.table_note td.table_note_col_0{
+	border-right:Solid 1px #808080;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.table_no_border{
+	margin:10px 10px 10px 30px;	
+}
+table div.table_no_border{
+	margin-left:10px;
+}
+table.table_no_border{
+	border:None;
+	width:Auto;
+}
+thead.table_no_border td.table_no_border{
+	padding:0px 5px 0px 0px;
+	border:None;
+	font-size:100%;
+	text-align:Left;
+	font-weight:Bold;
+	vertical-align:Middle;
+}
+tbody.table_no_border td.table_no_border{
+	padding:0px 5px 0px 0px;
+	vertical-align:Top;
+	border:None;
+	font-size:100%;
+	padding-bottom:5px;
+}
+tbody.table_no_border td.table_no_border div{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.table_matrix{
+	margin:10px 10px 10px 30px;
+}
+table div.table_matrix{
+	margin-left:20px;
+}
+table.table_matrix{
+	border-collapse:Collapse;
+	border:Solid 1px #808080;
+}
+thead.table_matrix td.table_matrix{
+	padding:5px;
+	background-color:#DDDDDD;
+	border:Solid 1px #808080;
+	font-size:100%;
+	text-align:Center;
+	font-weight:Normal;
+	vertical-align:Middle;
+}
+tbody.table_matrix td.table_matrix_col_0{
+	padding:5px 0px;
+	padding-left:5px;
+	width:120px;
+	vertical-align:Middle;
+	background-color:#EFEFEF;
+	border:Solid 1px #808080;
+	font-size:100%;
+	font-weight:Normal;
+}
+tbody.table_matrix td.table_matrix{
+	padding:3px 10px;
+	vertical-align:Middle;
+	border:Solid 1px #808080;
+	font-size:100%;
+}
+thead.table_matrix td.table_matrix_col_1{
+	background-color:#DDDDDD;
+	border:Solid 1px #808080;
+	padding:5px;
+}
+tbody.table_matrix td.table_matrix_col_1{
+	vertical-align:Middle;
+	border:Solid 1px #808080;
+}
+thead.table_matrix td.table_matrix_col_0{
+	border:Solid 1px #808080;
+	background-color:#DDDDDD;
+	padding:5px;
+}
+thead.table_matrix td.table_matrix div{
+	color:#000000;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.table_general{
+	margin:10px 10px 10px 30px;
+}
+table div.table_general{
+	margin-left:20px;
+}
+table.table_general{
+	border-collapse:Collapse;
+	border:Solid 1px #808080;
+}
+thead.table_general td.table_general{
+	padding:5px;
+	border:Solid 1px #808080;
+	font-size:100%;
+	text-align:Center;
+	font-weight:Normal;
+	vertical-align:Middle;
+}
+tbody.table_general td.table_general_col_0{
+	padding:5px 0px;
+	padding-left:5px;
+	width:120px;
+	vertical-align:Middle;
+	border:Solid 1px #808080;
+	font-size:100%;
+	font-weight:Normal;
+}
+tbody.table_general td.table_general{
+	padding:3px 10px;
+	vertical-align:Middle;
+	border:Solid 1px #808080;
+	font-size:100%;
+}
+thead.table_general td.table_general_col_1{
+	border:Solid 1px #808080;
+	padding:5px;
+}
+tbody.table_general td.table_general_col_1{
+	vertical-align:Middle;
+	border:Solid 1px #808080;
+}
+thead.table_general td.table_general_col_0{
+	border:Solid 1px #808080;
+	padding:5px;
+}
+thead.table_general td.table_general div{
+	color:#000000;
+}
+/*-----------------------------------------------------------------------------------------------*/
+div.table_number{
+	margin:10px 10px 10px 35px;	
+}
+table div.table_number{
+	margin-left:25px;
+}
+table.table_number{
+	border-collapse:Collapse;
+	border:None;
+	width:Auto;
+}
+tbody.table_number td.table_number{
+	padding:0px 5px 0px 0px;
+	border:None;
+	font-size:100%;
+	text-align:Left;
+	vertical-align:Top;
+}
+tbody.table_number td.table_number_col_0{
+	width:1.5em;
+	border:None;
+}
+tbody.table_number td.table_number_col_0 div{
+	margin-left:0px;
+	margin-right:0px;
+	font-weight:Normal;
+	text-align:Right;
+}
+tbody.table_number td.table_number_col_1{
+	width:Auto;
+}
+/*-----------------------------------------------------------------------------------------------*/
+span.bold{
+	font-weight:Bold;
+}
+span.italic{
+	font-style:Italic;
+}
+span.no_break{
+	white-space:Nowrap;
+}
+span.superscript{
+	vertical-align:Super;
+	font-size:80%;
+}
+span.subscript{
+	vertical-align:Sub;
+	font-size:80%;
+}
+span.underline{
+	text-decoration:Underline;
+}
+span.color_white{
+	color:#FFFFFF;
+}
+span.color_blue{
+	color:#0000FF;
+}
+span.color_red{
+	color:#FF0000;
+}
+span.color_orange{
+	color:#FFA500;
+}
+span.color_green{
+	color:#008000;
+}
+span.bold\+color_red{
+	color:#FF0000;
+	font-weight:Bold;
+}
+span.bold\+italic{
+	font-style:Italic;
+	font-weight:Bold;
+}
+span.bold\+superscript{
+	vertical-align:Super;
+	font-size:80%;
+	font-weight:Bold;
+}
+span.bold\+underline{
+	text-decoration:Underline;
+	font-weight:Bold;
+}
+span.italic\+superscript{
+	vertical-align:Super;
+	font-size:80%;
+	font-style:Italic;
+}
+span.yenmark{
+	/*font-family:"MS PGothic","Osaka","Arial","Helvetica",Sans-serif;*/
+}
+span.yenmark\+italic{
+	/*font-family:"MS PGothic","Osaka","Arial","Helvetica",Sans-serif;*/
+	font-style:Italic;
+}
+span.bold\+color_orange{
+	color:#FFA500;
+	font-weight:Bold;
+}
+span.bold\+superscript\+color_red{
+	color:#FF0000;
+	vertical-align:Super;
+	font-size:80%;
+	font-weight:Bold;
+}
+span.bold\+superscript\+color_orange{
+	color:#FFA500;
+	vertical-align:Super;
+	font-size:80%;
+	font-weight:Bold;
+}
+span.bold\+no_break{
+	white-space:Nowrap;
+	font-weight:Bold;
+}
+span.bold\+no_break\+superscript{
+	white-space:Nowrap;
+	font-weight:Bold;
+	vertical-align:Super;
+	font-size:80%;
+}
+span.no_break\+superscript{
+	white-space:Nowrap;
+	vertical-align:Super;
+	font-size:80%;
+}
+span.superscript\+color_red{
+	color:#FF0000;
+	vertical-align:Super;
+	font-size:80%;
+}
+span.superscript\+color_orange{
+	color:#FFA500;
+	vertical-align:Super;
+	font-size:80%;
+}
+span.ui_text{
+}
+span.ui_bold{
+	font-weight:Bold;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+div#id_breadcrumbs{
+	font-size:70%;
+	position:Absolute;
+	left:5px;
+	top:10px;
+	z-index:1;
+	cursor:Default;
+	display:None;
+}
+div#id_breadcrumbs a{
+	margin:0px 5px;
+}
+div#id_breadcrumbs a:link{
+	color:#0000FF;
+}
+div#id_breadcrumbs a:visited{
+	color:#0000FF;
+}
+span.style_name{
+	font:Normal 8pt "Tahoma";
+	color:#FF0000;
+	margin:0px 5px;
+}
+div.open_close_all{
+	font-size:80%;
+	margin:5px 10px 5px 30px;
+	color:#3366A5;
+	text-align:Right;
+}
+div.open_close_next_sibling{
+	font-size:80%;
+	margin:5px 10px 5px 30px;
+	color:#3366A5;
+	text-align:Right;
+}
+div#id_content div.open_close_all a:hover,
+div#id_content div.open_close_next_sibling a:hover{
+	text-decoration:None;
+}
+a.open_all:hover,
+a.close_all:hover,
+a.open_next_sibling:hover,
+a.close_next_sibling:hover{
+	border-bottom:Solid 1px #3366A5;
+}
+a.open_all,
+a.close_all,
+a.open_next_sibling,
+a.close_next_sibling{
+	border-bottom:Dotted 1px #3366A5;
+	padding-right:15px;
+}
+a.open_all{
+	margin-right:5px;
+}
+a.open_next_sibling{
+}
+a.close_all,
+a.close_next_sibling{
+}
+div.invisible_begin{
+	color:#FFFFFF;
+	font-size:80%;
+	text-align:Right;
+}
+div.invisible_end{
+	color:#FFFFFF;
+	font-size:80%;
+	text-align:Right;
+}
+div.invisible{
+	display:None;
+	border-right:Dotted 1px #808080;
+	margin-right:10px;
+}
+@media print{
+div.open_close_all{
+	display:None;
+}
+div.open_close_next_sibling{
+	display:None;
+}
+div.invisible{
+	display:Block;
+	border-right:None;
+	margin-right:0px;
+}}
+div.hr{
+	border-top:Solid 2px #808080;
+	margin:25px 10px 0px 10px;
+	font-size:0pt;
+	color:#FFFFFF;
+}
+hr{
+	color:#808080;
+	background-color:#808080;
+	margin:25px 10px 0px 10px;
+	height:2px;
+	border:0;
+}
+/*-----------------------------------------------------------------------------------------------*/
+@supports (-ms-accelerator:true) { @media print {
+	div./*[style]*/list {
+		background: none!important;
+		position: relative;
+	}
+	div./*[style]*/list:before {
+		content: url(style_list.gif);
+		line-height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 4px;
+	}
+	div./*[style]*/dash {
+		background: none!important;
+		position: relative;
+	}
+	div./*[style]*/dash:before {
+		content: url(style_dash.gif);
+		line-height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 4px;
+	}
+	div./*[style]*/path {
+		background: none!important;
+		position: relative;
+	}
+	div./*[style]*/path:before {
+		content: url(style_path.gif);
+		line-height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 1px;
+	}
+	div./*[style]*/step_path {
+		background: #F8F8F8!important;
+		position: relative;
+	}
+	div./*[style]*/step_path:before {
+		content: url(style_path.gif);
+		line-height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 8px;
+	}
+	div./*[style]*/step_sub {
+		background: none!important;
+		position: relative;
+	}
+	div./*[style]*/step_sub:before {
+		content: url(style_step_sub.gif);
+		line-height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 8px;
+	}
+	div./*[style]*/step_sub {
+		background: none!important;
+		position: relative;
+	}
+	div./*[style]*/step_sub:before {
+		content: url(style_step_sub.gif);
+		line-height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 8px;
+	}
+	div./*[style]*/link a {
+		background: none!important;
+		position: relative;
+	}
+	div./*[style]*/link a:before {
+		content: url(style_link.gif);
+		line-height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	div./*[style]*/list_link {
+		background: none!important;
+		position: relative;
+	}
+	div./*[style]*/list_link:before {
+		content: url(style_link.gif);
+		line-height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	thead./*[style]*/table_important td./*[style]*/table_important {
+		background: none!important;
+		position: relative;
+	}
+	thead./*[style]*/table_important td./*[style]*/table_important:before {
+		content: url(style_important.gif);
+		line-height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	thead./*[style]*/table_note td./*[style]*/table_note {
+		background: none!important;
+		position: relative;
+	}
+	thead./*[style]*/table_note td./*[style]*/table_note:before {
+		content: url(style_note.gif);
+		line-height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+}}
+/*
+ * name: html_manual_template_pl_centering_en_151019
+ * language: en
+ * version: 200706
+ * date: 2020/07/06
+ */
+-->
+		</style>
+	</head>
+	<body>
+		<!--CONTENT_START-->
+		<div id="id_content">
+			<div class="h1"><a id="df3bea22ca1bd001772585b8368e7dcd"></a>Ovládač faxu Canon Generic verzia 10.57 pre Microsoft Windows</div>
+			<div class="text">Pred použitím tohto softvéru si prečítajte pokyny LICENČNÁ ZMLUVA K SOFTVÉRU CANON zobrazené počas inštalácie. Môžete tiež zobraziť LICENČNÁ ZMLUVA K SOFTVÉRU CANON (EULAsk-SK.rtf) uložené v [misc] na priloženom CD-ROM alebo v priečinku s prevzatým ovládačom.</div>
+			<div class="text">Tento súbor README obsahuje doplnkové informácie, ktoré vám majú pomôcť pri inštalácii a používaní softvéru ovládača faxu v systéme Microsoft Windows.</div>
+			<div class="text">Ako pri väčšine softvérových a hardvérových výrobkov, niektoré informácie sú k dispozícii po vytvorení návodu. Aktualizované informácie týkajúce sa tohto softvéru ovládača sú uvedené v tomto súbore README. Ak potrebujete ďalšiu pomoc, obráťte sa na miestne zastúpenie spoločnosti Canon.</div>
+			<div class="text">Všetky názvy značiek a názvy produktov uvedené v tomto dokumente sú registrované ochranné známky alebo ochranné známky príslušných vlastníkov.</div>
+			<div class="text">All other trademarks are the property of their respective owners.</div>
+			<div class="h2"><a id="354a09d9c1248a49c2e1db8eea02b0bf"></a>OBSAH</div>
+			<div class="text"><a href="#cf3d925ae8750e1ad7421407ec488b62">Prehľad</a></div>
+			<div class="text"><a href="#1d73139fd5cfcede5cb89645ead72b71">Systémové požiadavky</a></div>
+			<div class="text"><a href="#9b5bcd3fbd2009731ce32e5dc05fadcd">Inštalácia ovládača</a></div>
+			<div class="text"><a href="#716910206d9c7d4ed92497f650b2e755">Konfigurácia nastavení faxového prenosu pomocou ovládača</a></div>
+			<div class="text"><a href="#809221e1bde0f6449fb73a9ada3b2cf9">Odkazovanie na Pomocníka</a></div>
+			<div class="text"><a href="#3dc11d3caca53528014c44333c457faa">Dostupný počet cieľov</a></div>
+			<div class="text"><a href="#70e4d832386bc9d8389ca15bbf0f3729">Upozornenia, limity a obmedzenia počas inštalácie</a></div>
+			<div class="text"><a href="#01c23a0d46d9aa6863ccd11d44e13ced">Upozornenia, limity a obmedzenia počas posielania faxu</a></div>
+			<div class="text"><a href="#6a6da8c9f409ef3310e7d2cc63819c3c">Obmedzenia týkajúce sa nastavení zariadenia</a></div>
+			<div class="h2"><a id="cf3d925ae8750e1ad7421407ec488b62"></a>Prehľad</div>
+			<div class="text">Tento ovládač faxu umožňuje posielať faxy z akejkoľvek aplikácie systému Windows na vzdialené faxové zariadenie, ak vaše zariadenie obsahuje voliteľnú faxovú dosku.</div>
+			<div class="h2"><a id="1d73139fd5cfcede5cb89645ead72b71"></a>Systémové požiadavky</div>
+			<div class="text">Tento ovládač možno používať v týchto systémoch a prostrediach.</div>
+			<div class="h5"><a id="73d3cb84ad833e71a3775a70a480f516"></a>Softvér operačného systému</div>
+			<div class="text">Microsoft Windows 10/11</div>
+			<div class="text">Microsoft Windows Server 2012/2012 R2/2016/2019/2022</div>
+			<div class="h5"><a id="79e2836d6ff99846a23e1c4bc9c94b96"></a>S počítačovým prostredím založeným na serveri</div>
+			<div class="h6"><a id="2a59f3f591febb2ec6bf618fe8bd0582"></a>Kompatibilný terminálový server Windows (služba)</div>
+			<div class="text">Microsoft Windows Server 2012/2012 R2/2016/2019/2022</div>
+			<div class="h6"><a id="91ed58530d71c10ed72be590e0757886"></a>Kompatibilný softvér</div>
+			<div class="text">Citrix Virtual Apps and Desktops 7 1912(LTSR)/2109/2112/2203(LTSR)/2206</div>
+			<div class="text">VMware vSphere 6.7/7.0</div>
+			<div class="text">Microsoft Application Virtualization (App-V)</div>
+			<div class="text">Remote Desktop Service on Windows Server 2012 R2/2016/2019/2022</div>
+			<div class="h6"><a id="05346a94c9b581ec5083cd9e37baacd7"></a>Operačné systémy pre klastrový server</div>
+			<div class="text">Microsoft Windows Server 2012/2012 R2/2016/2019/2022</div>
+			<div class="h5"><a id="b645da8b6d74c65ddfca16a856bbe76e"></a>Počítač</div>
+			<div class="text">Akýkoľvek počítač, na ktorom správne funguje hore uvedený operačný systém.</div>
+			<div class="text">Architektúra ARM sa však nepodporuje.</div>
+			<div class="h2"><a id="9b5bcd3fbd2009731ce32e5dc05fadcd"></a>Inštalácia ovládača</div>
+			<div class="text">Na aktualizáciu alebo pridanie ovládača odporúčame použiť inštalačný program. Ovládač môžete aktualizovať alebo pridať aj pomocou Sprievodcu pridaním tlačiarne systému Windows.</div>
+			<div class="text">Podrobnosti o postupe inštalácie nájdete v inštalačnej príručke na lokalite portálu spoločnosti Canon (https://oip.manual.canon/).</div>
+			<div class="text">Upozornenia týkajúce sa inštalácie nájdete v časti „<a href="#70e4d832386bc9d8389ca15bbf0f3729">Upozornenia, limity a obmedzenia počas inštalácie</a>“.</div>
+			<div class="h2"><a id="716910206d9c7d4ed92497f650b2e755"></a>Konfigurácia nastavení faxového prenosu pomocou ovládača</div>
+			<div class="text">Ak chcete konfigurovať nastavenia faxového prenosu pomocou ovládača, postupujte podľa ďalej uvedených pokynov.</div>
+			<div class="h3"><a id="8053cd3072a73ec8cd11298bb25fc59f"></a>Postup pri zmene predvolených nastavení</div>
+			<div class="text">Zobrazte obrazovku nastavení faxového prenosu a nakonfigurujte predvolené nastavenia ovládača podľa niektorého z postupov uvedených dole.</div>
+			<div class="text"><span class="bold">V prípade zobrazenia z položky [Nastavenie] v ponuke Štart</span></div>
+			<div class="text_level1">1. Zobrazte položku [Bluetooth a zariadenia] (alebo [Zariadenia]).</div>
+			<div class="text_level1">2. V ponuke [Tlačiarne a skenery] zobrazte obrazovku správy pre nastavované zariadenie.</div>
+			<div class="text_level2">Ak chcete zobraziť obrazovku správy, kliknite na zariadenie alebo pre príslušné zariadenie kliknite na položku [Spravovať].</div>
+			<div class="text_level1">3. Pre nastavované zariadenie kliknite na položku [Predvoľby tlače].</div>
+			<div class="text"><span class="bold">V prípade zobrazenia z ponuky [Ovládací panel] systému Windows</span></div>
+			<div class="text_level1">1. Zobrazte položku [Zariadenia a tlačiarne].</div>
+			<div class="text_level2">Ak sa zobrazí obrazovka [Nastavenie], postupujte podľa vyššie uvedeného postupu zobrazenia obrazovky z [Nastavenie].</div>
+			<div class="text_level1">2. V zozname tlačiarní kliknite pravým tlačidlom na zariadenie, ktoré chcete nastaviť → vyberte položku [Predvoľby tlače] zo zobrazenej ponuky.</div>
+			<div class="h3"><a id="569dbc4c5e0ded43af67ad8cf81e2c42"></a>Nastavenie pri odosielaní faxu</div>
+			<div class="text">1. Vyberte ponuku tlače príslušnej aplikácie.</div>
+			<div class="text">2. Na zobrazenej obrazovke tlače vyberte zariadenie, ktoré používate → kliknite na položku [Preferencie].</div>
+			<div class="text_level1">V závislosti od aplikácie sa namiesto názvu [Preferencie] môže používať názov „Vlastnosti tlačiarne“ alebo „Vlastnosti“.</div>
+			<div class="h2"><a id="809221e1bde0f6449fb73a9ada3b2cf9"></a>Odkazovanie na Pomocníka</div>
+			<div class="text">Aby bolo možné lepšie pochopiť používanie príručiek, spoločnosť CANON INC. používa nástroje na analýzu webu poskytované službou Google Analytics. Pri používaní služby Google Analytics sa nezaznamenávajú žiadne osobné identifikačné údaje o našich zákazníkoch. Podrobné informácie nájdete v nasledujúcej časti.</div>
+			<div class="text_level1">http://www.google.com/policies/privacy/partners/</div>
+			<div class="text">Informácie o predchádzaní používania údajov službou Google Analytics nájdete v nasledujúcej časti.</div>
+			<div class="text_level1">https://tools.google.com/dlpage/gaoptout</div>
+			<div class="h2"><a id="3dc11d3caca53528014c44333c457faa"></a>Dostupný počet cieľov</div>
+			<div class="text">Počet cieľov, na ktoré môžete naraz posielať, sa mení podľa nasledujúcich nastavení.</div>
+			<div class="h6"><a id="fbd3e45f9e760453472a27e39353e4ad"></a>(1) Ak je vybraná možnosť [Nastaviť počet cieľov, ktoré možno určiť naraz, na 2000]:</div>
+			<div class="list">Ak [Príloha hárku obálky] je [Žiadna]: 2000</div>
+			<div class="list">Ak [Príloha hárku obálky] je [Rôzne obálky pre každý cieľ]: 100</div>
+			<div class="list">Ak [Príloha hárku obálky] je [Rovnaká obálka pre všetky ciele]: 2000</div>
+			<div class="h6"><a id="561dd323e0ff85de5892770925332183"></a>(2) Ak je zrušený výber položky [Nastaviť počet cieľov, ktoré možno určiť naraz, na 2000]:</div>
+			<div class="list">Ak [Príloha hárku obálky] je [Žiadna]: 500</div>
+			<div class="list">Ak [Príloha hárku obálky] je [Rôzne obálky pre každý cieľ]: 100</div>
+			<div class="list">Ak [Príloha hárku obálky] je [Rovnaká obálka pre všetky ciele]: 500</div>
+			<div class="h6"><a id="9544a13f1a7161817483d4f6a22fbab3"></a>POZNÁMKA</div>
+			<div class="list">V prípade skupín je vyššie uvedený počet cieľov počet osobných cieľov zaregistrovaných v skupine.</div>
+			<div class="list">Určený počet cieľov (okrem vyššie uvedených) sa odosiela oddelene do viacerých úloh. Následne v zozname protokolov tlače úloh atď. môžu byť zobrazené ako samostatné súbory faxového prenosu.</div>
+			<div class="list">Existuje obmedzenie počtu cieľov faxovej úlohy, ktoré je možné uchovať v zariadení. Ak pri niektorých modeloch tlačiarní počet cieľov po odoslaní faxovej úlohy presiahne limit, môže sa odstrániť posledná odoslaná úloha(-y). Ak sú zaregistrované ciele prekračujúce limit skupiny, dávajte pozor, aby sa fax neposielal nepretržite na viaceré skupinové ciele.</div>
+			<div class="h2"><a id="70e4d832386bc9d8389ca15bbf0f3729"></a>Upozornenia, limity a obmedzenia počas inštalácie</div>
+			<div class="list">Ak zmeníte používateľské práva na počítači, ktorý používate, a spustíte inštalačný program, inštalácia sa nemusí vykonať správne. V takom prípade sa prihláste ako Administrator a potom skúste inštaláciu znova.</div>
+			<div class="list">Ak sa pri použití inštalačného programu objaví výzva na reštartovanie počítača, nezabudnite počítač reštartovať. Ak počítač nereštartujete, existujúce ovládače nemusia fungovať správne.</div>
+			<div class="list">Ovládač nemusí fungovať správne pokiaľ nebude pred nainštalovaním ovládača nastavená správna oblasť. Oblasť môže byť nastavená v jednom z nasledujúcich umiestnení.</div>
+			<div class="dash">[Nastavenie] &gt; [čas a jazyk] &gt; [Jazyk a oblasť] &gt; [Oblasť] (alebo [čas a jazyk] &gt; [Oblasť]/[Miestne a jazykové nastavenie]) v ponuke Štart</div>
+			<div class="dash">[Ovládací panel] &gt; [Oblasť] (alebo [Miestne a jazykové nastavenie]) v systéme Windows</div>
+			<div class="list">V prípade inštalovania ovládača na serverovom počítači s tlačiarňou SMB (sieťNetBIOS ), ktorá je zadefinovaná ako zdieľané zariadenie, použite Sprievodcu pridaním tlačiarne a nainštalujte ju ako sieťovú tlačiareň.</div>
+			<div class="list">Ak používate mechanizmus automatického vytvorenia tlačiarne v prostredí Citrix XenApp, nemusí sa dať pomocou inštalačného programu tento ovládač nainštalovať správne. V takom prípade reštartujte serverový počítač XenApp Server a skontrolujte zoznam tlačiarní systému Windows. Ak sa tlačiareň nezobrazuje, znova nainštalujte ovládač v počítači XenApp Server pomocou Sprievodcu pridaním tlačiarne.</div>
+			<div class="text_level2">Potom pred spustením inštalačného programu a inštaláciou tohto ovládača odpojte všetky klientské tlačiarne zo všetkých relácií ICA pomôckou ICA Client Printer Configuration. Po inštalácii ovládača reštartujte pomôckuICA Client Printer Configuration a znova pripojte tlačiarne.</div>
+			<div class="list">Pre operačný systém Windows Server nainštalovaný s možnosťou Server Core existujú nasledujúce obmedzenia používania tohto ovládača.</div>
+			<div class="dash">Nie je možné nainštalovať ovládač pomocou inštalačného programu. Použite možnosti inštalácie v systéme Windows.</div>
+			<div class="dash">Niektoré možnosti faxu nie sú k dispozícii v lokálnom prostredí alebo v prostredí Vzdialená pracovná plocha Windows.</div>
+			<div class="list">Inštaláciu tohto ovládača cez USB umožňujú iba zariadenia podporované vo verzii ovládača faxu 9.00 alebo staršej.</div>
+			<div class="list">Tento ovládač môže existovať súčasne s ovládačom faxu verzie 9.xx alebo staršej. Nie je však možné ho nainštalovať aktualizáciou verzie ovládača faxu 9.xx alebo staršej.</div>
+			<div class="list">Ak nie je na zariadení nastavený protokol SNMP, nemusí byť možné nainštalovať ovládač pomocou [Štandardná].</div>
+			<div class="list">V závislosti od názvu zariadenia nastaveného zo samotného zariadenia nemusí byť názov správne zobrazený pri jeho vyhľadávaní počas inštalácie [Štandardná].</div>
+			<div class="h2"><a id="01c23a0d46d9aa6863ccd11d44e13ced"></a>Upozornenia, limity a obmedzenia počas posielania faxu</div>
+			<div class="list">Ak odosielate pomocou iného formátu papiera ako A4, v závislosti od aplikácie nebudete môcť odosielať pomocou špecifikovanej veľkosti papiera. Ak k tomu dôjde, znížte zväčšenie pôvodných údajov, určite A4 a znova odošlite fax.</div>
+			<div class="list">V závislosti od aplikácie, ak je počet cieľov v zozname adresára veľký, nemusí fungovať správne.</div>
+			<div class="list">Ak sú v niektorej z položiek (napríklad mená a faxové čísla), uložených v súbore CSV dvojité úvodzovky alebo oddeľovače CSV, adresy uložené v súbore sa nemusia správne importovať do adresára.</div>
+			<div class="list">Ak sú v niektorej z položiek (napríklad mená a faxové čísla), uložených v súbore ABK (*.abk) dvojité úvodzovky, adresy uložené v súbore sa nemusia správne importovať do adresára.</div>
+			<div class="list">V aplikácii nezadávajte pre možnosť kopírovania hodnotu väčšiu ako jeden, pretože v niektorých aplikáciách sa môže fax odoslať viac ako raz, keď je v aplikácii zadaná možnosť kopírovania.</div>
+			<div class="list">V 64-bitovom prostredí nie je možné použiť adresár s určitými aplikáciami. Ak používate aplikáciu, ktorá nedokáže používať adresár, preveďte adresár do súboru CSV a potom importujte súbor CSV do ovládača ako adresár.</div>
+			<div class="list">Na export zoznamu adries je potrebné heslo nastavené na karte [Špeciálne] &gt; [Nastavenia zabezpečenia] &gt; [Chrániť heslom pri exporte zoznamu kontaktov]. Ak heslo nepoznáte, je potrebné znova vytvoriť zoznam adries, aby ste ho mohli exportovať. Bez hesla môžete vykonávať operácie iné ako export (prehľadávanie, pridávanie, úpravy, mazanie atď.).</div>
+			<div class="list">Ak používate mechanizmus automatického vytvárania tlačiarne v prostredí Citrix XenApp, možno nebudete môcť použiť funkciu Správa ID oddelenia alebo funkciu Načítanie informácií o zariadení.</div>
+			<div class="text_level2">V takomto prípade použite univerzálny ovládač tlačiarne (UPD) alebo zvoľte štandardný port TCP/IP, pre ktorý bola nastavená adresa IP zariadenia, do ktorého v skutočnosti posielate výstup.</div>
+			<div class="list">Obrazovka nastavení odosielania faxu sa nemusí v prostredí Citrix zobraziť. Ak k tomu dôjde, skúste to urobiť znova podľa ďalej uvedeného postupu.</div>
+			<div class="text_level2">1. Zobrazte obrazovku vlastností tlačiarne systému Windows v zariadení, ktoré chcete použiť.</div>
+			<div class="text_level3"><span class="bold">V prípade zobrazenia z položky [Nastavenie] v ponuke Štart</span></div>
+			<div class="text_level3">(1) Zobrazte položku [Bluetooth a zariadenia] (alebo [Zariadenia]).</div>
+			<div class="text_level3">(2) V ponuke [Tlačiarne a skenery] zobrazte obrazovku správy pre nastavované zariadenie.</div>
+			<div class="text_level3">Ak chcete zobraziť obrazovku správy, kliknite na zariadenie alebo pre príslušné zariadenie kliknite na položku [Spravovať].</div>
+			<div class="text_level3">(3) Pre nastavované zariadenie kliknite na položku [Vlastnosti tlačiarne].</div>
+			<div class="text_level3"><span class="bold">V prípade zobrazenia z ponuky [Ovládací panel]</span></div>
+			<div class="text_level3">(1) Zobrazte položku [Zariadenia a tlačiarne].</div>
+			<div class="text_level3">Ak sa zobrazí obrazovka [Nastavenie], postupujte podľa vyššie uvedeného postupu zobrazenia obrazovky z [Nastavenie].</div>
+			<div class="text_level3">(2) V zozname tlačiarní kliknite pravým tlačidlom na zariadenie, ktoré chcete nastaviť → vyberte položku [Vlastnosti tlačiarne] zo zobrazenej ponuky.</div>
+			<div class="text_level2">2. Na obrazovke s vlastnosťami tlačiarne zobrazte kartu [Spresnenie] → vypnite [Povoliť rozšírené vlastnosti tlače].</div>
+			<div class="list">„Mobilný adresár“ sa môže zobraziť v adresári Messaging API, ale nie je možné ho použiť. Kontakty adresára zaregistrované v tomto adresári sa nezobrazia, pretože nemajú faxové informácie.</div>
+			<div class="list">Vyberte položku [Ukladať informácie a obrázky odoslaných faxov] a odoslaný obrázok sa uloží iba v tomto ovládači. Odoslaný obrázok a výsledky odosielania nemusia byť rovnaké ako tie, ktoré sú v zariadení. Ak chcete skontrolovať výsledky odosielania odoslaného faxu, skontrolujte protokoly komunikácie v zariadení.</div>
+			<div class="list">V závislosti od zariadenia môžu byť úlohy odoslané faxom z ovládača zaznamenané v protokole tlačového servera PS. Aj pri úlohách odosielaných prostredníctvom protokolu NetWare sa zaznamenané informácie nemusia správne zaznamenať.</div>
+			<div class="list">Režim komunikácie, ktorý vyberiete pri používaní funkcie IP-Fax, by mal zodpovedať komunikačnému prostrediu zariadenia. Ak nevyberiete príslušný komunikačný režim, bude to mať za následok nesprávny prenos a chyby pri odoslaní.</div>
+			<div class="list">Pri exportovaní súborov adresára Adresár Canon (*.abk), môžete určiť kód znakov. Pri importovaní adresára Adresár Canon (*.abk), existuje niekoľko modelov tlačiarní, ktoré nemôžu importovať súbor adresára Adresár Canon (*.abk), pokiaľ kód znakov importovaného súboru nezodpovedá kódu znakov podporovanému zariadením.</div>
+			<div class="list">Ak zadáte znaky nepodporované jazykom použitým v názve zariadenia, ovládač nemusí pracovať riadne. Môžete skontrolovať jazyk používaný v niektorom z nasledujúcich umiestnení.</div>
+			<div class="dash">[Nastavenie] &gt; [čas a jazyk] &gt; [Jazyk a oblasť] &gt; [Jazyk] (alebo [čas a jazyk] &gt; [Jazyk]/[Miestne a jazykové nastavenie]) v ponuke Štart</div>
+			<div class="dash">[Ovládací panel] &gt; [Miestne a jazykové nastavenie] v systéme Windows</div>
+			<div class="list">Ak odoslanie do zariadenia nepodporuje rozlíšenie 400 x 400 dpi s nastavením možnosti [Mimoriadne jemné] v tomto ovládači, odoslanie nemožno vykonať a na ovládacom paneli zariadenia sa zobrazí chyba. V takom prípade vykonajte odoslanie znova a použite rozlíšenie, ktoré zariadenie podporuje.</div>
+			<div class="list">Pri importovaní adresára exportovaného zo zariadenia sa znaky, ktoré ovládač nepodporuje, nemusia správne načítať.</div>
+			<div class="list">Nasledujúce adresáre nemôžete používať s verziami ovládačov staršími ako 8.70:</div>
+			<div class="dash">Adresáre, ktoré boli novo vytvorené v ovládačoch verzie 8.70 alebo novších.</div>
+			<div class="dash">Adresáre, ktoré boli vytvorené v starších verziách a importované do ovládačov verzie 8.70 alebo novšej.</div>
+			<div class="text_level2">Vo verziách ovládačov starších než verzia 8.70 však môžete použiť adresáre, ktoré sú exportované do súborov.</div>
+			<div class="list">Odoslané obrázky a profily vytvorené pomocou tohto ovládača nie je možné použiť s ovládačom faxu verzie 9.xx alebo staršej.</div>
+			<div class="list">Tento ovládač nepodporuje úpravu adresára v sieti. Úpravy je možné vykonať v prostredí, kde súčasne existujú ovládače a verzie ovládača faxu 10.10 alebo staršie, ale zmeny nie je možné uložiť.</div>
+			<div class="list">Súbory adresára vo formáte CSV exportované zo staršej verzie ovládača faxu sa nemusia dať v závislosti od jazykovej mutácie možné importovať do verzie 10.20 alebo novšej tohto ovládača.</div>
+			<div class="text_level2">V takomto prípade ich exportujte ako súbory adresáraAdresár Canon (*.abk), potom ich importujte do tohto ovládača.</div>
+			<div class="list">Ak používate zariadenie vyrobené pre Kóreu, USA alebo Kanadu a pre faxové číslo zadáte viac ako 40 jedno-bajtových číselných znakov, na zariadení sa vyskytne chyba a fax sa nepošle.</div>
+			<div class="h2"><a id="6a6da8c9f409ef3310e7d2cc63819c3c"></a>Obmedzenia týkajúce sa nastavení zariadenia</div>
+			<div class="text">Ak používate funkcie závislé od zariadenia s týmto ovládačom, musíte načítať informácie o zariadení na karte [Nastavenia zariadenia] &gt; [Získať informácie o zariadení], aby ste nastavili nainštalované doplnky na ovládač. Ak nemôžete načítať informácie o zariadení, pretože ste pripojení cez USB atď., manuálne nastavte nainštalované možnosti na karte [Nastavenia zariadenia].</div>
+			<div class="text">Dbajte na to, aby ste nenastavili funkcie, ktoré zariadenie nemôže použiť v ovládači, pretože to môže viesť k nesprávnemu prenosu a chybám prenosu.</div>
+			<div class="dash">Ak nastavíte odosielateľa s modelom tlačiarne, ktorý nemá špecifikovanú funkciu odosielateľa, túto funkciu nebudete môcť používať.</div>
+			<div class="dash">Ak vyberiete faxovú dosku, ktorá nie je kompatibilná s modelom tlačiarne, ktorý používate, a vyberiete linku, ktorá nezodpovedá platnej linke, z ktorej sa má odosielať, existuje možnosť, že bude fax odoslaný cez inú linku.</div>
+			<div class="dash">Ak sa pokúsite odosielať s nastaveniami, ktoré nezodpovedajú modelu tlačiarne, ktorý používate pre režim autentifikácie podadresárov, režim overovania správy podnikových ID a komunikačný režim IP faxu, nebudete môcť odosielať.</div>
+			<div class="dash">Ak určíte čas odoslania pomocou modelu tlačiarne, ktorý nemá funkciu času odoslania, túto funkciu nebudete môcť používať.</div>
+			<div class="dash">Ak určíte funkciu podadresy pomocou modelu tlačiarne, ktorý nemá funkciu podadresy, túto funkciu nebudete môcť používať.</div>
+			<div class="dash">Ak určíte funkciu [Nastaviť počet cieľov, ktoré možno určiť naraz, na 2000] a pokúsite sa o odoslanie s modelom tlačiarne, ktorý nepodporuje túto funkciu, bude to mať za následok chybu komunikácie alebo chybu pri prenose.</div>
+			<div class="dash">Ak nastavíte správu podnikových ID alebo overovanie používateľa pomocou modelu tlačiarne, ktorý nemá funkciu správy podnikových ID alebo funkciu overovania používateľa, túto funkciu nebudete môcť používať.</div>
+			<div class="dash">Ak určíte funkciu [Používať kódovanie Unicode (UTF-8) na komunikáciu so zariadením] a pokúsite sa o odoslanie s modelom tlačiarne, ktorý nepodporuje komunikáciu vo formáte Unicode (UTF-8), informácie o cieli a pod. sa nebudú správne zobrazovať.</div>
+			<hr />
+			<div class="text_right">Copyright Canon Inc. 1999</div>
+		</div>
+		<!--CONTENT_END-->
+	</body>
+</html>

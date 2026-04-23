@@ -1,0 +1,630 @@
+;
+; MFSCN.INF  -- Windows Setup File for the Canon iR2224 (Windows 7,8.1,10(x86))
+; Copyright CANON INC. 2022
+;
+; InfID: {2AFE101B-FEFE-4BE9-BDA3-D9C20DDD5557}
+;
+; LastModified: 29-Mar-2022
+
+[Version]
+Signature="$Windows NT$"
+Class=Image
+ClassGUID={6bdd1fc6-810f-11d0-bec7-08002be2092f}
+Provider="Canon"
+CatalogFile=MFSCNM.CAT
+DriverVer=%Version%,%SGVersion%
+
+[DestinationDirs]
+DefaultDestDir=11
+CNCMediaFiles=10,media
+ColorFiles.NT=11,spool\drivers\Color
+DsCmnFilesXP=24,"CanonMF\MFSCN_mf52"
+DsCmnFiles=16422,"Canon\CanonMF\MFSCN_mf52"
+MFSCN_DsFiles=10,"twain_32\MFSCN"
+iR2224_DsFiles=10,"twain_32\iR2224"
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+"Canon"=Models,NTx86,NTx86.6.0
+
+[Models.NTx86]
+"Canon MF Scan"=MFSCN_USB,,USB\MS_COMP_SCAN&MS_SUBCOMP_CAOPIS2
+"Canon iR2224"=iR2224_USB,USB\VID_04A9&PID_289B&MI_00
+"Canon MF Scan"=MFSCN_NW,CANON_MFNP&MFSCN
+"Canon iR2224"=iR2224_NW,CANON_MFNP&iR2224
+
+[Models.NTx86.6.0]
+"Canon MF Scan"= MFSCN_USB_VISTA,,USB\MS_COMP_SCAN&MS_SUBCOMP_CAOPIS2
+"Canon iR2224"= iR2224_USB_VISTA,USB\VID_04A9&PID_289B&MI_00
+"Canon MF Scan"= MFSCN_NW_VISTA,CANON_MFNP&MFSCN
+"Canon iR2224"= iR2224_NW_VISTA,CANON_MFNP&iR2224
+
+[MFSCN_USB.NTx86]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+DeviceData=MFSCN_DeviceData
+ICMProfiles="sRGB Color Space Profile.icm"
+Capabilities=0x11
+DriverVer=%Version%,%SGVersion%
+FriendlyName="WIA Canon MF Scan"
+AddReg=MFSCN_Addreg,MFSCN_Addreg_XP,MFSCN_Addreg.USB,MFSCN_USDAddreg,USDAddreg
+CopyFiles=MFSCN_DsFiles,DsCmnFilesXP,WiaFiles,MPScanLLD,ColorFiles.NT,CNCMediaFiles
+Events=MFSCN_PushButton.Events
+
+[iR2224_USB.NTx86]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+DeviceData=iR2224_DeviceData
+ICMProfiles="sRGB Color Space Profile.icm"
+Capabilities=0x11
+DriverVer=%Version%,%SGVersion%
+FriendlyName="WIA Canon iR2224"
+AddReg=iR2224_Addreg,iR2224_Addreg_XP,iR2224_Addreg.USB,iR2224_USDAddreg,USDAddreg
+CopyFiles=iR2224_DsFiles,DsCmnFilesXP,WiaFiles,MPScanLLD,ColorFiles.NT,CNCMediaFiles
+Events=iR2224_PushButton.Events
+
+[MFSCN_USB.NTx86.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[iR2224_USB.NTx86.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[MFSCN_USB_VISTA.NTx86]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+DeviceData=MFSCN_DeviceData_VISTA
+ICMProfiles="sRGB Color Space Profile.icm"
+Capabilities=0x11
+DriverVer=%Version%,%SGVersion%
+FriendlyName="WIA Canon MF Scan"
+AddReg=MFSCN_Addreg,MFSCN_Addreg_VISTA,MFSCN_Addreg.USB,MFSCN_USDAddreg,USDAddreg,USDAddreg_VISTA
+CopyFiles=MFSCN_DsFiles,DsCmnFiles,Wia2Files,MPScanLLD,ColorFiles.NT,CNCMediaFiles
+Events=MFSCN_PushButton.Events
+
+[iR2224_USB_VISTA.NTx86]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+DeviceData=iR2224_DeviceData_VISTA
+ICMProfiles="sRGB Color Space Profile.icm"
+Capabilities=0x11
+DriverVer=%Version%,%SGVersion%
+FriendlyName="WIA Canon iR2224"
+AddReg=iR2224_Addreg,iR2224_Addreg_VISTA,iR2224_Addreg.USB,iR2224_USDAddreg,USDAddreg,USDAddreg_VISTA
+CopyFiles=iR2224_DsFiles,DsCmnFiles,Wia2Files,MPScanLLD,ColorFiles.NT,CNCMediaFiles
+Events=iR2224_PushButton.Events
+
+[MFSCN_USB_VISTA.NTx86.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[iR2224_USB_VISTA.NTx86.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[MFSCN_NW.NTx86]
+Include=sti.inf
+Needs=STI.SerialSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+DeviceData=MFSCN_DeviceData.Net
+ICMProfiles="sRGB Color Space Profile.icm"
+Capabilities=0x11
+DriverVer=%Version%,%SGVersion%
+FriendlyName="WIA Canon MF Scan"
+AddReg=MFSCN_Addreg,MFSCN_Addreg_XP,MFSCN_USDAddreg,USDAddreg,USDAddreg.NET
+CopyFiles=MFSCN_DsFiles,DsCmnFilesXP,WiaFiles,MPScanLLD,ColorFiles.NT,CNCMediaFiles
+Events=MFSCN_PushButton.Events
+PortSelect=NO
+
+[iR2224_NW.NTx86]
+Include=sti.inf
+Needs=STI.SerialSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+DeviceData=iR2224_DeviceData.Net
+ICMProfiles="sRGB Color Space Profile.icm"
+Capabilities=0x11
+DriverVer=%Version%,%SGVersion%
+FriendlyName="WIA Canon iR2224"
+AddReg=iR2224_Addreg,iR2224_Addreg_XP,iR2224_USDAddreg,USDAddreg,USDAddreg.NET
+CopyFiles=iR2224_DsFiles,DsCmnFilesXP,WiaFiles,MPScanLLD,ColorFiles.NT,CNCMediaFiles
+Events=iR2224_PushButton.Events
+PortSelect=NO
+
+[MFSCN_NW.NTx86.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[iR2224_NW.NTx86.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[MFSCN_NW_VISTA.NTx86]
+Include=sti.inf
+Needs=STI.SerialSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+DeviceData=MFSCN_DeviceData_VISTA.Net
+ICMProfiles="sRGB Color Space Profile.icm"
+Capabilities=0x11
+DriverVer=%Version%,%SGVersion%
+FriendlyName="WIA Canon MF Scan"
+AddReg=MFSCN_Addreg,MFSCN_Addreg_VISTA,MFSCN_USDAddreg,USDAddreg,USDAddreg_VISTA,USDAddreg.Net
+CopyFiles=MFSCN_DsFiles,DsCmnFiles,Wia2Files,MPScanLLD,ColorFiles.NT,CNCMediaFiles
+Events=MFSCN_PushButton.Events
+PortSelect=NO
+
+[iR2224_NW_VISTA.NTx86]
+Include=sti.inf
+Needs=STI.SerialSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+DeviceData=iR2224_DeviceData_VISTA.Net
+ICMProfiles="sRGB Color Space Profile.icm"
+Capabilities=0x11
+DriverVer=%Version%,%SGVersion%
+FriendlyName="WIA Canon iR2224"
+AddReg=iR2224_Addreg,iR2224_Addreg_VISTA,iR2224_USDAddreg,USDAddreg,USDAddreg_VISTA,USDAddreg.Net
+CopyFiles=iR2224_DsFiles,DsCmnFiles,Wia2Files,MPScanLLD,ColorFiles.NT,CNCMediaFiles
+Events=iR2224_PushButton.Events
+PortSelect=NO
+
+[MFSCN_NW_VISTA.NTx86.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[iR2224_NW_VISTA.NTx86.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+[MFSCN_PushButton.Events]
+PushButtonPushed1=%PushButtonPushed1%,{9BB9528A-F2C8-444C-8A4F-C5DA3AA478D5},%ButtonApp%
+PushButtonPushed2=%PushButtonPushed2%,{04D4A2CA-0AAA-4EFD-B6BF-36548C21109D},%ButtonApp%
+PushButtonPushed3=%PushButtonPushed3%,{FE8719EE-CA18-4C6C-A921-B9017500664C},%ButtonApp%
+PushButtonPushed4=%PushButtonPushed4%,{7565BFFF-EF34-4BF8-ACCF-E7195EBA0A86},%ButtonApp%
+
+[iR2224_PushButton.Events]
+PushButtonPushed1=%PushButtonPushed1%,{44AF8616-5738-40BE-A06F-84732AE4E77D},%ButtonApp%
+PushButtonPushed2=%PushButtonPushed2%,{C4F23D16-6EFC-42A2-8C60-036288119274},%ButtonApp%
+PushButtonPushed3=%PushButtonPushed3%,{BF181E6F-B086-422D-B526-4D532D9C2620},%ButtonApp%
+PushButtonPushed4=%PushButtonPushed4%,{416E6B13-6427-40AE-BB75-C24BE29462BD},%ButtonApp%
+
+[MFSCN_DeviceData]
+TwainDS="Canon MF Scan"
+SpecialInfo="Canon MF Scanner"
+DeviceKey=MFSCN
+InstallDirectory="CanonMF\MFSCN_mf52\"
+DeviceInfoClass="SGDEV0000.DAT"
+
+[iR2224_DeviceData]
+TwainDS="Canon iR2224"
+SpecialInfo="Canon iR2224 Scanner"
+DeviceKey=iR2224
+InstallDirectory="CanonMF\MFSCN_mf52\"
+DeviceInfoClass="SGDEV0014.DAT"
+
+[MFSCN_DeviceData_VISTA]
+TwainDS="Canon MF Scan"
+SpecialInfo="Canon MF Scanner"
+DeviceKey=MFSCN
+InstallDirectory="Program Files\Canon\CanonMF\MFSCN_mf52\"
+DeviceInfoClass="SGDEV0000.DAT"
+UI Class ID=%GUID.UIClass%
+
+[iR2224_DeviceData_VISTA]
+TwainDS="Canon iR2224"
+SpecialInfo="Canon iR2224 Scanner"
+DeviceKey=iR2224
+InstallDirectory="Program Files\Canon\CanonMF\MFSCN_mf52\"
+DeviceInfoClass="SGDEV0014.DAT"
+UI Class ID=%GUID.UIClass%
+
+[MFSCN_DeviceData.Net]
+TwainDS="Canon MF Scan"
+SpecialInfo="Canon MF Scanner"
+DeviceKey=MFSCN
+InstallDirectory="CanonMF\MFSCN_mf52\"
+DeviceInfoClass="SGDEV0000.DAT"
+PortName="CNMFNPSCAN_"
+
+[iR2224_DeviceData.Net]
+TwainDS="Canon iR2224"
+SpecialInfo="Canon iR2224 Scanner"
+DeviceKey=iR2224
+InstallDirectory="CanonMF\MFSCN_mf52\"
+DeviceInfoClass="SGDEV0014.DAT"
+PortName="CNMFNPSCAN_"
+
+[MFSCN_DeviceData_VISTA.Net]
+TwainDS="Canon MF Scan"
+SpecialInfo="Canon MF Scanner"
+DeviceKey=MFSCN
+InstallDirectory="Program Files\Canon\CanonMF\MFSCN_mf52\"
+DeviceInfoClass="SGDEV0000.DAT"
+UI Class ID=%GUID.UIClass%
+PortName="CNMFNPSCAN_"
+
+[iR2224_DeviceData_VISTA.Net]
+TwainDS="Canon iR2224"
+SpecialInfo="Canon iR2224 Scanner"
+DeviceKey=iR2224
+InstallDirectory="Program Files\Canon\CanonMF\MFSCN_mf52\"
+DeviceInfoClass="SGDEV0014.DAT"
+UI Class ID=%GUID.UIClass%
+PortName="CNMFNPSCAN_"
+
+[MFSCN_Addreg]
+HKLM,"%SGDKEY%\MFSCN","SeriesName",,"Canon MF Scan"
+HKLM,"%SGDKEY%\MFSCN","ProductId",,"MFSCN"
+HKLM,"%SGDKEY%\MFSCN","ProductName",,"Canon MF Scan"
+HKLM,"%SGDKEY%\MFSCN","InstallDirectory",,"%10%\TWAIN_32\MFSCN\"
+HKLM,"%SGDKEY%\MFSCN","DriverDate",,"03 2022"
+HKLM,"%SGDKEY%\MFSCN","ButtonNum",0x00010001,4
+HKLM,"%SGDKEY%\MFSCN","CaddisLLDPath",,"CNC1772DMF.TBL"
+HKLM,"%SGDKEY%\MFSCN","CaddisUIPath",,"CNUIG01.TBL"
+HKLM,"%SGDKEY%\MFSCN","SGGenMFUninst",,"Canon MF Scan"
+HKLM,"%SGDKEY%\MFSCN","DeviceInfoClass",,"SGDEV0000.DAT"
+HKLM,"%STIKEY%","MFSCN",0x00010001,1
+
+[iR2224_Addreg]
+HKLM,"%SGDKEY%\iR2224","SeriesName",,"Canon iR2224"
+HKLM,"%SGDKEY%\iR2224","ProductId",,"iR2224"
+HKLM,"%SGDKEY%\iR2224","ProductName",,"Canon iR2224"
+HKLM,"%SGDKEY%\iR2224","InstallDirectory",,"%10%\TWAIN_32\iR2224\"
+HKLM,"%SGDKEY%\iR2224","DriverDate",,"03 2022"
+HKLM,"%SGDKEY%\iR2224","ButtonNum",0x00010001,4
+HKLM,"%SGDKEY%\iR2224","CaddisLLDPath",,"CNC1772DMF.TBL"
+HKLM,"%SGDKEY%\iR2224","CaddisUIPath",,"CNUI013.TBL"
+HKLM,"%SGDKEY%\iR2224","SGGenMFUninst",,"Canon iR2224"
+HKLM,"%SGDKEY%\iR2224","DeviceInfoClass",,"SGDEV0014.DAT"
+HKLM,"%STIKEY%","iR2224",0x00010001,1
+
+[MFSCN_Addreg_XP]
+HKLM,"%SGDKEY%\MFSCN","CommonModuleDirectory",,"%24%\CanonMF\MFSCN_mf52\"
+
+[iR2224_Addreg_XP]
+HKLM,"%SGDKEY%\iR2224","CommonModuleDirectory",,"%24%\CanonMF\MFSCN_mf52\"
+
+[MFSCN_Addreg_VISTA]
+HKLM,"%SGDKEY%\MFSCN","CommonModuleDirectory",,"%16422%\Canon\CanonMF\MFSCN_mf52\"
+
+[iR2224_Addreg_VISTA]
+HKLM,"%SGDKEY%\iR2224","CommonModuleDirectory",,"%16422%\Canon\CanonMF\MFSCN_mf52\"
+
+[MFSCN_Addreg.USB]
+HKLM,"%SGDKEY%\MFSCN","AvailableDriver",0x00010001,1
+
+[iR2224_Addreg.USB]
+HKLM,"%SGDKEY%\iR2224","AvailableDriver",0x00010001,1
+
+[MFSCN_USDAddreg]
+HKLM,"%WIASGDKEY%\MFSCN","SGGenMFUninst",,"Canon MF Scan"
+HKLM,"%WIASTIKEY%","MFSCN",0x00010001,1
+
+[iR2224_USDAddreg]
+HKLM,"%WIASGDKEY%\iR2224","SGGenMFUninst",,"Canon iR2224"
+HKLM,"%WIASTIKEY%","iR2224",0x00010001,1
+
+[USDAddreg]
+HKR,,USDClass,,%GUID.USDClass%
+HKCR,CLSID\%GUID.USDClass%,,,"Canon USD2"
+HKCR,CLSID\%GUID.USDClass%\InProcServer32,,,%11%\CNCCSCN2.DLL
+HKCR,CLSID\%GUID.USDClass%\InProcServer32,ThreadingModel,,"Both"
+
+[USDAddreg_VISTA]
+HKCR,CLSID\%GUID.UIClass%,,,"Canon WIA Driver UI Extension2"
+HKCR,CLSID\%GUID.UIClass%\shellex\ImageProcessingFilter\%GUID.IPFilter%
+HKCR,CLSID\%GUID.IPFilter%,,,"Canon Image Processing Filter2"
+HKCR,CLSID\%GUID.IPFilter%\InProcServer32,,,%11%\CNCESCN2.DLL
+HKCR,CLSID\%GUID.IPFilter%\InProcServer32,ThreadingModel,,"Both"
+
+[USDAddreg.Net]
+HKR,,CreateFileName,,AUTO
+
+[WiaFiles]
+CNCCSCN2.DLL
+CNCISCN2.DLL
+CNCLSCN2.DLL
+
+[Wia2Files]
+CNCCSCN2.DLL
+CNCISCN2.DLL
+CNCLSCN2.DLL
+CNCESCN2.DLL
+
+[MPScanLLD]
+CNCMFPSCN2.INI,,,0x20
+CNCLSISCN2.DLL,,,0x20
+CNCLSDSCN2.DLL,,,0x20
+CNCLSCSCN2.DLL,,,0x20
+CNCLSTSCN2.DLL,,,0x20
+CNCLSUSCN2.DLL,,,0x20
+
+[ColorFiles.NT]
+CNZ005.ICC
+CNFR36.ICC
+
+[CNCMediaFiles]
+CSSAMP1.MID
+
+[DsCmnFilesXP]
+WIARES_en-US.DLL
+WIARES_ar-SA.DLL
+WIARES_eu-ES.DLL
+WIARES_ca-ES.DLL
+WIARES_cs-CZ.DLL
+WIARES_da-DK.DLL
+WIARES_nl-NL.DLL
+WIARES_fi-FI.DLL
+WIARES_fr-FR.DLL
+WIARES_de-DE.DLL
+WIARES_hu-HU.DLL
+WIARES_it-IT.DLL
+WIARES_ja-JP.DLL
+WIARES_ko-KR.DLL
+WIARES_ms-MY.DLL
+WIARES_nb-NO.DLL
+WIARES_pl-PL.DLL
+WIARES_pt.DLL
+WIARES_ru-RU.DLL
+WIARES_zh-CN.DLL
+WIARES_zh-TW.DLL
+WIARES_sk-SK.DLL
+WIARES_es-ES.DLL
+WIARES_sv-SE.DLL
+WIARES_th-TH.DLL
+WIARES_tr-TR.DLL
+WIARES_vi-VN.DLL
+WIARES_uk-UA.DLL
+SGCFLTR.dll
+SCFLLIB3.dll
+SGDEV0000.DAT
+SGDEV0014.DAT
+
+[DsCmnFiles]
+WIARES_en-US.DLL
+WIARES_ar-SA.DLL
+WIARES_eu-ES.DLL
+WIARES_ca-ES.DLL
+WIARES_cs-CZ.DLL
+WIARES_da-DK.DLL
+WIARES_nl-NL.DLL
+WIARES_fi-FI.DLL
+WIARES_fr-FR.DLL
+WIARES_de-DE.DLL
+WIARES_hu-HU.DLL
+WIARES_it-IT.DLL
+WIARES_ja-JP.DLL
+WIARES_ko-KR.DLL
+WIARES_ms-MY.DLL
+WIARES_nb-NO.DLL
+WIARES_pl-PL.DLL
+WIARES_pt.DLL
+WIARES_ru-RU.DLL
+WIARES_zh-CN.DLL
+WIARES_zh-TW.DLL
+WIARES_sk-SK.DLL
+WIARES_es-ES.DLL
+WIARES_sv-SE.DLL
+WIARES_th-TH.DLL
+WIARES_tr-TR.DLL
+WIARES_vi-VN.DLL
+WIARES_uk-UA.DLL
+SGCFLTR.dll
+SCFLLIB3.dll
+SGDEV0000.DAT
+SGDEV0014.DAT
+
+[MFSCN_DsFiles]
+CISDS.DS
+SGUI.DLL
+SGUI_RES_en-US.DLL
+SGUI_RES_ar-SA.DLL
+SGUI_RES_eu-ES.DLL
+SGUI_RES_ca-ES.DLL
+SGUI_RES_cs-CZ.DLL
+SGUI_RES_da-DK.DLL
+SGUI_RES_nl-NL.DLL
+SGUI_RES_fi-FI.DLL
+SGUI_RES_fr-FR.DLL
+SGUI_RES_de-DE.DLL
+SGUI_RES_hu-HU.DLL
+SGUI_RES_it-IT.DLL
+SGUI_RES_ja-JP.DLL
+SGUI_RES_ko-KR.DLL
+SGUI_RES_ms-MY.DLL
+SGUI_RES_nb-NO.DLL
+SGUI_RES_pl-PL.DLL
+SGUI_RES_pt.DLL
+SGUI_RES_ru-RU.DLL
+SGUI_RES_zh-CN.DLL
+SGUI_RES_zh-TW.DLL
+SGUI_RES_sk-SK.DLL
+SGUI_RES_es-ES.DLL
+SGUI_RES_sv-SE.DLL
+SGUI_RES_th-TH.DLL
+SGUI_RES_tr-TR.DLL
+SGUI_RES_vi-VN.DLL
+SGUI_RES_uk-UA.DLL
+IOP.DLL
+ITLIB32.DLL
+SCANINTF.DLL
+TPM.DLL
+CNCFR36.DAT
+MC2.TXT
+JDA_CIMG.DLL
+NBS4MB.DLL
+NBSCOR4M.DLL
+RMSLANTC.DLL
+RSTCOL.DLL
+
+[iR2224_DsFiles]
+CISDS.DS
+SGUI.DLL
+SGUI_RES_en-US.DLL
+SGUI_RES_ar-SA.DLL
+SGUI_RES_eu-ES.DLL
+SGUI_RES_ca-ES.DLL
+SGUI_RES_cs-CZ.DLL
+SGUI_RES_da-DK.DLL
+SGUI_RES_nl-NL.DLL
+SGUI_RES_fi-FI.DLL
+SGUI_RES_fr-FR.DLL
+SGUI_RES_de-DE.DLL
+SGUI_RES_hu-HU.DLL
+SGUI_RES_it-IT.DLL
+SGUI_RES_ja-JP.DLL
+SGUI_RES_ko-KR.DLL
+SGUI_RES_ms-MY.DLL
+SGUI_RES_nb-NO.DLL
+SGUI_RES_pl-PL.DLL
+SGUI_RES_pt.DLL
+SGUI_RES_ru-RU.DLL
+SGUI_RES_zh-CN.DLL
+SGUI_RES_zh-TW.DLL
+SGUI_RES_sk-SK.DLL
+SGUI_RES_es-ES.DLL
+SGUI_RES_sv-SE.DLL
+SGUI_RES_th-TH.DLL
+SGUI_RES_tr-TR.DLL
+SGUI_RES_vi-VN.DLL
+SGUI_RES_uk-UA.DLL
+IOP.DLL
+ITLIB32.DLL
+SCANINTF.DLL
+TPM.DLL
+CNCFR36.DAT
+MC2.TXT
+JDA_CIMG.DLL
+NBS4MB.DLL
+NBSCOR4M.DLL
+RMSLANTC.DLL
+RSTCOL.DLL
+
+[SourceDisksFiles]
+CNZ005.ICC=1
+ITLIB32.DLL=1
+JDA_CIMG.DLL=1
+NBS4MB.DLL=1
+NBSCOR4M.DLL=1
+RMSLANTC.DLL=1
+RSTCOL.DLL=1
+CISDS.DS=1
+SGUI.DLL=1
+IOP.DLL=1
+SCANINTF.DLL=1
+TPM.DLL=1
+SGCFLTR.dll=1
+SCFLLIB3.dll=1
+SGUI_RES_en-US.DLL=1
+SGUI_RES_ar-SA.DLL=1
+SGUI_RES_eu-ES.DLL=1
+SGUI_RES_ca-ES.DLL=1
+SGUI_RES_cs-CZ.DLL=1
+SGUI_RES_da-DK.DLL=1
+SGUI_RES_nl-NL.DLL=1
+SGUI_RES_fi-FI.DLL=1
+SGUI_RES_fr-FR.DLL=1
+SGUI_RES_de-DE.DLL=1
+SGUI_RES_hu-HU.DLL=1
+SGUI_RES_it-IT.DLL=1
+SGUI_RES_ja-JP.DLL=1
+SGUI_RES_ko-KR.DLL=1
+SGUI_RES_ms-MY.DLL=1
+SGUI_RES_nb-NO.DLL=1
+SGUI_RES_pl-PL.DLL=1
+SGUI_RES_pt.DLL=1
+SGUI_RES_ru-RU.DLL=1
+SGUI_RES_zh-CN.DLL=1
+SGUI_RES_zh-TW.DLL=1
+SGUI_RES_sk-SK.DLL=1
+SGUI_RES_es-ES.DLL=1
+SGUI_RES_sv-SE.DLL=1
+SGUI_RES_th-TH.DLL=1
+SGUI_RES_tr-TR.DLL=1
+SGUI_RES_vi-VN.DLL=1
+SGUI_RES_uk-UA.DLL=1
+WIARES_en-US.DLL=1
+WIARES_ar-SA.DLL=1
+WIARES_eu-ES.DLL=1
+WIARES_ca-ES.DLL=1
+WIARES_cs-CZ.DLL=1
+WIARES_da-DK.DLL=1
+WIARES_nl-NL.DLL=1
+WIARES_fi-FI.DLL=1
+WIARES_fr-FR.DLL=1
+WIARES_de-DE.DLL=1
+WIARES_hu-HU.DLL=1
+WIARES_it-IT.DLL=1
+WIARES_ja-JP.DLL=1
+WIARES_ko-KR.DLL=1
+WIARES_ms-MY.DLL=1
+WIARES_nb-NO.DLL=1
+WIARES_pl-PL.DLL=1
+WIARES_pt.DLL=1
+WIARES_ru-RU.DLL=1
+WIARES_zh-CN.DLL=1
+WIARES_zh-TW.DLL=1
+WIARES_sk-SK.DLL=1
+WIARES_es-ES.DLL=1
+WIARES_sv-SE.DLL=1
+WIARES_th-TH.DLL=1
+WIARES_tr-TR.DLL=1
+WIARES_vi-VN.DLL=1
+WIARES_uk-UA.DLL=1
+CSSAMP1.MID=1
+CNCFR36.DAT=1
+CNFR36.ICC=1
+MC2.TXT=1
+CNCCSCN2.DLL=1
+CNCISCN2.DLL=1
+CNCLSCN2.DLL=1
+CNCESCN2.DLL=1
+CNCMFPSCN2.INI=1
+CNCLSISCN2.DLL=1
+CNCLSDSCN2.DLL=1
+CNCLSCSCN2.DLL=1
+CNCLSTSCN2.DLL=1
+CNCLSUSCN2.DLL=1
+SGDEV0000.DAT=1
+SGDEV0014.DAT=1
+
+[SourceDisksNames]
+1=%D1%,scan.cab,
+
+[Strings]
+Version="03/29/2022"
+SGVersion="11.3.0.0"
+ButtonApp="MF Scan Utility"
+SGDKEY="Software\Canon\SateraMFP1\ScanGear\11.3\Devices"
+STIKEY="Software\Canon\SateraMFP1\ScanGear\STI"
+WIASGDKEY="Software\Canon\SateraMFP1\WIA\3.1\Devices"
+WIASTIKEY="Software\Canon\SateraMFP1\WIA\STI"
+PushButtonPushed1="Color Scan"
+PushButtonPushed2="B&W Scan"
+PushButtonPushed3="Custom 1"
+PushButtonPushed4="Custom 2"
+D1="Canon MF Scan Setup Disk"
+GUID.USDClass="{56511608-4559-4AA0-8050-FABEAA214322}"
+GUID.IPFilter="{CD66C2E3-7521-4A60-8E9D-93343C077867}"
+GUID.UIClass="{3AA7ECC0-A835-4D9A-A96B-639CBD6AECE3}"
