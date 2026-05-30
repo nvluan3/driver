@@ -1,16 +1,13 @@
-﻿# Kiểm tra xem script có đang chạy với quyền admin không
+﻿# Cấu hình encoding để hiển thị tiếng Việt đúng cách
+$OutputEncoding = [System.Text.Encoding]::UTF8
+# Kiểm tra xem script có đang chạy với quyền admin không
 $IsAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")
-
 if (-not $IsAdmin) {
     Write-Host "Script chưa chạy với quyền admin. Đang khởi động lại..."
     $scriptPath = $MyInvocation.MyCommand.Definition
     Start-Process powershell -ArgumentList "-File `"$scriptPath`"" -Verb RunAs
     exit
 }
-
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
-$OutputEncoding = [System.Text.Encoding]::UTF8
-
 $nameFolder = "IM C4500-C6000"
 # Thư mục driver gốc (nằm cùng chỗ với script)
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
@@ -52,17 +49,30 @@ if ($existingDriver) {
 
 # Tạo cổng nếu chưa có
 if (-not (Get-PrinterPort -Name $portName -ErrorAction SilentlyContinue)) {
+    Write-Host "Đang tạo cổng $portName với địa chỉ $portAddress..."
     Add-PrinterPort -Name $portName -PrinterHostAddress $portAddress
 }
 
 # Thêm máy in nếu chưa có
 if (-not (Get-Printer -Name $printerName -ErrorAction SilentlyContinue)) {
+    Write-Host "Đang thêm máy in $printerName..."
     Add-Printer -Name $printerName -PortName $portName -DriverName $driverName
 } else {
     Write-Host "Máy in $printerName đã tồn tại, bỏ qua bước thêm."
 }
 
-# Cấu hình khổ giấy
-Set-PrintConfiguration -PrinterName $printerName -PaperSize $paperSize
+# Cấu hình máy in (mặc định khổ A4, in trắng đen)
+Write-Host "Đang cấu hình máy in $printerName với khổ giấy $paperSize và in trắng đen..."
+Set-PrintConfiguration -PrinterName $printerName -PaperSize $paperSize -Color $false
+# Đặt máy in mặc định
+Write-Host "Đang đặt máy in $printerName làm máy in mặc định..."
+$printer = Get-CimInstance -ClassName Win32_Printer | Where-Object { $_.Name -eq $printerName }
+Invoke-CimMethod -InputObject $printer -MethodName SetDefaultPrinter
+# Bỏ chia sẻ và xuất bản máy in
+Write-Host "Đang bỏ chia sẻ và xuất bản máy in $printerName..."
+Set-Printer -Name $printerName -Shared $false -Published $false
+# Mở thư mục Devices and Printers
+Write-Host "Đang mở thư mục Devices and Printers..."
 Start-Process "shell:::{A8A91A66-3A7D-4424-8D24-04E180695C7A}"
+Write-Host "Hoàn thành cấu hình máy in $printerName."
 Pause
