@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<bidi:Definition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi"
+                 xsi:schemaLocation="http://schemas.microsoft.com/windows/2005/03/printing/bidi wsdbidi.xsd">
+  <Schema xmlns:nprt="http://schemas.microsoft.com/windows/2006/08/wdp/print"
+          xmlns:hpprt="http://www.hp.com/schemas/imaging/con/hpprt/2014/08/22"
+          xmlns:wprt="http://schemas.microsoft.com/windows/2006/08/wdp/print">
+    <Property name="Printer">
+      <Property name="PaperSource">
+          <Property name="Source1">
+            <Installed name="InputInstalled" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[1]' drvPrinterEvent="true"/>
+            <Value name="Name" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[1]/wprt:InputBinEntry' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="Type" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[1]/hpprt:Type' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="NotReady" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[1]/hpprt:isReady' type="BIDI_BOOL" drvPrinterEvent="true"/>
+            <Value name="Width" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[1]/hpprt:MediaWidth' type="BIDI_INT" drvPrinterEvent="true"/>
+            <Value name="Length" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[1]/hpprt:MediaHeight' type="BIDI_INT" drvPrinterEvent="true"/>
+            <Value name="Id" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[1]/hpprt:MediaID' type="BIDI_STRING" drvPrinterEvent="true"/>
+          </Property>
+          <Property name="Source2">
+            <Installed name="InputInstalled" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[2]' drvPrinterEvent="true"/>
+            <Value name="Name" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[2]/wprt:InputBinEntry' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="Type" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[2]/hpprt:Type' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="NotReady" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[2]/hpprt:isReady' type="BIDI_BOOL" drvPrinterEvent="true"/>
+            <Value name="Width" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[2]/hpprt:MediaWidth' type="BIDI_INT" drvPrinterEvent="true"/>
+            <Value name="Length" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[2]/hpprt:MediaHeight' type="BIDI_INT" drvPrinterEvent="true"/>
+            <Value name="Id" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[2]/hpprt:MediaID' type="BIDI_STRING" drvPrinterEvent="true"/>
+          </Property>
+          <Property name="Source3">
+            <Installed name="InputInstalled" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[3]' drvPrinterEvent="true"/>
+            <Value name="Name" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[3]/wprt:InputBinEntry' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="Type" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[3]/hpprt:Type' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="NotReady" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[3]/hpprt:isReady' type="BIDI_BOOL" drvPrinterEvent="true"/>
+            <Value name="Width" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[3]/hpprt:MediaWidth' type="BIDI_INT" drvPrinterEvent="true"/>
+            <Value name="Length" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[3]/hpprt:MediaHeight' type="BIDI_INT" drvPrinterEvent="true"/>
+            <Value name="Id" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[3]/hpprt:MediaID' type="BIDI_STRING" drvPrinterEvent="true"/>
+          </Property>
+          <Property name="Source4">
+            <Installed name="InputInstalled" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[4]' drvPrinterEvent="true"/>
+            <Value name="Name" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[4]/wprt:InputBinEntry' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="Type" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[4]/hpprt:Type' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="NotReady" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[4]/hpprt:isReady' type="BIDI_BOOL" drvPrinterEvent="true"/>
+            <Value name="Width" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[4]/hpprt:MediaWidth' type="BIDI_INT" drvPrinterEvent="true"/>
+            <Value name="Length" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[4]/hpprt:MediaHeight' type="BIDI_INT" drvPrinterEvent="true"/>
+            <Value name="Id" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[4]/hpprt:MediaID' type="BIDI_STRING" drvPrinterEvent="true"/>
+          </Property>
+          <Property name="Source5">
+            <Installed name="InputInstalled" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[5]' drvPrinterEvent="true"/>
+            <Value name="Name" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[5]/wprt:InputBinEntry' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="Type" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[5]/hpprt:Type' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="NotReady" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[5]/hpprt:isReady' type="BIDI_BOOL" drvPrinterEvent="true"/>
+            <Value name="Width" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[5]/hpprt:MediaWidth' type="BIDI_INT" drvPrinterEvent="true"/>
+            <Value name="Length" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[5]/hpprt:MediaHeight' type="BIDI_INT" drvPrinterEvent="true"/>
+            <Value name="Id" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[5]/hpprt:MediaID' type="BIDI_STRING" drvPrinterEvent="true"/>
+          </Property>
+          <Property name="Source6">
+            <Installed name="InputInstalled" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[6]' drvPrinterEvent="true"/>
+            <Value name="Name" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[6]/wprt:InputBinEntry' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="Type" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[6]/hpprt:Type' type="BIDI_STRING" drvPrinterEvent="true"/>
+            <Value name="NotReady" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[6]/hpprt:isReady' type="BIDI_BOOL" drvPrinterEvent="true"/>
+            <Value name="Width" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[6]/hpprt:MediaWidth' type="BIDI_INT" drvPrinterEvent="true"/>
+            <Value name="Length" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[6]/hpprt:MediaHeight' type="BIDI_INT" drvPrinterEvent="true"/>
+            <Value name="Id" query="wprt:PrinterConfiguration" filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[6]/hpprt:MediaID' type="BIDI_STRING" drvPrinterEvent="true"/>
+          </Property>
+      </Property>
+    </Property>
+  </Schema>
+</bidi:Definition>

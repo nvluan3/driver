@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataMaps xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\..\..\src\DataModel\DataMap.xsd">
+	<!--Version 3.25 -->
+
+	<XMLDataMap Protocol="LEDM">
+		<StaticDataItem Name="Protocol">LEDM</StaticDataItem>
+		<DataItem Prefix="prdcfgdyn" Name="MakeAndModel" URI="ledm:hpLedmProductConfigDyn" XPath="//dd:MakeAndModel" Transient="false" />
+		<DataItem Prefix="prdcfgdyn" Name="SerialNumber" URI="ledm:hpLedmProductConfigDyn" XPath="//dd:SerialNumber" Transient="false"/>
+		<DataItem Prefix="mhdyn" Name="NumOfInputTrays" URI="ledm:hpLedmMediaHandlingDyn" XPath="//dd:NumOfInputTrays" Transient="false" LifeSpan="300" />
+		
+		<!-- Sources -->
+		<!-- Source 1 -->
+		<DataItem Prefix="mhdyn" Name="Source1_Name" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[0]/dd:InputBin" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source1_Type" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[0]/dd:InputBin" Transient="false" LifeSpan="300">
+			<Conversion Contains="Roll" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll1" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll2" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll3" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll4" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll5" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll6" Value="ContinuousRoll"/>
+			<Conversion Contains="roll" Value="ContinuousRoll"/>
+			<Conversion Contains="roll1" Value="ContinuousRoll"/>
+			<Conversion Contains="roll2" Value="ContinuousRoll"/>
+			<Conversion Contains="ROLL_1" Value="ContinuousRoll"/>
+			<Conversion Contains="ROLL_2" Value="ContinuousRoll"/>
+			<Conversion Contains="TopFeedTray" Value="sheetFeedManual"/>
+			<Conversion Contains="ManualFeed" Value="sheetFeedManual"/>
+			<Conversion Contains="RearManualFeed" Value="sheetFeedManual"/>
+			<Conversion Contains="SHEET" Value="sheetFeedManual"/>
+			<Conversion Contains="Sheet" Value="sheetFeedManual"/> 
+			<Conversion Contains="sheet" Value="sheetFeedManual"/>
+			<Conversion Contains="PrinterSelect" Value=""/>
+			<Conversion Contains="" Value=""/>
+			<Conversion Contains="default" Value="sheetFeedAutoNonRemovableTray"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="Source1_InputInstalled" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[0]/dd:TrayState" Transient="false" LifeSpan="300">
+			<Conversion Contains="engaged" Value="2"/>
+			<Conversion Contains="installed" Value="2"/>
+			<Conversion Contains="notEngaged" Value="2"/>
+			<Conversion Contains="ready" Value="2"/>
+			<Conversion Contains="standBy" Value="2"/>
+			<Conversion Contains="" Value=""/>
+			<Conversion Contains="default" Value="0"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="Source1_NotReady" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[0]/dd:TrayState" Transient="false" LifeSpan="300">
+			<Conversion Contains="engaged" Value="true"/>
+			<Conversion Contains="ready" Value="true"/>
+			<Conversion Contains="standBy" Value="true"/>
+			<Conversion Contains="" Value=""/>
+			<Conversion Contains="default" Value="false"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="Source1_MediaID" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[0]/dd:MediaKey" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source1_MediaType" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[0]/dd:MediaType" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source1_MediaSizeName" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[0]/dd:MediaSizeName" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source1_MediaWidth" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[0]/dd:MediaSizeDimensions/dd:Width" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source1_MediaLength" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[0]/dd:MediaSizeDimensions/dd:Length" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source1_MediaUnits" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[0]/dd:MediaSizeDimensions/dd:Unit" Transient="false" LifeSpan="300"/>
+			<!-- Source 2 -->
+		<DataItem Prefix="mhdyn" Name="Source2_Name" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[1]/dd:InputBin" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source2_Type" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[1]/dd:InputBin" Transient="false" LifeSpan="300">
+			<Conversion Contains="Roll" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll1" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll2" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll3" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll4" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll5" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll6" Value="ContinuousRoll"/>
+			<Conversion Contains="roll" Value="ContinuousRoll"/>
+			<Conversion Contains="roll1" Value="ContinuousRoll"/>
+			<Conversion Contains="roll2" Value="ContinuousRoll"/>
+			<Conversion Contains="ROLL_1" Value="ContinuousRoll"/>
+			<Conversion Contains="ROLL_2" Value="ContinuousRoll"/>
+			<Conversion Contains="TopFeedTray" Value="sheetFeedManual"/>
+			<Conversion Contains="ManualFeed" Value="sheetFeedManual"/>
+			<Conversion Contains="RearManualFeed" Value="sheetFeedManual"/>
+			<Conversion Contains="SHEET" Value="sheetFeedManual"/>
+			<Conversion Contains="Sheet" Value="sheetFeedManual"/> 
+			<Conversion Contains="sheet" Value="sheetFeedManual"/>
+			<Conversion Contains="PrinterSelect" Value=""/>
+			<Conversion Contains="" Value=""/>
+			<Conversion Contains="default" Value="sheetFeedAutoNonRemovableTray"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="Source2_InputInstalled" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[1]/dd:TrayState" Transient="false" LifeSpan="300">
+			<Conversion Contains="engaged" Value="2"/>
+			<Conversion Contains="installed" Value="2"/>
+			<Conversion Contains="notEngaged" Value="2"/>
+			<Conversion Contains="ready" Value="2"/>
+			<Conversion Contains="standBy" Value="2"/>
+			<Conversion Contains="" Value=""/>
+			<Conversion Contains="default" Value="0"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="Source2_NotReady" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[1]/dd:TrayState" Transient="false" LifeSpan="300">
+			<Conversion Contains="engaged" Value="true"/>
+			<Conversion Contains="ready" Value="true"/>
+			<Conversion Contains="standBy" Value="true"/>
+			<Conversion Contains="" Value=""/>
+			<Conversion Contains="default" Value="false"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="Source2_MediaID" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[1]/dd:MediaKey" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source2_MediaType" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[1]/dd:MediaType" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source2_MediaSizeName" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[1]/dd:MediaSizeName" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source2_MediaWidth" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[1]/dd:MediaSizeDimensions/dd:Width" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source2_MediaLength" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[1]/dd:MediaSizeDimensions/dd:Length" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source2_MediaUnits" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[1]/dd:MediaSizeDimensions/dd:Unit" Transient="false" LifeSpan="300"/>
+				<!-- Source 3 -->
+		<DataItem Prefix="mhdyn" Name="Source3_Name" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[2]/dd:InputBin" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source3_Type" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[2]/dd:InputBin" Transient="false" LifeSpan="300">
+			<Conversion Contains="Roll" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll1" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll2" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll3" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll4" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll5" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll6" Value="ContinuousRoll"/>
+			<Conversion Contains="roll" Value="ContinuousRoll"/>
+			<Conversion Contains="roll1" Value="ContinuousRoll"/>
+			<Conversion Contains="roll2" Value="ContinuousRoll"/>
+			<Conversion Contains="ROLL_1" Value="ContinuousRoll"/>
+			<Conversion Contains="ROLL_2" Value="ContinuousRoll"/>
+			<Conversion Contains="TopFeedTray" Value="sheetFeedManual"/>
+			<Conversion Contains="ManualFeed" Value="sheetFeedManual"/>
+			<Conversion Contains="RearManualFeed" Value="sheetFeedManual"/>
+			<Conversion Contains="SHEET" Value="sheetFeedManual"/>
+			<Conversion Contains="Sheet" Value="sheetFeedManual"/> 
+			<Conversion Contains="sheet" Value="sheetFeedManual"/>
+			<Conversion Contains="PrinterSelect" Value=""/>
+			<Conversion Contains="" Value=""/>
+			<Conversion Contains="default" Value="sheetFeedAutoNonRemovableTray"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="Source3_InputInstalled" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[2]/dd:TrayState" Transient="false" LifeSpan="300">
+			<Conversion Contains="engaged" Value="2"/>
+			<Conversion Contains="installed" Value="2"/>
+			<Conversion Contains="notEngaged" Value="2"/>
+			<Conversion Contains="ready" Value="2"/>
+			<Conversion Contains="standBy" Value="2"/>
+			<Conversion Contains="" Value=""/>
+			<Conversion Contains="default" Value="0"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="Source3_NotReady" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[2]/dd:TrayState" Transient="false" LifeSpan="300">
+			<Conversion Contains="engaged" Value="true"/>
+			<Conversion Contains="ready" Value="true"/>
+			<Conversion Contains="standBy" Value="true"/>
+			<Conversion Contains="" Value=""/>
+			<Conversion Contains="default" Value="false"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="Source3_MediaID" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[2]/dd:MediaKey" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source3_MediaType" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[2]/dd:MediaType" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source3_MediaSizeName" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[2]/dd:MediaSizeName" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source3_MediaWidth" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[2]/dd:MediaSizeDimensions/dd:Width" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source3_MediaLength" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[2]/dd:MediaSizeDimensions/dd:Length" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source3_MediaUnits" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[2]/dd:MediaSizeDimensions/dd:Unit" Transient="false" LifeSpan="300"/>
+				<!-- Source 4 -->
+		<DataItem Prefix="mhdyn" Name="Source4_Name" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[3]/dd:InputBin" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source4_Type" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[3]/dd:InputBin" Transient="false" LifeSpan="300">
+			<Conversion Contains="Roll" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll1" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll2" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll3" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll4" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll5" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll6" Value="ContinuousRoll"/>
+			<Conversion Contains="roll" Value="ContinuousRoll"/>
+			<Conversion Contains="roll1" Value="ContinuousRoll"/>
+			<Conversion Contains="roll2" Value="ContinuousRoll"/>
+			<Conversion Contains="ROLL_1" Value="ContinuousRoll"/>
+			<Conversion Contains="ROLL_2" Value="ContinuousRoll"/>
+			<Conversion Contains="TopFeedTray" Value="sheetFeedManual"/>
+			<Conversion Contains="ManualFeed" Value="sheetFeedManual"/>
+			<Conversion Contains="RearManualFeed" Value="sheetFeedManual"/>
+			<Conversion Contains="SHEET" Value="sheetFeedManual"/>
+			<Conversion Contains="Sheet" Value="sheetFeedManual"/> 
+			<Conversion Contains="sheet" Value="sheetFeedManual"/>
+			<Conversion Contains="PrinterSelect" Value=""/>
+			<Conversion Contains="" Value=""/>
+			<Conversion Contains="default" Value="sheetFeedAutoNonRemovableTray"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="Source4_InputInstalled" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[3]/dd:TrayState" Transient="false" LifeSpan="300">
+			<Conversion Contains="engaged" Value="2"/>
+			<Conversion Contains="installed" Value="2"/>
+			<Conversion Contains="notEngaged" Value="2"/>
+			<Conversion Contains="ready" Value="2"/>
+			<Conversion Contains="standBy" Value="2"/>
+			<Conversion Contains="" Value=""/>
+			<Conversion Contains="default" Value="0"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="Source4_NotReady" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[3]/dd:TrayState" Transient="false" LifeSpan="300">
+			<Conversion Contains="engaged" Value="true"/>
+			<Conversion Contains="ready" Value="true"/>
+			<Conversion Contains="standBy" Value="true"/>
+			<Conversion Contains="" Value=""/>
+			<Conversion Contains="default" Value="false"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="Source4_MediaID" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[3]/dd:MediaKey" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source4_MediaType" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[3]/dd:MediaType" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source4_MediaSizeName" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[3]/dd:MediaSizeName" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source4_MediaWidth" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[3]/dd:MediaSizeDimensions/dd:Width" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source4_MediaLength" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[3]/dd:MediaSizeDimensions/dd:Length" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source4_MediaUnits" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[3]/dd:MediaSizeDimensions/dd:Unit" Transient="false" LifeSpan="300"/>
+				<!-- Source 5 -->
+		<DataItem Prefix="mhdyn" Name="Source5_Name" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[4]/dd:InputBin" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source5_Type" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[4]/dd:InputBin" Transient="false" LifeSpan="300">
+			<Conversion Contains="Roll" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll1" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll2" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll3" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll4" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll5" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll6" Value="ContinuousRoll"/>
+			<Conversion Contains="roll" Value="ContinuousRoll"/>
+			<Conversion Contains="roll1" Value="ContinuousRoll"/>
+			<Conversion Contains="roll2" Value="ContinuousRoll"/>
+			<Conversion Contains="ROLL_1" Value="ContinuousRoll"/>
+			<Conversion Contains="ROLL_2" Value="ContinuousRoll"/>
+			<Conversion Contains="TopFeedTray" Value="sheetFeedManual"/>
+			<Conversion Contains="ManualFeed" Value="sheetFeedManual"/>
+			<Conversion Contains="RearManualFeed" Value="sheetFeedManual"/>
+			<Conversion Contains="SHEET" Value="sheetFeedManual"/>
+			<Conversion Contains="Sheet" Value="sheetFeedManual"/> 
+			<Conversion Contains="sheet" Value="sheetFeedManual"/>
+			<Conversion Contains="PrinterSelect" Value=""/>
+			<Conversion Contains="" Value=""/>
+			<Conversion Contains="default" Value="sheetFeedAutoNonRemovableTray"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="Source5_InputInstalled" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[4]/dd:TrayState" Transient="false" LifeSpan="300">
+			<Conversion Contains="engaged" Value="2"/>
+			<Conversion Contains="installed" Value="2"/>
+			<Conversion Contains="notEngaged" Value="2"/>
+			<Conversion Contains="ready" Value="2"/>
+			<Conversion Contains="standBy" Value="2"/>
+			<Conversion Contains="" Value=""/>
+			<Conversion Contains="default" Value="0"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="Source5_NotReady" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[4]/dd:TrayState" Transient="false" LifeSpan="300">
+			<Conversion Contains="engaged" Value="true"/>
+			<Conversion Contains="ready" Value="true"/>
+			<Conversion Contains="standBy" Value="true"/>
+			<Conversion Contains="" Value=""/>
+			<Conversion Contains="default" Value="false"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="Source5_MediaID" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[4]/dd:MediaKey" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source5_MediaType" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[4]/dd:MediaType" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source5_MediaSizeName" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[4]/dd:MediaSizeName" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source5_MediaWidth" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[4]/dd:MediaSizeDimensions/dd:Width" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source5_MediaLength" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[4]/dd:MediaSizeDimensions/dd:Length" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source5_MediaUnits" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[4]/dd:MediaSizeDimensions/dd:Unit" Transient="false" LifeSpan="300"/>
+				<!-- Source 6 -->
+		<DataItem Prefix="mhdyn" Name="Source6_Name" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[5]/dd:InputBin" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source6_Type" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[5]/dd:InputBin" Transient="false" LifeSpan="300">
+			<Conversion Contains="Roll" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll1" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll2" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll3" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll4" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll5" Value="ContinuousRoll"/>
+			<Conversion Contains="Roll6" Value="ContinuousRoll"/>
+			<Conversion Contains="roll" Value="ContinuousRoll"/>
+			<Conversion Contains="roll1" Value="ContinuousRoll"/>
+			<Conversion Contains="roll2" Value="ContinuousRoll"/>
+			<Conversion Contains="ROLL_1" Value="ContinuousRoll"/>
+			<Conversion Contains="ROLL_2" Value="ContinuousRoll"/>
+			<Conversion Contains="TopFeedTray" Value="sheetFeedManual"/>
+			<Conversion Contains="ManualFeed" Value="sheetFeedManual"/>
+			<Conversion Contains="RearManualFeed" Value="sheetFeedManual"/>
+			<Conversion Contains="SHEET" Value="sheetFeedManual"/>
+			<Conversion Contains="Sheet" Value="sheetFeedManual"/> 
+			<Conversion Contains="sheet" Value="sheetFeedManual"/>
+			<Conversion Contains="PrinterSelect" Value=""/>
+			<Conversion Contains="" Value=""/>
+			<Conversion Contains="default" Value="sheetFeedAutoNonRemovableTray"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="Source6_InputInstalled" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[5]/dd:TrayState" Transient="false" LifeSpan="300">
+			<Conversion Contains="engaged" Value="2"/>
+			<Conversion Contains="installed" Value="2"/>
+			<Conversion Contains="notEngaged" Value="2"/>
+			<Conversion Contains="ready" Value="2"/>
+			<Conversion Contains="standBy" Value="2"/>
+			<Conversion Contains="" Value=""/>
+			<Conversion Contains="default" Value="0"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="Source6_NotReady" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[5]/dd:TrayState" Transient="false" LifeSpan="300">
+			<Conversion Contains="engaged" Value="true"/>
+			<Conversion Contains="ready" Value="true"/>
+			<Conversion Contains="standBy" Value="true"/>
+			<Conversion Contains="" Value=""/>
+			<Conversion Contains="default" Value="false"/>
+		</DataItem>
+		<DataItem Prefix="mhdyn" Name="Source6_MediaID" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[5]/dd:MediaKey" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source6_MediaType" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[5]/dd:MediaType" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source6_MediaSizeName" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[5]/dd:MediaSizeName" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source6_MediaWidth" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[5]/dd:MediaSizeDimensions/dd:Width" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source6_MediaLength" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[5]/dd:MediaSizeDimensions/dd:Length" Transient="false" LifeSpan="300"/>
+		<DataItem Prefix="mhdyn" Name="Source6_MediaUnits" URI="ledm:hpLedmMediaHandlingDyn" XPath="//mhdyn:MediaHandlingDyn/mhdyn:InputTray[5]/dd:MediaSizeDimensions/dd:Unit" Transient="false" LifeSpan="300"/>
+		
+		</XMLDataMap>
+
+	</DataMaps>
