@@ -261,7 +261,7 @@ do {
         }
         "7" {
             $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
-            $driverPath = Join-Path $scriptDir "IM C4500-C6000\OEMSETUP.INF"
+            $driverPath = Join-Path $scriptDir "IM C4500-C6000\MPC4500_.inf"
             $driverName = "RICOH IM C4500 PCL 6"
             $printerName = "RICOH IM C4500 (THACO AGRI IN MAU)"
             $portName = "IP_10.10.110.105"
