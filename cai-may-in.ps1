@@ -23,7 +23,7 @@ function Show-Menu {
     Write-Host "3. Cài đặt máy in RICOH Aficio MP 9002 (SADORA MAY 3)"
     Write-Host "4. Cài đặt máy in RICOH Aficio MP 9002 (SADORA MAY 4)"
     Write-Host "5. Cài đặt máy in RICOH MP C4504 (SADORA MAY 5)"
-    Write-Host "6. Cài đặt máy in RICOH Aficio MP 6001 (SADORA MAY 6)"
+    Write-Host "6. Cài đặt máy in RICOH MP 6503 (SADORA MAY 6)"
     Write-Host "7. Cài đặt máy in RICOH IM C4500 (THACO AGRI - IN MAU)"
     Write-Host "8. Cài đặt máy in RICOH MP 7503 (THACO AGRI - TRANG DEN)"
     Write-Host "9. Cài đặt máy in RICOH IM C4500 (TANG 18 MAY 1)"
@@ -225,9 +225,9 @@ do {
         }
         "6" {
             $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
-            $driverPath = Join-Path $scriptDir "Aficio MP 6001-7001-8001-9001\OEMSETUP.INF"
-            $driverName = "RICOH Aficio MP 6001 PCL 6"
-            $printerName = "RICOH Aficio MP 6001 (sadora may 6)"
+            $driverPath = Join-Path $scriptDir "MP 6503SP 7503SP 9003SP\MP_6503_.INF"
+            $driverName = "RICOH MP 6503 PCL 6"
+            $printerName = "RICOH Aficio MP 6503 (sadora may 6)"
             $portName = "IP_10.10.109.54"
             $portAddress = "10.10.109.54"
             $paperSize = "A4"

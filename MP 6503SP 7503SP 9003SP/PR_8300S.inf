@@ -1,0 +1,266 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2026 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 03/10/2026,3.3.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%infotec%=infotec,NTamd64
+%LANIER%=LANIER,NTamd64
+%NRG%=NRG,NTamd64
+%Ricoh%=Ricoh,NTamd64
+%SAVIN%=SAVIN,NTamd64
+
+
+;WindowsXP(amd64)
+[infotec.NTamd64]
+"infotec Pro 8300S PCL 6"=infotec_Pro_8300S_64.dat,USBPRINT\infotecPro_8300S7C47,LPTENUM\infotecPro_8300S7C47,infotecPro_8300S7C47
+"infotec Pro 8310S PCL 6"=infotec_Pro_8310S_64.dat,USBPRINT\infotecPro_8310SBC16,LPTENUM\infotecPro_8310SBC16,infotecPro_8310SBC16
+"infotec Pro 8320S PCL 6"=infotec_Pro_8320S_64.dat,USBPRINT\infotecPro_8320SBCE6,LPTENUM\infotecPro_8320SBCE6,infotecPro_8320SBCE6
+
+[LANIER.NTamd64]
+"LANIER Pro 8300S PCL 6"=LANIER_Pro_8300S_64.dat,USBPRINT\LANIERPro_8300SD41F,LPTENUM\LANIERPro_8300SD41F,LANIERPro_8300SD41F
+"LANIER Pro 8310S PCL 6"=LANIER_Pro_8310S_64.dat,USBPRINT\LANIERPro_8310S144E,LPTENUM\LANIERPro_8310S144E,LANIERPro_8310S144E
+"LANIER Pro 8320S PCL 6"=LANIER_Pro_8320S_64.dat,USBPRINT\LANIERPro_8320S14BE,LPTENUM\LANIERPro_8320S14BE,LANIERPro_8320S14BE
+
+[NRG.NTamd64]
+"NRG Pro 8300S PCL 6"=NRG_Pro_8300S_64.dat,USBPRINT\NRGPro_8300S4FC9,LPTENUM\NRGPro_8300S4FC9,NRGPro_8300S4FC9
+"NRG Pro 8310S PCL 6"=NRG_Pro_8310S_64.dat,USBPRINT\NRGPro_8310S8F98,LPTENUM\NRGPro_8310S8F98,NRGPro_8310S8F98
+"NRG Pro 8320S PCL 6"=NRG_Pro_8320S_64.dat,USBPRINT\NRGPro_8320S8F68,LPTENUM\NRGPro_8320S8F68,NRGPro_8320S8F68
+
+[Ricoh.NTamd64]
+"RICOH Pro 8300S PCL 6"=RICOH_Pro_8300S_64.dat,USBPRINT\RICOHPro_8300S79B3,LPTENUM\RICOHPro_8300S79B3,RICOHPro_8300S79B3
+"RICOH Pro 8310S PCL 6"=RICOH_Pro_8310S_64.dat,USBPRINT\RICOHPro_8310SB9E2,LPTENUM\RICOHPro_8310SB9E2,RICOHPro_8310SB9E2
+"RICOH Pro 8320S PCL 6"=RICOH_Pro_8320S_64.dat,USBPRINT\RICOHPro_8320SB912,LPTENUM\RICOHPro_8320SB912,RICOHPro_8320SB912
+
+[SAVIN.NTamd64]
+"SAVIN Pro 8300S PCL 6"=SAVIN_Pro_8300S_64.dat,USBPRINT\SAVINPro_8300S54E6,LPTENUM\SAVINPro_8300S54E6,SAVINPro_8300S54E6
+"SAVIN Pro 8310S PCL 6"=SAVIN_Pro_8310S_64.dat,USBPRINT\SAVINPro_8310S94B7,LPTENUM\SAVINPro_8310S94B7,SAVINPro_8310S94B7
+"SAVIN Pro 8320S PCL 6"=SAVIN_Pro_8320S_64.dat,USBPRINT\SAVINPro_8320S9447,LPTENUM\SAVINPro_8320S9447,SAVINPro_8320S9447
+
+
+
+[infotec_Pro_8300S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Ocd.psz
+LanguageMonitor = rica8Olm,rica8Olm.dll
+
+[infotec_Pro_8310S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Ocd.psz
+LanguageMonitor = rica8Olm,rica8Olm.dll
+
+[infotec_Pro_8320S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Ocd.psz
+LanguageMonitor = rica8Olm,rica8Olm.dll
+
+[LANIER_Pro_8300S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Ocd.psz
+LanguageMonitor = rica8Olm,rica8Olm.dll
+
+[LANIER_Pro_8310S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Ocd.psz
+LanguageMonitor = rica8Olm,rica8Olm.dll
+
+[LANIER_Pro_8320S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Ocd.psz
+LanguageMonitor = rica8Olm,rica8Olm.dll
+
+[NRG_Pro_8300S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Ocd.psz
+LanguageMonitor = rica8Olm,rica8Olm.dll
+
+[NRG_Pro_8310S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Ocd.psz
+LanguageMonitor = rica8Olm,rica8Olm.dll
+
+[NRG_Pro_8320S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Ocd.psz
+LanguageMonitor = rica8Olm,rica8Olm.dll
+
+[RICOH_Pro_8300S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Ocd.psz
+LanguageMonitor = rica8Olm,rica8Olm.dll
+
+[RICOH_Pro_8310S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Ocd.psz
+LanguageMonitor = rica8Olm,rica8Olm.dll
+
+[RICOH_Pro_8320S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Ocd.psz
+LanguageMonitor = rica8Olm,rica8Olm.dll
+
+[SAVIN_Pro_8300S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Ocd.psz
+LanguageMonitor = rica8Olm,rica8Olm.dll
+
+[SAVIN_Pro_8310S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Ocd.psz
+LanguageMonitor = rica8Olm,rica8Olm.dll
+
+[SAVIN_Pro_8320S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica8Ocd.psz
+LanguageMonitor = rica8Olm,rica8Olm.dll
+
+
+[infotec_Pro_8300S_64.dat.Services]
+AddService = ,0x2 
+
+[infotec_Pro_8310S_64.dat.Services]
+AddService = ,0x2 
+
+[infotec_Pro_8320S_64.dat.Services]
+AddService = ,0x2 
+
+[LANIER_Pro_8300S_64.dat.Services]
+AddService = ,0x2 
+
+[LANIER_Pro_8310S_64.dat.Services]
+AddService = ,0x2 
+
+[LANIER_Pro_8320S_64.dat.Services]
+AddService = ,0x2 
+
+[NRG_Pro_8300S_64.dat.Services]
+AddService = ,0x2 
+
+[NRG_Pro_8310S_64.dat.Services]
+AddService = ,0x2 
+
+[NRG_Pro_8320S_64.dat.Services]
+AddService = ,0x2 
+
+[RICOH_Pro_8300S_64.dat.Services]
+AddService = ,0x2 
+
+[RICOH_Pro_8310S_64.dat.Services]
+AddService = ,0x2 
+
+[RICOH_Pro_8320S_64.dat.Services]
+AddService = ,0x2 
+
+[SAVIN_Pro_8300S_64.dat.Services]
+AddService = ,0x2 
+
+[SAVIN_Pro_8310S_64.dat.Services]
+AddService = ,0x2 
+
+[SAVIN_Pro_8320S_64.dat.Services]
+AddService = ,0x2 
+
+
+[RPD_FILES]
+rica8Oui.dll,rica8Oui.dll
+rica8Oui.irj,PR_8300S.irj
+rica8Oui.rdj
+rica8Oui.rcf,PR_8300S.rcf
+rica8Oug.dll,rica8Oug.dll
+rica8Oug.miz
+rica8Our.dll,rica8Our.dll
+rica8Ogr.dll,rica8Ogr.dll
+rica8Ogl.dll,rica8Ogl.dll
+rica8Oci.dll,rica8Oci.dll
+rica8Ocd.dll,rica8Ocd.dll
+rica8Ocd.psz
+rica8Ocf.cfz
+rica8Ocl.ini
+rica8Och.chm
+rica8Ocz.dlz
+rica8Ocj.dll,rica8Ocj.dll
+rica8Oct.dll,rica8Oct.dll
+rica8Ocb.dll,rica8Ocb.dll
+rica8Otl.exe,rica8Otl.exe
+
+[RPD_COMMON_SYS32]
+rica8Olm.dll,rica8Olm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD08Od64.dll,RD08Od64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica8Oui.dll
+DriverFile	= rica8Ogr.dll
+HelpFile	= rica8Och.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware		=TRUE
+
+[SourceDisksFiles.amd64]
+rica8Oui.dll	= 1
+PR_8300S.irj	= 1
+rica8Oui.rdj	= 1
+PR_8300S.rcf	= 2
+rica8Oug.dll	= 1
+rica8Oug.miz	= 1
+rica8Our.dll	= 1
+rica8Ogr.dll	= 1
+rica8Ogl.dll	= 1
+rica8Oci.dll	= 1
+rica8Ocd.dll	= 1
+rica8Ocd.psz	= 1
+rica8Ocf.cfz	= 1
+rica8Ocl.ini	= 1
+rica8Och.chm	= 1
+rica8Ocz.dlz	= 1
+rica8Ocj.dll	= 1
+rica8Oct.dll	= 1
+rica8Ocb.dll	= 1
+rica8Olm.dll	= 1
+ricdb64.dll		= 1
+mfricr64.dll	= 1
+rica8Otl.exe              = 1
+RD08Od64.dll	= 1
+
+[Strings]
+Ricoh="Ricoh"
+infotec="infotec"
+LANIER="LANIER"
+NRG="NRG"
+SAVIN="SAVIN"
+DSK= "PCL6 Printer Driver Disk1"

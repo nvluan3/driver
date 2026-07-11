@@ -1,0 +1,179 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2026 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 03/10/2026,3.3.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%LANIER%=LANIER,NTamd64
+%Ricoh%=Ricoh,NTamd64
+%SAVIN%=SAVIN,NTamd64
+
+
+;WindowsXP(amd64)
+[LANIER.NTamd64]
+"LANIER P 501 PCL 6"=LANIER_P_501_64.dat,USBPRINT\LANIERP_501D9EE,LPTENUM\LANIERP_501D9EE,LANIERP_501D9EE
+"LANIER P 502 PCL 6"=LANIER_P_502_64.dat,USBPRINT\LANIERP_502D8AE,LPTENUM\LANIERP_502D8AE,LANIERP_502D8AE
+
+[Ricoh.NTamd64]
+"RICOH P 501 PCL 6"=RICOH_P_501_64.dat,USBPRINT\RICOHP_501DF01,LPTENUM\RICOHP_501DF01,RICOHP_501DF01
+"RICOH P 502 PCL 6"=RICOH_P_502_64.dat,USBPRINT\RICOHP_502DE41,LPTENUM\RICOHP_502DE41,RICOHP_502DE41
+
+[SAVIN.NTamd64]
+"SAVIN P 501 PCL 6"=SAVIN_P_501_64.dat,USBPRINT\SAVINP_5018F92,LPTENUM\SAVINP_5018F92,SAVINP_5018F92
+"SAVIN P 502 PCL 6"=SAVIN_P_502_64.dat,USBPRINT\SAVINP_5028ED2,LPTENUM\SAVINP_5028ED2,SAVINP_5028ED2
+
+
+[LANIER_P_501_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Zcd.psz
+LanguageMonitor = rica3Zlm,rica3Zlm.dll
+CopyINF = RPRNUT.INF
+
+[LANIER_P_502_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Zcd.psz
+LanguageMonitor = rica3Zlm,rica3Zlm.dll
+CopyINF = RPRNUT.INF
+
+[RICOH_P_501_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Zcd.psz
+LanguageMonitor = rica3Zlm,rica3Zlm.dll
+CopyINF = RPRNUT.INF
+
+[RICOH_P_502_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Zcd.psz
+LanguageMonitor = rica3Zlm,rica3Zlm.dll
+CopyINF = RPRNUT.INF
+
+[SAVIN_P_501_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Zcd.psz
+LanguageMonitor = rica3Zlm,rica3Zlm.dll
+CopyINF = RPRNUT.INF
+
+[SAVIN_P_502_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Zcd.psz
+LanguageMonitor = rica3Zlm,rica3Zlm.dll
+CopyINF = RPRNUT.INF
+
+
+[LANIER_P_501_64.dat.Services]
+AddService = ,0x2 
+
+[LANIER_P_502_64.dat.Services]
+AddService = ,0x2 
+
+[RICOH_P_501_64.dat.Services]
+AddService = ,0x2 
+
+[RICOH_P_502_64.dat.Services]
+AddService = ,0x2 
+
+[SAVIN_P_501_64.dat.Services]
+AddService = ,0x2 
+
+[SAVIN_P_502_64.dat.Services]
+AddService = ,0x2 
+
+
+[RPD_FILES]
+rica3Zui.dll,rica8Oui.dll
+rica3Zui.irj,SP_501__.irj
+rica3Zui.rdj
+rica3Zui.rcf,SP_501__.rcf
+rica3Zug.dll,rica8Oug.dll
+rica3Zug.miz
+rica3Zur.dll,rica8Our.dll
+rica3Zgr.dll,rica8Ogr.dll
+rica3Zgl.dll,rica8Ogl.dll
+rica3Zci.dll,rica8Oci.dll
+rica3Zcd.dll,rica8Ocd.dll
+rica3Zcd.psz
+rica3Zcf.cfz
+rica3Zcl.ini
+rica3Zch.chm,rica8Och.chm
+rica3Zcz.dlz,rica3Ycz.dlz
+rica3Zcj.dll,rica8Ocj.dll
+rica3Zct.dll,rica8Oct.dll
+rica3Zcb.dll,rica8Ocb.dll
+rica3Ztl.exe,rica8Otl.exe
+rica3Ztc.exe,rica8Otc.exe
+rica3Ztt.exe,rica8Ott.exe
+rica3Ztf.exe,rica8Otf.exe
+
+[RPD_COMMON_SYS32]
+rica3Zlm.dll,rica8Olm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD03Zd64.dll,RD03Zd64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica3Zui.dll
+DriverFile	= rica3Zgr.dll
+HelpFile	= rica3Zch.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica8Oui.dll	= 1
+SP_501__.irj	= 1
+rica3Zui.rdj	= 1
+SP_501__.rcf	= 2
+rica8Oug.dll	= 1
+rica3Zug.miz	= 1
+rica8Our.dll	= 1
+rica8Ogr.dll	= 1
+rica8Ogl.dll	= 1
+rica8Oci.dll	= 1
+rica8Ocd.dll	= 1
+rica3Zcd.psz	= 1
+rica3Zcf.cfz	= 1
+rica3Zcl.ini	= 1
+rica8Och.chm	= 1
+rica3Ycz.dlz	= 1
+rica8Ocj.dll	= 1
+rica8Oct.dll	= 1
+rica8Ocb.dll	= 1
+rica8Olm.dll	= 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+rica8Otl.exe              = 1
+RD03Zd64.dll	= 1
+rica8Otc.exe	= 1
+rica8Ott.exe	= 1
+rica8Otf.exe	= 1
+
+[Strings]
+Ricoh="Ricoh"
+LANIER="LANIER"
+SAVIN="SAVIN"
+DSK= "PCL6 Printer Driver Disk1"

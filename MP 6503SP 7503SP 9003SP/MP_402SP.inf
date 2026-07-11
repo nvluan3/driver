@@ -1,0 +1,187 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2026 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 03/10/2026,3.3.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%Gestetner%=Gestetner,NTamd64
+%infotec%=infotec,NTamd64
+%LANIER%=LANIER,NTamd64
+%NRG%=NRG,NTamd64
+%Ricoh%=Ricoh,NTamd64
+%SAVIN%=SAVIN,NTamd64
+
+
+;WindowsXP(amd64)
+[Gestetner.NTamd64]
+"Gestetner MP 402SPF PCL 6"=Gestetner_MP_402SPF_64.dat,USBPRINT\GestetnerMP_402SPF51AD,LPTENUM\GestetnerMP_402SPF51AD,GestetnerMP_402SPF51AD
+
+[infotec.NTamd64]
+"infotec MP 402SPF PCL 6"=infotec_MP_402SPF_64.dat,USBPRINT\infotecMP_402SPFD115,LPTENUM\infotecMP_402SPFD115,infotecMP_402SPFD115
+
+[LANIER.NTamd64]
+"LANIER MP 402SPF PCL 6"=LANIER_MP_402SPF_64.dat,USBPRINT\LANIERMP_402SPF194C,LPTENUM\LANIERMP_402SPF194C,LANIERMP_402SPF194C
+
+[NRG.NTamd64]
+"NRG MP 402SPF PCL 6"=NRG_MP_402SPF_64.dat,USBPRINT\NRGMP_402SPFC11B,LPTENUM\NRGMP_402SPFC11B,NRGMP_402SPFC11B
+
+[Ricoh.NTamd64]
+"RICOH MP 402SPF PCL 6"=RICOH_MP_402SPF_64.dat,USBPRINT\RICOHMP_402SPF1498,LPTENUM\RICOHMP_402SPF1498,RICOHMP_402SPF1498
+
+[SAVIN.NTamd64]
+"SAVIN MP 402SPF PCL 6"=SAVIN_MP_402SPF_64.dat,USBPRINT\SAVINMP_402SPFF9B4,LPTENUM\SAVINMP_402SPFF9B4,SAVINMP_402SPFF9B4
+
+
+
+
+[Gestetner_MP_402SPF_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1Zcd.psz
+LanguageMonitor	= rica1Zlm,rica1Zlm.dll
+
+[infotec_MP_402SPF_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1Zcd.psz
+LanguageMonitor	= rica1Zlm,rica1Zlm.dll
+
+[LANIER_MP_402SPF_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1Zcd.psz
+LanguageMonitor	= rica1Zlm,rica1Zlm.dll
+
+[NRG_MP_402SPF_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1Zcd.psz
+LanguageMonitor	= rica1Zlm,rica1Zlm.dll
+
+[RICOH_MP_402SPF_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1Zcd.psz
+LanguageMonitor	= rica1Zlm,rica1Zlm.dll
+
+[SAVIN_MP_402SPF_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1Zcd.psz
+LanguageMonitor	= rica1Zlm,rica1Zlm.dll
+
+
+[Gestetner_MP_402SPF_64.dat.Services]
+AddService = ,0x2 
+
+[infotec_MP_402SPF_64.dat.Services]
+AddService = ,0x2 
+
+[LANIER_MP_402SPF_64.dat.Services]
+AddService = ,0x2 
+
+[NRG_MP_402SPF_64.dat.Services]
+AddService = ,0x2 
+
+[RICOH_MP_402SPF_64.dat.Services]
+AddService = ,0x2 
+
+[SAVIN_MP_402SPF_64.dat.Services]
+AddService = ,0x2 
+
+
+[RPD_FILES]
+rica1Zui.dll,rica8Oui.dll
+rica1Zui.irj,MP_402SP.irj
+rica1Zui.rdj
+rica1Zui.rcf,MP_402SP.rcf
+rica1Zug.dll,rica8Oug.dll
+rica1Zug.miz
+rica1Zur.dll,rica8Our.dll
+rica1Zgr.dll,rica8Ogr.dll
+rica1Zgl.dll,rica8Ogl.dll
+rica1Zci.dll,rica8Oci.dll
+rica1Zcd.dll,rica8Ocd.dll
+rica1Zcd.psz
+rica1Zcf.cfz
+rica1Zcl.ini
+rica1Zch.chm,rica8Och.chm
+rica1Zcz.dlz,rica8Ocz.dlz
+rica1Zcj.dll,rica8Ocj.dll
+rica1Zct.dll,rica8Oct.dll
+rica1Zcb.dll,rica8Ocb.dll
+rica1Ztl.exe,rica8Otl.exe
+rica1Ztc.exe,rica8Otc.exe
+rica1Ztt.exe,rica8Ott.exe
+rica1Ztf.exe,rica8Otf.exe
+
+[RPD_COMMON_SYS32]
+rica1Zlm.dll,rica8Olm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD01Zd64.dll,RD01Zd64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica1Zui.dll
+DriverFile	= rica1Zgr.dll
+HelpFile	= rica1Zch.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica8Oui.dll	= 1
+MP_402SP.irj	= 1
+rica1Zui.rdj	= 1
+MP_402SP.rcf	= 2
+rica8Oug.dll	= 1
+rica1Zug.miz	= 1
+rica8Our.dll	= 1
+rica8Ogr.dll	= 1
+rica8Ogl.dll	= 1
+rica8Oci.dll	= 1
+rica8Ocd.dll	= 1
+rica1Zcd.psz	= 1
+rica1Zcf.cfz	= 1
+rica1Zcl.ini	= 1
+rica8Och.chm	= 1
+rica8Ocz.dlz	= 1
+rica8Ocj.dll	= 1
+rica8Oct.dll	= 1
+rica8Ocb.dll	= 1
+rica8Olm.dll	= 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+rica8Otl.exe      = 1
+RD01Zd64.dll	= 1
+rica8Otc.exe	= 1
+rica8Ott.exe	= 1
+rica8Otf.exe	= 1
+
+[Strings]
+Ricoh="Ricoh"
+Gestetner="Gestetner"
+infotec="infotec"
+LANIER="LANIER"
+NRG="NRG"
+SAVIN="SAVIN"
+DSK= "PCL6 Printer Driver Disk1"

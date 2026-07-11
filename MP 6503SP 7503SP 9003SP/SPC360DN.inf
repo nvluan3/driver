@@ -1,0 +1,143 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2026 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 03/10/2026,3.3.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%LANIER%=LANIER,NTamd64
+%Ricoh%=Ricoh,NTamd64
+%SAVIN%=SAVIN,NTamd64
+
+
+;WindowsXP(amd64)
+[LANIER.NTamd64]
+"LANIER SP C360DNw PCL 6"=LANIER_SP_C360DNw_64.dat,USBPRINT\LANIERSP_C360DNwC74F,LPTENUM\LANIERSP_C360DNwC74F,LANIERSP_C360DNwC74F
+
+[Ricoh.NTamd64]
+"RICOH SP C360DNw PCL 6"=RICOH_SP_C360DNw_64.dat,USBPRINT\RICOHSP_C360DNw989A,LPTENUM\RICOHSP_C360DNw989A,RICOHSP_C360DNw989A
+
+[SAVIN.NTamd64]
+"SAVIN SP C360DNw PCL 6"=SAVIN_SP_C360DNw_64.dat,USBPRINT\SAVINSP_C360DNw86F7,LPTENUM\SAVINSP_C360DNw86F7,SAVINSP_C360DNw86F7
+
+
+[LANIER_SP_C360DNw_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Xcd.psz
+LanguageMonitor	= rica3Xlm,rica3Xlm.dll
+
+[RICOH_SP_C360DNw_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Xcd.psz
+LanguageMonitor	= rica3Xlm,rica3Xlm.dll
+
+[SAVIN_SP_C360DNw_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Xcd.psz
+LanguageMonitor	= rica3Xlm,rica3Xlm.dll
+
+
+[LANIER_SP_C360DNw_64.dat.Services]
+AddService = ,0x2 
+
+[RICOH_SP_C360DNw_64.dat.Services]
+AddService = ,0x2 
+
+[SAVIN_SP_C360DNw_64.dat.Services]
+AddService = ,0x2 
+
+
+[RPD_FILES]
+rica3Xui.dll,rica8Oui.dll
+rica3Xui.irj,SPC360DN.irj
+rica3Xui.rdj
+rica3Xui.rcf,SPC360DN.rcf
+rica3Xug.dll,rica8Oug.dll
+rica3Xug.miz
+rica3Xur.dll,rica8Our.dll
+rica3Xgr.dll,rica8Ogr.dll
+rica3Xgl.dll,rica8Ogl.dll
+rica3Xci.dll,rica8Oci.dll
+rica3Xcd.dll,rica8Ocd.dll
+rica3Xcd.psz
+rica3Xcf.cfz
+rica3Xcl.ini
+rica3Xch.chm,rica8Och.chm
+rica3Xcz.dlz,rica3Ycz.dlz
+rica3Xcj.dll,rica8Ocj.dll
+rica3Xct.dll,rica8Oct.dll
+rica3Xcb.dll,rica8Ocb.dll
+rica3Xtl.exe,rica8Otl.exe
+rica3Xtc.exe,rica8Otc.exe
+rica3Xtt.exe,rica8Ott.exe
+rica3Xtf.exe,rica8Otf.exe
+
+[RPD_COMMON_SYS32]
+rica3Xlm.dll,rica8Olm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD03Xd64.dll,RD03Xd64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica3Xui.dll
+DriverFile	= rica3Xgr.dll
+HelpFile	= rica3Xch.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica8Oui.dll	= 1
+SPC360DN.irj	= 1
+rica3Xui.rdj	= 1
+SPC360DN.rcf	= 2
+rica8Oug.dll	= 1
+rica3Xug.miz	= 1
+rica8Our.dll	= 1
+rica8Ogr.dll	= 1
+rica8Ogl.dll	= 1
+rica8Oci.dll	= 1
+rica8Ocd.dll	= 1
+rica3Xcd.psz	= 1
+rica3Xcf.cfz	= 1
+rica3Xcl.ini	= 1
+rica8Och.chm	= 1
+rica3Ycz.dlz	= 1
+rica8Ocj.dll	= 1
+rica8Oct.dll	= 1
+rica8Ocb.dll	= 1
+rica8Olm.dll	= 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+rica8Otl.exe      = 1
+RD03Xd64.dll	= 1
+rica8Otc.exe	= 1
+rica8Ott.exe	= 1
+rica8Otf.exe	= 1
+
+[Strings]
+Ricoh="Ricoh"
+LANIER="LANIER"
+SAVIN="SAVIN"
+DSK= "PCL6 Printer Driver Disk1"

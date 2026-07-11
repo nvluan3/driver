@@ -1,0 +1,245 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2026 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 03/10/2026,3.3.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%Gestetner%=Gestetner,NTamd64
+%infotec%=infotec,NTamd64
+%LANIER%=LANIER,NTamd64
+%NRG%=NRG,NTamd64
+%Ricoh%=Ricoh,NTamd64
+%SAVIN%=SAVIN,NTamd64
+
+
+;WindowsXP(amd64)
+[Gestetner.NTamd64]
+"Gestetner Pro C5200S PCL 6"=Gestetner_Pro_C5200S_64.dat,USBPRINT\GestetnerPro_C5200SDE2F,LPTENUM\GestetnerPro_C5200SDE2F,GestetnerPro_C5200SDE2F
+"Gestetner Pro C5210S PCL 6"=Gestetner_Pro_C5210S_64.dat,USBPRINT\GestetnerPro_C5210S1E7E,LPTENUM\GestetnerPro_C5210S1E7E,GestetnerPro_C5210S1E7E
+
+[infotec.NTamd64]
+"infotec Pro C5200S PCL 6"=infotec_Pro_C5200S_64.dat,USBPRINT\infotecPro_C5200SCD56,LPTENUM\infotecPro_C5200SCD56,infotecPro_C5200SCD56
+"infotec Pro C5210S PCL 6"=infotec_Pro_C5210S_64.dat,USBPRINT\infotecPro_C5210S0D05,LPTENUM\infotecPro_C5210S0D05,infotecPro_C5210S0D05,infotecPro_C5210S_D05
+
+[LANIER.NTamd64]
+"LANIER Pro C5200S PCL 6"=LANIER_Pro_C5200S_64.dat,USBPRINT\LANIERPro_C5200SF67E,LPTENUM\LANIERPro_C5200SF67E,LANIERPro_C5200SF67E
+"LANIER Pro C5210S PCL 6"=LANIER_Pro_C5210S_64.dat,USBPRINT\LANIERPro_C5210S362F,LPTENUM\LANIERPro_C5210S362F,LANIERPro_C5210S362F
+
+[NRG.NTamd64]
+"NRG Pro C5200S PCL 6"=NRG_Pro_C5200S_64.dat,USBPRINT\NRGPro_C5200S0865,LPTENUM\NRGPro_C5200S0865,NRGPro_C5200S0865,NRGPro_C5200S_865
+"NRG Pro C5210S PCL 6"=NRG_Pro_C5210S_64.dat,USBPRINT\NRGPro_C5210SC834,LPTENUM\NRGPro_C5210SC834,NRGPro_C5210SC834
+
+[Ricoh.NTamd64]
+"RICOH Pro C5200S PCL 6"=RICOH_Pro_C5200S_64.dat,USBPRINT\RICOHPro_C5200S8BD3,LPTENUM\RICOHPro_C5200S8BD3,RICOHPro_C5200S8BD3
+"RICOH Pro C5210S PCL 6"=RICOH_Pro_C5210S_64.dat,USBPRINT\RICOHPro_C5210S4B80,LPTENUM\RICOHPro_C5210S4B80,RICOHPro_C5210S4B80
+
+[SAVIN.NTamd64]
+"SAVIN Pro C5200S PCL 6"=SAVIN_Pro_C5200S_64.dat,USBPRINT\SAVINPro_C5200SB43E,LPTENUM\SAVINPro_C5200SB43E,SAVINPro_C5200SB43E
+"SAVIN Pro C5210S PCL 6"=SAVIN_Pro_C5210S_64.dat,USBPRINT\SAVINPro_C5210S746F,LPTENUM\SAVINPro_C5210S746F,SAVINPro_C5210S746F
+
+
+[Gestetner_Pro_C5200S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Vcd.psz
+LanguageMonitor = rica6Vlm,rica6Vlm.dll
+
+[Gestetner_Pro_C5210S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Vcd.psz
+LanguageMonitor = rica6Vlm,rica6Vlm.dll
+
+[infotec_Pro_C5200S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Vcd.psz
+LanguageMonitor = rica6Vlm,rica6Vlm.dll
+
+[infotec_Pro_C5210S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Vcd.psz
+LanguageMonitor = rica6Vlm,rica6Vlm.dll
+
+[LANIER_Pro_C5200S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Vcd.psz
+LanguageMonitor = rica6Vlm,rica6Vlm.dll
+
+[LANIER_Pro_C5210S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Vcd.psz
+LanguageMonitor = rica6Vlm,rica6Vlm.dll
+
+[NRG_Pro_C5200S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Vcd.psz
+LanguageMonitor = rica6Vlm,rica6Vlm.dll
+
+[NRG_Pro_C5210S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Vcd.psz
+LanguageMonitor = rica6Vlm,rica6Vlm.dll
+
+[RICOH_Pro_C5200S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Vcd.psz
+LanguageMonitor = rica6Vlm,rica6Vlm.dll
+
+[RICOH_Pro_C5210S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Vcd.psz
+LanguageMonitor = rica6Vlm,rica6Vlm.dll
+
+[SAVIN_Pro_C5200S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Vcd.psz
+LanguageMonitor = rica6Vlm,rica6Vlm.dll
+
+[SAVIN_Pro_C5210S_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Vcd.psz
+LanguageMonitor = rica6Vlm,rica6Vlm.dll
+
+
+[Gestetner_Pro_C5200S_64.dat.Services]
+AddService = ,0x2 
+
+[Gestetner_Pro_C5210S_64.dat.Services]
+AddService = ,0x2 
+
+[infotec_Pro_C5200S_64.dat.Services]
+AddService = ,0x2 
+
+[infotec_Pro_C5210S_64.dat.Services]
+AddService = ,0x2 
+
+[LANIER_Pro_C5200S_64.dat.Services]
+AddService = ,0x2 
+
+[LANIER_Pro_C5210S_64.dat.Services]
+AddService = ,0x2 
+
+[NRG_Pro_C5200S_64.dat.Services]
+AddService = ,0x2 
+
+[NRG_Pro_C5210S_64.dat.Services]
+AddService = ,0x2 
+
+[RICOH_Pro_C5200S_64.dat.Services]
+AddService = ,0x2 
+
+[RICOH_Pro_C5210S_64.dat.Services]
+AddService = ,0x2 
+
+[SAVIN_Pro_C5200S_64.dat.Services]
+AddService = ,0x2 
+
+[SAVIN_Pro_C5210S_64.dat.Services]
+AddService = ,0x2 
+
+
+[RPD_FILES]
+rica6Vui.dll,rica8Oui.dll
+rica6Vui.irj,PRC5200S.irj
+rica6Vui.rdj
+rica6Vui.rcf,PRC5200S.rcf
+rica6Vug.dll,rica8Oug.dll
+rica6Vug.miz
+rica6Vur.dll,rica8Our.dll
+rica6Vgr.dll,rica8Ogr.dll
+rica6Vgl.dll,rica8Ogl.dll
+rica6Vci.dll,rica8Oci.dll
+rica6Vcd.dll,rica8Ocd.dll
+rica6Vcd.psz
+rica6Vcf.cfz
+rica6Vcl.ini
+rica6Vch.chm,rica8Och.chm
+rica6Vcz.dlz,rica8Ocz.dlz
+rica6Vcj.dll,rica8Ocj.dll
+rica6Vct.dll,rica8Oct.dll
+rica6Vcb.dll,rica8Ocb.dll
+rica6Vtl.exe,rica8Otl.exe
+rica6Vtc.exe,rica8Otc.exe
+rica6Vtt.exe,rica8Ott.exe
+rica6Vtf.exe,rica8Otf.exe
+
+[RPD_COMMON_SYS32]
+rica6Vlm.dll,rica8Olm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD06Ud64.dll,RD06Ud64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica6Vui.dll
+DriverFile	= rica6Vgr.dll
+HelpFile	= rica6Vch.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica8Oui.dll	= 1
+PRC5200S.irj	= 1
+rica6Vui.rdj	= 1
+PRC5200S.rcf	= 2
+rica8Oug.dll	= 1
+rica6Vug.miz	= 1
+rica8Our.dll	= 1
+rica8Ogr.dll	= 1
+rica8Ogl.dll	= 1
+rica8Oci.dll	= 1
+rica8Ocd.dll	= 1
+rica6Vcd.psz	= 1
+rica6Vcf.cfz	= 1
+rica6Vcl.ini	= 1
+rica8Och.chm	= 1
+rica8Ocz.dlz	= 1
+rica8Ocj.dll	= 1
+rica8Oct.dll	= 1
+rica8Ocb.dll	= 1
+rica8Olm.dll	= 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+rica8Otl.exe              = 1
+RD06Ud64.dll	= 1
+rica8Otc.exe	= 1
+rica8Ott.exe	= 1
+rica8Otf.exe	= 1
+
+[Strings]
+Ricoh="Ricoh"
+Gestetner="Gestetner"
+infotec="infotec"
+LANIER="LANIER"
+NRG="NRG"
+SAVIN="SAVIN"
+DSK= "PCL6 Printer Driver Disk1"

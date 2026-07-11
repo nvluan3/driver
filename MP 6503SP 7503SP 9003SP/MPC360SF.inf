@@ -1,0 +1,237 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2026 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 03/10/2026,3.3.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%LANIER%=LANIER,NTamd64
+%NRG%=NRG,NTamd64
+%Ricoh%=Ricoh,NTamd64
+%SAVIN%=SAVIN,NTamd64
+
+
+;WindowsXP(amd64)
+[LANIER.NTamd64]
+"LANIER SP C360SFNw PCL 6"=LANIER_SP_C360SFNw_64.dat,USBPRINT\LANIERSP_C360SFNwF450,LPTENUM\LANIERSP_C360SFNwF450,LANIERSP_C360SFNwF450
+"LANIER SP C360SNw PCL 6"=LANIER_SP_C360SNw_64.dat,USBPRINT\LANIERSP_C360SNwC3FF,LPTENUM\LANIERSP_C360SNwC3FF,LANIERSP_C360SNwC3FF
+"LANIER SP C361SFNw PCL 6"=LANIER_SP_C361SFNw_64.dat,USBPRINT\LANIERSP_C361SFNw346D,LPTENUM\LANIERSP_C361SFNw346D,LANIERSP_C361SFNw346D
+
+[NRG.NTamd64]
+"NRG SP C360SFNw PCL 6"=NRG_SP_C360SFNw_64.dat,USBPRINT\NRGSP_C360SFNw04CF,LPTENUM\NRGSP_C360SFNw04CF,NRGSP_C360SFNw04CF,NRGSP_C360SFNw_4CF
+"NRG SP C360SNw PCL 6"=NRG_SP_C360SNw_64.dat,USBPRINT\NRGSP_C360SNw5DBF,LPTENUM\NRGSP_C360SNw5DBF,NRGSP_C360SNw5DBF
+"NRG SP C361SFNw PCL 6"=NRG_SP_C361SFNw_64.dat,USBPRINT\NRGSP_C361SFNwC4F2,LPTENUM\NRGSP_C361SFNwC4F2,NRGSP_C361SFNwC4F2
+
+[Ricoh.NTamd64]
+"RICOH SP C360SFNw PCL 6"=RICOH_SP_C360SFNw_64.dat,USBPRINT\RICOHSP_C360SFNw6BCE,LPTENUM\RICOHSP_C360SFNw6BCE,RICOHSP_C360SFNw6BCE
+"RICOH SP C360SNw PCL 6"=RICOH_SP_C360SNw_64.dat,USBPRINT\RICOHSP_C360SNw9C2A,LPTENUM\RICOHSP_C360SNw9C2A,RICOHSP_C360SNw9C2A
+"RICOH SP C361SFNw PCL 6"=RICOH_SP_C361SFNw_64.dat,USBPRINT\RICOHSP_C361SFNwABF3,LPTENUM\RICOHSP_C361SFNwABF3,RICOHSP_C361SFNwABF3
+
+[SAVIN.NTamd64]
+"SAVIN SP C360SFNw PCL 6"=SAVIN_SP_C360SFNw_64.dat,USBPRINT\SAVINSP_C360SFNwE612,LPTENUM\SAVINSP_C360SFNwE612,SAVINSP_C360SFNwE612
+"SAVIN SP C360SNw PCL 6"=SAVIN_SP_C360SNw_64.dat,USBPRINT\SAVINSP_C360SNw43C6,LPTENUM\SAVINSP_C360SNw43C6,SAVINSP_C360SNw43C6
+"SAVIN SP C361SFNw PCL 6"=SAVIN_SP_C361SFNw_64.dat,USBPRINT\SAVINSP_C361SFNw262F,LPTENUM\SAVINSP_C361SFNw262F,SAVINSP_C361SFNw262F
+
+
+[LANIER_SP_C360SFNw_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Wcd.psz
+LanguageMonitor	= rica3Wlm,rica3Wlm.dll
+
+[LANIER_SP_C360SNw_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Wcd.psz
+LanguageMonitor	= rica3Wlm,rica3Wlm.dll
+
+[LANIER_SP_C361SFNw_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Wcd.psz
+LanguageMonitor	= rica3Wlm,rica3Wlm.dll
+
+[NRG_SP_C360SFNw_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Wcd.psz
+LanguageMonitor	= rica3Wlm,rica3Wlm.dll
+
+[NRG_SP_C360SNw_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Wcd.psz
+LanguageMonitor	= rica3Wlm,rica3Wlm.dll
+
+[NRG_SP_C361SFNw_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Wcd.psz
+LanguageMonitor	= rica3Wlm,rica3Wlm.dll
+
+[RICOH_SP_C360SFNw_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Wcd.psz
+LanguageMonitor	= rica3Wlm,rica3Wlm.dll
+
+[RICOH_SP_C360SNw_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Wcd.psz
+LanguageMonitor	= rica3Wlm,rica3Wlm.dll
+
+[RICOH_SP_C361SFNw_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Wcd.psz
+LanguageMonitor	= rica3Wlm,rica3Wlm.dll
+
+[SAVIN_SP_C360SFNw_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Wcd.psz
+LanguageMonitor	= rica3Wlm,rica3Wlm.dll
+
+[SAVIN_SP_C360SNw_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Wcd.psz
+LanguageMonitor	= rica3Wlm,rica3Wlm.dll
+
+[SAVIN_SP_C361SFNw_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Wcd.psz
+LanguageMonitor	= rica3Wlm,rica3Wlm.dll
+
+
+[LANIER_SP_C360SFNw_64.dat.Services]
+AddService = ,0x2 
+
+[LANIER_SP_C360SNw_64.dat.Services]
+AddService = ,0x2 
+
+[LANIER_SP_C361SFNw_64.dat.Services]
+AddService = ,0x2 
+
+[NRG_SP_C360SFNw_64.dat.Services]
+AddService = ,0x2 
+
+[NRG_SP_C360SNw_64.dat.Services]
+AddService = ,0x2 
+
+[NRG_SP_C361SFNw_64.dat.Services]
+AddService = ,0x2 
+
+[RICOH_SP_C360SFNw_64.dat.Services]
+AddService = ,0x2 
+
+[RICOH_SP_C360SNw_64.dat.Services]
+AddService = ,0x2 
+
+[RICOH_SP_C361SFNw_64.dat.Services]
+AddService = ,0x2 
+
+[SAVIN_SP_C360SFNw_64.dat.Services]
+AddService = ,0x2 
+
+[SAVIN_SP_C360SNw_64.dat.Services]
+AddService = ,0x2 
+
+[SAVIN_SP_C361SFNw_64.dat.Services]
+AddService = ,0x2 
+
+
+[RPD_FILES]
+rica3Wui.dll,rica8Oui.dll
+rica3Wui.irj,MPC360SF.irj
+rica3Wui.rdj
+rica3Wui.rcf,MPC360SF.rcf
+rica3Wug.dll,rica8Oug.dll
+rica3Wug.miz
+rica3Wur.dll,rica8Our.dll
+rica3Wgr.dll,rica8Ogr.dll
+rica3Wgl.dll,rica8Ogl.dll
+rica3Wci.dll,rica8Oci.dll
+rica3Wcd.dll,rica8Ocd.dll
+rica3Wcd.psz
+rica3Wcf.cfz
+rica3Wcl.ini
+rica3Wch.chm,rica8Och.chm
+rica3Wcz.dlz,rica3Ycz.dlz
+rica3Wcj.dll,rica8Ocj.dll
+rica3Wct.dll,rica8Oct.dll
+rica3Wcb.dll,rica8Ocb.dll
+rica3Wtl.exe,rica8Otl.exe
+rica3Wtc.exe,rica8Otc.exe
+rica3Wtt.exe,rica8Ott.exe
+rica3Wtf.exe,rica8Otf.exe
+
+[RPD_COMMON_SYS32]
+rica3Wlm.dll,rica8Olm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD03Wd64.dll,RD03Wd64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica3Wui.dll
+DriverFile	= rica3Wgr.dll
+HelpFile	= rica3Wch.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica8Oui.dll	= 1
+MPC360SF.irj	= 1
+rica3Wui.rdj	= 1
+MPC360SF.rcf	= 2
+rica8Oug.dll	= 1
+rica3Wug.miz	= 1
+rica8Our.dll	= 1
+rica8Ogr.dll	= 1
+rica8Ogl.dll	= 1
+rica8Oci.dll	= 1
+rica8Ocd.dll	= 1
+rica3Wcd.psz	= 1
+rica3Wcf.cfz	= 1
+rica3Wcl.ini	= 1
+rica8Och.chm	= 1
+rica3Ycz.dlz	= 1
+rica8Ocj.dll	= 1
+rica8Oct.dll	= 1
+rica8Ocb.dll	= 1
+rica8Olm.dll	= 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+rica8Otl.exe      = 1
+RD03Wd64.dll	= 1
+rica8Otc.exe	= 1
+rica8Ott.exe	= 1
+rica8Otf.exe	= 1
+
+[Strings]
+Ricoh="Ricoh"
+LANIER="LANIER"
+NRG="NRG"
+SAVIN="SAVIN"
+DSK= "PCL6 Printer Driver Disk1"

@@ -1,0 +1,38 @@
+;
+; Driver Installer Section (For DrvInst)
+;
+; Copyright (c) 2007-2026 RICOH COMPANY, LTD
+; All Rights Reserved
+;
+
+[DrvInst]
+DrvInst=LANIER SP C360SFNw PCL 6,LANIER SP C360SNw PCL 6,LANIER SP C361SFNw PCL 6,NRG SP C360SFNw PCL 6,NRG SP C360SNw PCL 6,NRG SP C361SFNw PCL 6,RICOH SP C360SFNw PCL 6,RICOH SP C360SNw PCL 6,RICOH SP C361SFNw PCL 6,SAVIN SP C360SFNw PCL 6,SAVIN SP C360SNw PCL 6,SAVIN SP C361SFNw PCL 6
+Comment="PCL6 Driver (For Windows)"
+DriverType=PCL6
+DriverArchitecture=ARC2010ALFA
+Version=3
+IniFileName=rpdinstv.ini,allusers
+IniFileSupport=4
+ScenarioInstallOK=ON
+RConfigFileOSVersion=3
+DriverVersion=3.3.0.0
+Platform=NTamd64
+RCFFormatVersion=1.0
+UserCodeOK=ON
+ModelName.LANIER SP C360SFNw PCL 6 = "SP C360SFNw"
+ModelName.LANIER SP C360SNw PCL 6 = "SP C360SNw"
+ModelName.LANIER SP C361SFNw PCL 6 = "SP C361SFNw"
+ModelName.NRG SP C360SFNw PCL 6 = "SP C360SFNw"
+ModelName.NRG SP C360SNw PCL 6 = "SP C360SNw"
+ModelName.NRG SP C361SFNw PCL 6 = "SP C361SFNw"
+ModelName.RICOH SP C360SFNw PCL 6 = "SP C360SFNw"
+ModelName.RICOH SP C360SNw PCL 6 = "SP C360SNw"
+ModelName.RICOH SP C361SFNw PCL 6 = "SP C361SFNw"
+ModelName.SAVIN SP C360SFNw PCL 6 = "SP C360SFNw"
+ModelName.SAVIN SP C360SNw PCL 6 = "SP C360SNw"
+ModelName.SAVIN SP C361SFNw PCL 6 = "SP C361SFNw"
+USBPermit=ON
+UserIDSupportLevel=1
+PackageInstall=ON
+PopupLockSupport=ON
+NXIdentify=1
