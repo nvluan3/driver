@@ -19,7 +19,7 @@ function Show-Menu {
     Write-Host "                      MENU LUA CHON                      "
     Write-Host "========================================================="
     Write-Host "1. Cài đặt máy in RICOH IM C4500 (SADORA MAY 1 ID)"
-    Write-Host "2. Cài đặt máy in RICOH Aficio MP MP 3054 (SADORA MAY 2)"
+    Write-Host "2. Cài đặt máy in RICOH IM C4500 (SADORA MAY 2)"
     Write-Host "3. Cài đặt máy in RICOH Aficio MP 9002 (SADORA MAY 3)"
     Write-Host "4. Cài đặt máy in RICOH Aficio MP 9002 (SADORA MAY 4)"
     Write-Host "5. Cài đặt máy in RICOH MP C4504 (SADORA MAY 5)"
@@ -81,9 +81,9 @@ do {
         }
         "2" {
             $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
-            $driverPath = Join-Path $scriptDir "MP 2554-3054-3554-4054-5054-6054 series\disk1\MP_2554_.INF"
-            $driverName = "RICOH MP 3054 PCL 6"
-            $printerName = "RICOH MP 3054 (sadora may 2)"
+            $driverPath = Join-Path $scriptDir "IM C4500-C6000\MPC4500_.inf"
+            $driverName = "RICOH IM C4500 PCL 6"
+            $printerName = "RICOH IM C4500 (sadora may 2)"
             $portName = "IP_10.10.108.52"
             $portAddress = "10.10.108.52"
             $paperSize = "A4"
